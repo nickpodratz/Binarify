@@ -1,0 +1,11 @@
+/* No Localized Strings */
+
+/* Class = "IBUILabel"; text = "Binarify"; ObjectID = "7N3-Yv-69z"; */
+"7N3-Yv-69z.text" = "Binarify";
+
+/* Class = "IBUIButton"; normalTitle = "copy"; ObjectID = "IRA-U6-PUV"; */
+"IRA-U6-PUV.normalTitle" = "копия";
+
+/* Class = "IBUITextField"; placeholder = "cleartext or binary"; ObjectID = "KJj-VL-iff"; */
+"KJj-VL-iff.placeholder" = "текст или двоичный код";
+
