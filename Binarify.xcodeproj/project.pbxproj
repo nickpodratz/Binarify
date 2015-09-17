@@ -8,22 +8,30 @@
 
 /* Begin PBXBuildFile section */
 		01519BD019AD340E000E5E46 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01519BCF19AD340E000E5E46 /* AppDelegate.swift */; };
-		01519BD219AD340E000E5E46 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01519BD119AD340E000E5E46 /* ViewController.swift */; };
+		01519BD219AD340E000E5E46 /* TranslatorVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01519BD119AD340E000E5E46 /* TranslatorVC.swift */; };
 		01519BD519AD340E000E5E46 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 01519BD319AD340E000E5E46 /* Main.storyboard */; };
 		01519BD719AD340E000E5E46 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 01519BD619AD340E000E5E46 /* Images.xcassets */; };
 		01AC730619C0F83000CEF8F6 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 01519BE119AD340E000E5E46 /* Info.plist */; };
+		63223A6D1BA061D300DCE8AB /* OtherAppsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63223A6C1BA061D300DCE8AB /* OtherAppsCell.swift */; };
+		636415991BA054F3008993D4 /* Translator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 636415981BA054F3008993D4 /* Translator.swift */; };
+		6364159B1BA05927008993D4 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6364159A1BA05927008993D4 /* Extensions.swift */; };
+		6382568C1BAA3998003CEA8E /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6382568B1BAA3998003CEA8E /* Launch Screen.storyboard */; settings = {ASSET_TAGS = (); }; };
+		63B6782C1B9FD76500E9DFD7 /* AboutVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63B6782B1B9FD76500E9DFD7 /* AboutVC.swift */; };
+		63EECB4D1B9FCAD100B73146 /* Encodings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63EECB4C1B9FCAD100B73146 /* Encodings.swift */; };
+		63F310A41B9FBBD000A262EA /* localize.py in Resources */ = {isa = PBXBuildFile; fileRef = 63F310A31B9FBBD000A262EA /* localize.py */; };
+		63F310AC1B9FC1D600A262EA /* SettingsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63F310AB1B9FC1D600A262EA /* SettingsVC.swift */; };
+		63F310B21B9FC39100A262EA /* EncodingSelectionVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63F310B11B9FC39100A262EA /* EncodingSelectionVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		01519BCA19AD340E000E5E46 /* Binarify.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Binarify.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		01519BCE19AD340E000E5E46 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		01519BCF19AD340E000E5E46 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		01519BD119AD340E000E5E46 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		01519BD119AD340E000E5E46 /* TranslatorVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TranslatorVC.swift; sourceTree = "<group>"; };
 		01519BD419AD340E000E5E46 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		01519BD619AD340E000E5E46 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		01519BE119AD340E000E5E46 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		01519BE219AD340E000E5E46 /* BinarifyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BinarifyTests.swift; sourceTree = "<group>"; };
-		0175933019DA18B7005304FE /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/Main.storyboard; sourceTree = "<group>"; };
 		0175933219DA18E6005304FE /* fr */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = fr; path = fr.lproj/Main.storyboard; sourceTree = "<group>"; };
 		0175933319DA18E9005304FE /* it */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = it; path = it.lproj/Main.storyboard; sourceTree = "<group>"; };
 		0175933419DA18ED005304FE /* pt */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = pt; path = pt.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -40,7 +48,17 @@
 		0175933F19DA1998005304FE /* nl */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = nl; path = nl.lproj/Main.storyboard; sourceTree = "<group>"; };
 		0175934019DA199A005304FE /* es-MX */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = "es-MX"; path = "es-MX.lproj/Main.storyboard"; sourceTree = "<group>"; };
 		0175934119DA199D005304FE /* he */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = he; path = he.lproj/Main.storyboard; sourceTree = "<group>"; };
-		0175934319DA1AC9005304FE /* de */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = de; path = de.lproj/Main.storyboard; sourceTree = "<group>"; };
+		6300D0581BA0E762006EAE5B /* de */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = de; path = de.lproj/Main.storyboard; sourceTree = "<group>"; };
+		63223A6C1BA061D300DCE8AB /* OtherAppsCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OtherAppsCell.swift; sourceTree = "<group>"; };
+		636415981BA054F3008993D4 /* Translator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Translator.swift; sourceTree = "<group>"; };
+		6364159A1BA05927008993D4 /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		6382568B1BAA3998003CEA8E /* Launch Screen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
+		63B6782B1B9FD76500E9DFD7 /* AboutVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AboutVC.swift; path = ../AboutVC.swift; sourceTree = "<group>"; };
+		63EECB4C1B9FCAD100B73146 /* Encodings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Encodings.swift; sourceTree = "<group>"; };
+		63F310A31B9FBBD000A262EA /* localize.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = localize.py; sourceTree = SOURCE_ROOT; };
+		63F310A61B9FC00900A262EA /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/Main.storyboard; sourceTree = "<group>"; };
+		63F310AB1B9FC1D600A262EA /* SettingsVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsVC.swift; sourceTree = "<group>"; };
+		63F310B11B9FC39100A262EA /* EncodingSelectionVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = EncodingSelectionVC.swift; path = ../EncodingSelectionVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +75,7 @@
 		01519BC119AD340D000E5E46 = {
 			isa = PBXGroup;
 			children = (
+				63F310A31B9FBBD000A262EA /* localize.py */,
 				01519BCC19AD340E000E5E46 /* Binarify */,
 				01519BDF19AD340E000E5E46 /* BinarifyTests */,
 				01519BCB19AD340E000E5E46 /* Products */,
@@ -75,8 +94,12 @@
 			isa = PBXGroup;
 			children = (
 				01519BCF19AD340E000E5E46 /* AppDelegate.swift */,
-				01519BD119AD340E000E5E46 /* ViewController.swift */,
+				6364159A1BA05927008993D4 /* Extensions.swift */,
+				6382568B1BAA3998003CEA8E /* Launch Screen.storyboard */,
 				01519BD319AD340E000E5E46 /* Main.storyboard */,
+				63EECB4E1B9FCB8B00B73146 /* Model */,
+				63223A6E1BA0625B00DCE8AB /* View */,
+				63EECB4F1B9FCB9900B73146 /* Controller */,
 				01519BD619AD340E000E5E46 /* Images.xcassets */,
 				01519BCD19AD340E000E5E46 /* Supporting Files */,
 			);
@@ -108,6 +131,34 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		63223A6E1BA0625B00DCE8AB /* View */ = {
+			isa = PBXGroup;
+			children = (
+				63223A6C1BA061D300DCE8AB /* OtherAppsCell.swift */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		63EECB4E1B9FCB8B00B73146 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				63EECB4C1B9FCAD100B73146 /* Encodings.swift */,
+				636415981BA054F3008993D4 /* Translator.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		63EECB4F1B9FCB9900B73146 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				01519BD119AD340E000E5E46 /* TranslatorVC.swift */,
+				63F310AB1B9FC1D600A262EA /* SettingsVC.swift */,
+				63B6782B1B9FD76500E9DFD7 /* AboutVC.swift */,
+				63F310B11B9FC39100A262EA /* EncodingSelectionVC.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -134,7 +185,9 @@
 		01519BC219AD340D000E5E46 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0600;
+				LastSwiftMigration = 0700;
+				LastSwiftUpdateCheck = 0700;
+				LastUpgradeCheck = 0700;
 				ORGANIZATIONNAME = "Nick Podratz";
 				TargetAttributes = {
 					01519BC919AD340E000E5E46 = {
@@ -192,7 +245,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				01519BD519AD340E000E5E46 /* Main.storyboard in Resources */,
+				63F310A41B9FBBD000A262EA /* localize.py in Resources */,
 				01519BD719AD340E000E5E46 /* Images.xcassets in Resources */,
+				6382568C1BAA3998003CEA8E /* Launch Screen.storyboard in Resources */,
 				01AC730619C0F83000CEF8F6 /* Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -204,8 +259,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				01519BD219AD340E000E5E46 /* ViewController.swift in Sources */,
+				63B6782C1B9FD76500E9DFD7 /* AboutVC.swift in Sources */,
+				63F310AC1B9FC1D600A262EA /* SettingsVC.swift in Sources */,
+				63EECB4D1B9FCAD100B73146 /* Encodings.swift in Sources */,
+				6364159B1BA05927008993D4 /* Extensions.swift in Sources */,
+				01519BD219AD340E000E5E46 /* TranslatorVC.swift in Sources */,
+				63F310B21B9FC39100A262EA /* EncodingSelectionVC.swift in Sources */,
 				01519BD019AD340E000E5E46 /* AppDelegate.swift in Sources */,
+				63223A6D1BA061D300DCE8AB /* OtherAppsCell.swift in Sources */,
+				636415991BA054F3008993D4 /* Translator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -216,7 +278,6 @@
 			isa = PBXVariantGroup;
 			children = (
 				01519BD419AD340E000E5E46 /* Base */,
-				0175933019DA18B7005304FE /* en */,
 				0175933219DA18E6005304FE /* fr */,
 				0175933319DA18E9005304FE /* it */,
 				0175933419DA18ED005304FE /* pt */,
@@ -233,7 +294,8 @@
 				0175933F19DA1998005304FE /* nl */,
 				0175934019DA199A005304FE /* es-MX */,
 				0175934119DA199D005304FE /* he */,
-				0175934319DA1AC9005304FE /* de */,
+				63F310A61B9FC00900A262EA /* en */,
+				6300D0581BA0E762006EAE5B /* de */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -262,6 +324,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
 				COPY_PHASE_STRIP = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
@@ -335,6 +398,7 @@
 				INFOPLIST_FILE = Binarify/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = np.Binarify;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 			};
@@ -351,6 +415,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = np.Binarify;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 			};
