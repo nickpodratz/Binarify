@@ -31,7 +31,7 @@
 
 """
     Important 1: There is a bug on ibtool when you add a 'Segment Control View' and then remove it... don't do it :)
-    Important 2: See this video to know how this script work with more details: http://www.youtube.com/watch?v=cF1Rf02QvZQ
+    Important 2: See this video to know how this script work with more details: https://www.youtube.com/watch?v=cF1Rf02QvZQ
     """
 
 # python localize.py --mainIdiom=en mainStoryboard=Binarify/en.lproj/Main.storyboard ar cs de el es-MX es fr he it ja nb nl pl pt ru th zh-Hans

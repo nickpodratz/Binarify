@@ -1,0 +1,9 @@
+
+/* Class = "UILabel"; text = "Binarify"; ObjectID = "7N3-Yv-69z"; */
+"7N3-Yv-69z.text" = "Binarify";
+
+/* Class = "UIButton"; normalTitle = "نسخة"; ObjectID = "IRA-U6-PUV"; */
+"IRA-U6-PUV.normalTitle" = "نسخة";
+
+/* Class = "UITextField"; placeholder = "النص أو رمز ثنائي"; ObjectID = "KJj-VL-iff"; */
+"KJj-VL-iff.placeholder" = "النص أو رمز ثنائي";

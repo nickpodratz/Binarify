@@ -12,11 +12,8 @@ import Foundation
 
 class Translator {
     
-    private let bitValues = [1, 2, 4, 8, 16, 32, 64, 128]
-    private let bitValuesB = [64, 32, 16, 8, 4, 2, 1, 0]
-    private let bitPosition = [7, 6, 5, 4, 3, 2, 1, 0]
-    private let allowedElements = ["0", "1", " "]
-
+    private let binaryCharacters: [Character] = ["0", "1", " "]
+    
     var encoding: Encoding
     var whitespacesEnabled: Bool
     
@@ -28,11 +25,11 @@ class Translator {
     func translate(aString: String) -> String {
         var isBinary = true
         
-        if aString.characters.count >= 8 {
-            let firstEightLetters = aString.substringToIndex(aString.startIndex.advancedBy(8))
-            for letter in firstEightLetters.characters {
-                for _ in allowedElements {
-                    if String(letter) != "0" && String(letter) != "1" && String(letter) != " " {
+        if aString.characters.count >= encoding.characterBitLength {
+            let firstCharacterLetters = aString.substringToIndex(aString.startIndex.advancedBy(encoding.characterBitLength))
+            for letter in firstCharacterLetters.characters {
+                for _ in binaryCharacters {
+                    if letter != "0" && letter != "1" && letter != " " {
                         isBinary = false
                     }
                 }
@@ -43,54 +40,77 @@ class Translator {
         
         return isBinary ? translateFromBinary(aString) : translateToBinary(aString)
     }
-
-    private func translateToBinary(astring: String) -> String {
-        var product = ""
-        for asciiNumber in astring.utf8 {
-            var number = Int(asciiNumber)
-            for currentBitPosition in bitPosition {
-                if number - bitValues[currentBitPosition] >= 0 {
-                    number -= bitValues[currentBitPosition]
-                    product += "1"
-                }else {
-                    product += "0"
-                }
+    
+    private func translateToBinary(aString: String) -> String {
+        var bytes = [String]()
+        switch encoding {
+        case .UTF8:
+            for asciiNumber in aString.utf8 {
+                let number: UInt32 = UInt32(asciiNumber)
+                var byte = String(number, radix: 2)
+                byte = pad(byte, toSize: 8)
+                bytes.append(byte)
+            }
+        case .UTF16:
+            for asciiNumber in aString.utf16 {
+                let number: UInt32 = UInt32(asciiNumber)
+                var byte = String(number, radix: 2)
+                byte = pad(byte, toSize: 16)
+                bytes.append(byte)
             }
             
-            if whitespacesEnabled {
-                product += " "
+        case .Unicode:
+            for asciiNumber in aString.unicodeScalars {
+                let number = asciiNumber.value
+                var byte = String(number, radix: 2)
+                byte = pad(byte, toSize: 32)
+                bytes.append(byte)
             }
         }
         
-        product = product.substringToIndex(product.startIndex.advancedBy(product.characters.count-1))
+        let separatorForJoining = whitespacesEnabled ? " " : ""
+        let product = bytes.joinWithSeparator(separatorForJoining)
         
         return product
     }
     
+    
     private func translateFromBinary(string: String) -> String {
-        var product = ""
-        var bytesArray = [String]()
+        var charactersAsBinary = [String]()
         
-        // lösche Leerzeichen
+        // Delete Whitespaces
         let clearBinary = string.stringByReplacingOccurrencesOfString(" ", withString: "", options: NSStringCompareOptions.LiteralSearch, range: nil)
-        
-        // Teile in Byte-Blöcke
-        for numberOfBytes in 1...(clearBinary.characters.count / 8) {
-            bytesArray.append(clearBinary.substring(numberOfBytes * 8 - 7, length: 8 ))
+        clearBinary.characters.count
+        clearBinary.characters.count / encoding.characterBitLength
+        // Separate into Byte-Blocks
+        for numberOfBytes in 0...(clearBinary.characters.count / encoding.characterBitLength) {
+            charactersAsBinary.append(clearBinary.substring(numberOfBytes * encoding.characterBitLength, length: encoding.characterBitLength ))
         }
         
-        // Code zum Übersetzen der Bytes in ASCII
-        for currentByte in bytesArray {
-            var asciiNumber = 0
-            for currentBitPosition in 0...7 {
-                if currentByte.substring(currentBitPosition, length: 1) == "1" {
-                    asciiNumber += bitValuesB[currentBitPosition]
-                }
-            }
-            product += String(UnicodeScalar(asciiNumber))
+        let values = charactersAsBinary.map{ strtoul($0, nil, 2) }.map{ Int($0) }
+        let characters = values.map{ String(UnicodeScalar(Int($0))) } as [String]
+        return characters.joinWithSeparator("")
+    }
+    
+    
+    // MARK: - Helper Functions
+    
+    private func bitValueAtPosition(index: Int) -> Int {
+        if index == 0 { return 1 }
+        else { return Int(pow(2.0, Double(index))) }
+    }
+    
+    private func bitValueAtPosition(index: Int) -> UInt32 {
+        if index == 0 { return 1 }
+        else { return UInt32(pow(2.0, Double(index))) }
+    }
+    
+    private func pad(string : String, toSize: Int) -> String {
+        var padded = string
+        for _ in 0..<toSize - string.characters.count {
+            padded = "0" + padded
         }
-        
-        return product
+        return padded
     }
 
 }

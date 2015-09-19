@@ -11,25 +11,32 @@ import UIKit
 
 class TranslatorController: UIViewController, UITextFieldDelegate {
                             
+    @IBOutlet weak var binarifyButton: UIButton!
     @IBOutlet var textField: UITextField!
     @IBOutlet var outputTextView: UITextView!
     @IBOutlet var copyButton: UIButton!
     @IBOutlet var tapGestureRecognizer: UITapGestureRecognizer!
     
+    var autoCopying: Bool = NSUserDefaults.standardUserDefaults().boolForKey(autoCopyingKey)
+
     var translator: Translator!
-    
     
     // MARK: - Life Cycle
     
     override func viewDidLoad() {
         setupTextField()
         setupTranslator()
+        NSTimer.scheduledTimerWithTimeInterval(2.8, target: self, selector: "animateBinarifyButton", userInfo: nil, repeats: false)
+    }
+    
+    override func viewDidAppear(animated: Bool) {
+        self.textField.keyboardType = translator.encoding.keyboard
     }
     
     private func setupTranslator() {
         let defaults = NSUserDefaults.standardUserDefaults()
         let encodingRaw = defaults.integerForKey(encodingKey)
-        let encoding = Encoding(rawValue: encodingRaw) ?? Encoding.ASCII
+        let encoding = Encoding(rawValue: encodingRaw) ?? Encoding.UTF8
         let whitespacesEnabled = defaults.boolForKey(whitespacesKey) ?? true
         self.translator = Translator(encoding: encoding, addsWhitespaces: whitespacesEnabled)
     }
@@ -38,17 +45,40 @@ class TranslatorController: UIViewController, UITextFieldDelegate {
         let defaults = NSUserDefaults.standardUserDefaults()
         let correctionEnabled = defaults.boolForKey(autoCorrectionKey) ?? false
         self.textField.autocorrectionType = correctionEnabled ? .Yes : .No
+        self.textField.delegate = self
     }
     
-
+    
     // MARK: - User Interaction
     
-    @IBAction func copyToPasteboard(sender: UIButton) {
+    @IBAction func copyToPasteboard(sender: AnyObject) {
         UIPasteboard.generalPasteboard().string = outputTextView.text
+        performSegueWithIdentifier("toCopyingSucceededVC", sender: self)
     }
     
     @IBAction func finishedEditing(sender: AnyObject) {
         textField.resignFirstResponder()
+        tapGestureRecognizer.enabled = false
+        if autoCopying && !textField.text!.isEmpty {
+            copyToPasteboard(sender)
+        }
+    }
+    
+    func animateBinarifyButton() {
+        if self.binarifyButton != nil {
+            UIView.animateWithDuration(0.3, delay: 0, options: UIViewAnimationOptions.CurveEaseInOut,
+                animations: {
+                    self.binarifyButton.transform = CGAffineTransformScale(self.binarifyButton.transform, 1.05, 1.05)
+                }
+                ,
+                completion: { completed -> Void in
+                    UIView.animateWithDuration(0.7, delay: 0, usingSpringWithDamping: 0.35, initialSpringVelocity: 0.5, options: UIViewAnimationOptions.CurveEaseIn,
+                        animations: {
+                            self.binarifyButton.transform = CGAffineTransformScale(self.binarifyButton.transform, 0.9375, 0.9375)
+                        }, completion: nil)
+                }
+            )
+        }
     }
     
     @IBAction func translate(sender: UITextField) {
@@ -69,9 +99,13 @@ class TranslatorController: UIViewController, UITextFieldDelegate {
         if segue.identifier == nil { return }
         
         switch segue.identifier! {
+            
         case "toSettings":
             let destinationController = (segue.destinationViewController as! UINavigationController).visibleViewController as! SettingsController
             destinationController.delegate = self
+            
+        case "toCopyingSucceededVC": return
+
         default: print("Presenting unknown View Controller \"\(segue.identifier)\"")
         }
     }
@@ -79,6 +113,14 @@ class TranslatorController: UIViewController, UITextFieldDelegate {
     func textFieldShouldReturn(textField: UITextField) -> Bool {
         finishedEditing(textField)
         return false
+    }
+    
+    func textFieldDidBeginEditing(textField: UITextField) {
+        tapGestureRecognizer.enabled = true
+    }
+    
+    func textFieldDidEndEditing(textField: UITextField) {
+        self.finishedEditing(textField)
     }
     
     @IBAction func returnsToViewController(segue:UIStoryboardSegue) {
@@ -104,6 +146,8 @@ class TranslatorController: UIViewController, UITextFieldDelegate {
 extension TranslatorController: SettingsDelegate {
     func settingsController(didSetEncoding encoding: Encoding) {
         self.translator.encoding = encoding
+        self.textField.keyboardType = encoding.keyboard
+        translate(textField)
     }
     
     func settingsController(didSetWhitespacesEnabled enabled: Bool) {
@@ -116,6 +160,7 @@ extension TranslatorController: SettingsDelegate {
     }
     
     func settingsController(didSetAutoCopying enabled: Bool) {
+        self.autoCopying = enabled
         // Set auto copying enabled.
     }
     

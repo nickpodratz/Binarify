@@ -1,0 +1,9 @@
+
+/* Class = "UILabel"; text = "Binarify"; ObjectID = "7N3-Yv-69z"; */
+"7N3-Yv-69z.text" = "Binarify";
+
+/* Class = "UIButton"; normalTitle = "副本"; ObjectID = "IRA-U6-PUV"; */
+"IRA-U6-PUV.normalTitle" = "副本";
+
+/* Class = "UITextField"; placeholder = "文本或二进制编码"; ObjectID = "KJj-VL-iff"; */
+"KJj-VL-iff.placeholder" = "文本或二进制编码";

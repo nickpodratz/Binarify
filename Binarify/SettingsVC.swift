@@ -37,13 +37,13 @@ class SettingsController: UITableViewController, EncodingSelectorDelegate {
         
         let defaults = NSUserDefaults.standardUserDefaults()
         
-        let encoding = Encoding(rawValue: defaults.integerForKey(encodingKey)) ?? Encoding.ASCII
+        let encoding = Encoding(rawValue: defaults.integerForKey(encodingKey)) ?? Encoding.UTF8
         encodingLabel.text = encoding.getDescription()
         whitespacesSwitch.on = defaults.boolForKey(whitespacesKey) ?? true
         wordSuggestionsSwitch.on = defaults.boolForKey(autoCorrectionKey) ?? true
         autoCopyingSwitch.on = defaults.boolForKey(autoCopyingKey) ?? true
     }
-    
+        
     
     // MARK: - Transitioning
 
@@ -58,11 +58,13 @@ class SettingsController: UITableViewController, EncodingSelectorDelegate {
         case "toEncodingSelection":
             let destinationController = segue.destinationViewController as! EncodingSelectionController
             let defaults = NSUserDefaults.standardUserDefaults()
-            let encoding = Encoding(rawValue: defaults.integerForKey(encodingKey)) ?? Encoding.ASCII
+            let encoding = Encoding(rawValue: defaults.integerForKey(encodingKey)) ?? Encoding.UTF8
             destinationController.selectedEncoding = encoding
             destinationController.delegate = self
         case "toAbout": return
-//            let destinationController = segue.destinationViewController as! AboutController
+            //            let destinationController = segue.destinationViewController as! AboutController
+        case "toAbout": return
+            //            let destinationController = segue.destinationViewController as! AboutController
         default: print("Presenting unknown View Controller \"\(segue.identifier)\"")
         }
     }
@@ -92,6 +94,7 @@ class SettingsController: UITableViewController, EncodingSelectorDelegate {
     // MARK: - Encoding Selector Delegate
     
     func didSelectEncoding(newEncoding: Encoding) {
+        delegate.settingsController(didSetEncoding: newEncoding)
         encodingLabel.text = newEncoding.getDescription()
         let defaults = NSUserDefaults.standardUserDefaults()
         defaults.setInteger(newEncoding.rawValue, forKey: encodingKey)

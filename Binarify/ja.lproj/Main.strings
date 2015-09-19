@@ -1,0 +1,9 @@
+
+/* Class = "UILabel"; text = "Binarify"; ObjectID = "7N3-Yv-69z"; */
+"7N3-Yv-69z.text" = "Binarify";
+
+/* Class = "UIButton"; normalTitle = "コピー"; ObjectID = "IRA-U6-PUV"; */
+"IRA-U6-PUV.normalTitle" = "コピー";
+
+/* Class = "UITextField"; placeholder = "テキストまたはバイナリコード"; ObjectID = "KJj-VL-iff"; */
+"KJj-VL-iff.placeholder" = "テキストまたはバイナリコード";

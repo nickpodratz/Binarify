@@ -16,7 +16,7 @@ class AboutController: UITableViewController, SKStoreProductViewControllerDelega
     @IBOutlet weak var otherAppsTVCell: UITableViewCell!
     @IBOutlet weak var otherAppsActivityIndicator: UIActivityIndicatorView!
     @IBOutlet weak var otherAppsCollectionView: UICollectionView!
-    @IBOutlet weak var otherAppsLabel: UILabel!
+    @IBOutlet weak var otherAppsErrorLabel: UILabel!
     @IBOutlet weak var imageView: UIImageView!
 
     var selectedIndexPath: NSIndexPath?
@@ -54,8 +54,8 @@ class AboutController: UITableViewController, SKStoreProductViewControllerDelega
                 otherAppsActivityIndicator.stopAnimating()
                 otherAppsActivityIndicator.removeFromSuperview()
             }
-            if otherAppsLabel != nil {
-                otherAppsLabel.removeFromSuperview()
+            if otherAppsErrorLabel != nil {
+                otherAppsErrorLabel.removeFromSuperview()
             }
         }
     }
@@ -83,8 +83,7 @@ class AboutController: UITableViewController, SKStoreProductViewControllerDelega
                 if error != nil {
                     print(error)
                     self.otherAppsActivityIndicator.stopAnimating()
-                    self.otherAppsActivityIndicator.removeFromSuperview()
-                    self.otherAppsLabel.hidden = false
+                    self.otherAppsErrorLabel.hidden = false
                 } else {
                     guard let json = try! NSJSONSerialization.JSONObjectWithData(data!, options: NSJSONReadingOptions.AllowFragments) as? NSDictionary else { return }
                     if let results = json["results"] as? [NSDictionary] {

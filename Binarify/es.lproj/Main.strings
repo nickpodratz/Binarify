@@ -1,0 +1,9 @@
+
+/* Class = "UILabel"; text = "Binarify"; ObjectID = "7N3-Yv-69z"; */
+"7N3-Yv-69z.text" = "Binarify";
+
+/* Class = "UIButton"; normalTitle = "copiar"; ObjectID = "IRA-U6-PUV"; */
+"IRA-U6-PUV.normalTitle" = "copiar";
+
+/* Class = "UITextField"; placeholder = "texto o código binario"; ObjectID = "KJj-VL-iff"; */
+"KJj-VL-iff.placeholder" = "texto o código binario";

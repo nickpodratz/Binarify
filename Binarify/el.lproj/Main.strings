@@ -1,0 +1,9 @@
+
+/* Class = "UILabel"; text = "Binarify"; ObjectID = "7N3-Yv-69z"; */
+"7N3-Yv-69z.text" = "Binarify";
+
+/* Class = "UIButton"; normalTitle = "αντίγραφο"; ObjectID = "IRA-U6-PUV"; */
+"IRA-U6-PUV.normalTitle" = "αντίγραφο";
+
+/* Class = "UITextField"; placeholder = "κειμένου ή δυαδικό κώδικα"; ObjectID = "KJj-VL-iff"; */
+"KJj-VL-iff.placeholder" = "κειμένου ή δυαδικό κώδικα";

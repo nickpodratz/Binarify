@@ -3,6 +3,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
     </dependencies>
     <scenes>
@@ -39,16 +40,34 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="Dtz-0Q-nny" secondAttribute="trailing" constant="20" id="5mp-7s-cfd">
+                                <variation key="widthClass=compact" constant="8"/>
+                            </constraint>
                             <constraint firstItem="Dtz-0Q-nny" firstAttribute="top" secondItem="woL-aF-dGx" secondAttribute="bottom" constant="20" id="LWO-P5-roY"/>
                             <constraint firstItem="woL-aF-dGx" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="X2h-ZA-A8j"/>
                             <constraint firstAttribute="centerY" secondItem="woL-aF-dGx" secondAttribute="centerY" multiplier="4.2" constant="-88" id="ilM-WX-Amh"/>
                             <constraint firstItem="Dtz-0Q-nny" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="n0h-D0-WJr"/>
+                            <constraint firstItem="Dtz-0Q-nny" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leadingMargin" constant="20" id="zKT-o9-LCB">
+                                <variation key="widthClass=compact" constant="8"/>
+                            </constraint>
                         </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="5mp-7s-cfd"/>
+                                <exclude reference="zKT-o9-LCB"/>
+                            </mask>
+                        </variation>
+                        <variation key="widthClass=compact">
+                            <mask key="constraints">
+                                <include reference="5mp-7s-cfd"/>
+                                <include reference="zKT-o9-LCB"/>
+                            </mask>
+                        </variation>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="53" y="375"/>
+            <point key="canvasLocation" x="52.5" y="375"/>
         </scene>
     </scenes>
 </document>
