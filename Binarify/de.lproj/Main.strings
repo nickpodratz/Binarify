@@ -1,0 +1,91 @@
+
+/* Class = "UITableViewSection"; headerTitle = "Übersetzung"; ObjectID = "3zU-PL-yGm"; */
+"3zU-PL-yGm.headerTitle" = "Übersetzung";
+
+/* Class = "UITableViewSection"; headerTitle = "Usability"; ObjectID = "5w9-mt-clg"; */
+"5w9-mt-clg.headerTitle" = "Usability";
+
+/* Class = "UILabel"; text = "UTF-16"; ObjectID = "8TI-FW-N5v"; */
+"8TI-FW-N5v.text" = "UTF-16";
+
+/* Class = "UILabel"; text = "18, Entwickler aus Hamburg"; ObjectID = "9RZ-t3-PyK"; */
+"9RZ-t3-PyK.text" = "18, Entwickler aus Hamburg";
+
+/* Class = "UILabel"; text = "UTF8"; ObjectID = "BXl-cK-wZw"; */
+"BXl-cK-wZw.text" = "UTF8";
+
+/* Class = "UILabel"; text = "Kodierungsprotokoll"; ObjectID = "F3O-Je-K62"; */
+"F3O-Je-K62.text" = "Kodierungsprotokoll";
+
+/* Class = "UIBarButtonItem"; title = "About"; ObjectID = "GeQ-hC-KVr"; */
+"GeQ-hC-KVr.title" = "Über";
+
+/* Class = "UINavigationItem"; title = "Einstellungen"; ObjectID = "HZa-5q-EYg"; */
+"HZa-5q-EYg.title" = "Einstellungen";
+
+/* Class = "UILabel"; text = "keine Netzwerkverbindung"; ObjectID = "IQr-UG-dSh"; */
+"IQr-UG-dSh.text" = "keine Internetverbindung";
+
+/* Class = "UIButton"; normalTitle = "kopieren"; ObjectID = "IRA-U6-PUV"; */
+"IRA-U6-PUV.normalTitle" = "Kopieren";
+
+/* Class = "UITextField"; placeholder = "Text oder Binärcode"; ObjectID = "KJj-VL-iff"; */
+"KJj-VL-iff.placeholder" = "Text oder Binärcode";
+
+/* Class = "UILabel"; text = "Feedback senden"; ObjectID = "Ml4-24-0nZ"; */
+"Ml4-24-0nZ.text" = "Feedback senden";
+
+/* Class = "UILabel"; text = "Nick Podratz"; ObjectID = "RGb-7B-0ox"; */
+"RGb-7B-0ox.text" = "Nick Podratz";
+
+/* Class = "UILabel"; text = "Dynamisch"; ObjectID = "Ras-sS-osb"; */
+"Ras-sS-osb.text" = "Dynamisch";
+
+/* Class = "UILabel"; text = "Unicode"; ObjectID = "StC-5D-nux"; */
+"StC-5D-nux.text" = "Unicode";
+
+/* Class = "UILabel"; text = "kopiert"; ObjectID = "YoI-3T-9SJ"; */
+"YoI-3T-9SJ.text" = "Kopiert";
+
+/* Class = "UILabel"; text = "UTF-8 (Standard)"; ObjectID = "Z1E-JH-SA5"; */
+"Z1E-JH-SA5.text" = "UTF-8 (Standard)";
+
+/* Class = "UILabel"; text = "8 Bit"; ObjectID = "am5-mR-T9X"; */
+"am5-mR-T9X.text" = "8 Bit";
+
+/* Class = "UITableViewSection"; headerTitle = "In Kontakt treten"; ObjectID = "cuD-UL-r4I"; */
+"cuD-UL-r4I.headerTitle" = "In Kontakt treten";
+
+/* Class = "UITableViewSection"; headerTitle = "Meine anderen Apps"; ObjectID = "gRb-bf-zzW"; */
+"gRb-bf-zzW.headerTitle" = "Meine anderen Apps";
+
+/* Class = "UITableViewSection"; headerTitle = "Kodierungsprotokoll"; ObjectID = "lIb-QV-uuG"; */
+"lIb-QV-uuG.headerTitle" = "Kodierungsprotokoll";
+
+/* Class = "UIButton"; normalTitle = "Binarify"; ObjectID = "mCq-NQ-bnD"; */
+"mCq-NQ-bnD.normalTitle" = "Binarify";
+
+/* Class = "UILabel"; text = "Zeichentrennung"; ObjectID = "p6C-kN-4li"; */
+"p6C-kN-4li.text" = "Zeichentrennung";
+
+/* Class = "UINavigationItem"; title = "Über"; ObjectID = "qqD-hi-n87"; */
+"qqD-hi-n87.title" = "Über";
+
+/* Class = "UILabel"; text = "Autokorrektur"; ObjectID = "thv-Mc-WYQ"; */
+"thv-Mc-WYQ.text" = "Autokorrektur";
+
+/* Class = "UILabel"; text = "16 Bit"; ObjectID = "v9W-4u-DbO"; */
+"v9W-4u-DbO.text" = "16 Bit";
+
+/* Class = "UILabel"; text = "Binarify bewerten"; ObjectID = "vkV-8T-qcm"; */
+"vkV-8T-qcm.text" = "Binarify bewerten";
+
+/* Class = "UILabel"; text = "Danke, dass du Binarify benutzt! Dies ist die erste App, die ich veröffentlicht habe und ich bin immer noch sehr interessiert, wie sie Verwendung findet. Darum würde ich mich über eine kurze Mail oder App Store Bewertung mit deiner Meinung sehr freuen. Und hast du schon meine anderen Apps gesehen? Ich bin mir sicher da ist auch etwas für dich dabei."; ObjectID = "wfd-Xk-Lx2"; */
+"wfd-Xk-Lx2.text" = "Danke, dass du Binarify benutzt! 
+Dies war meine erste App im App Store und ich bin immer noch sehr interessiert, wie sie Verwendung findet. Über eine kurze Mail oder App Store Bewertung mit deiner Meinung würde ich mich daher sehr freuen. Und vielleicht magst du noch einen Blick auf meine anderen Apps werfen?";
+
+/* Class = "UILabel"; text = "Automatisches kopieren"; ObjectID = "wnW-Bv-TOw"; */
+"wnW-Bv-TOw.text" = "Automatisches kopieren";
+
+/* Class = "UILabel"; text = "App Name"; ObjectID = "yRY-DX-zsA"; */
+"yRY-DX-zsA.text" = "App Name";

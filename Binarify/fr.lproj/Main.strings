@@ -1,15 +1,12 @@
 
-/* Class = "UITableViewSection"; headerTitle = "Translation"; ObjectID = "3zU-PL-yGm"; */
-"3zU-PL-yGm.headerTitle" = "Translation";
+/* Class = "UITableViewSection"; headerTitle = "Encoding/Decoding"; ObjectID = "3zU-PL-yGm"; */
+"3zU-PL-yGm.headerTitle" = "Encoding/Decoding";
 
 /* Class = "UITableViewSection"; headerTitle = "Usability"; ObjectID = "5w9-mt-clg"; */
 "5w9-mt-clg.headerTitle" = "Usability";
 
 /* Class = "UILabel"; text = "UTF-16"; ObjectID = "8TI-FW-N5v"; */
 "8TI-FW-N5v.text" = "UTF-16";
-
-/* Class = "UILabel"; text = "18, Developer from Germany"; ObjectID = "9RZ-t3-PyK"; */
-"9RZ-t3-PyK.text" = "18, Developer from Germany";
 
 /* Class = "UILabel"; text = "UTF8"; ObjectID = "BXl-cK-wZw"; */
 "BXl-cK-wZw.text" = "UTF8";
@@ -29,17 +26,17 @@
 /* Class = "UIButton"; normalTitle = "copy"; ObjectID = "IRA-U6-PUV"; */
 "IRA-U6-PUV.normalTitle" = "copy";
 
-/* Class = "UITextField"; placeholder = "textový nebo binární kód"; ObjectID = "KJj-VL-iff"; */
-"KJj-VL-iff.placeholder" = "textový nebo binární kód";
+/* Class = "UITextField"; placeholder = "clair ou binaire"; ObjectID = "KJj-VL-iff"; */
+"KJj-VL-iff.placeholder" = "clair ou binaire";
 
 /* Class = "UILabel"; text = "Send Feedback"; ObjectID = "Ml4-24-0nZ"; */
 "Ml4-24-0nZ.text" = "Send Feedback";
 
-/* Class = "UILabel"; text = "Nick Podratz"; ObjectID = "RGb-7B-0ox"; */
-"RGb-7B-0ox.text" = "Nick Podratz";
+/* Class = "UILabel"; text = "Hey, this is Nick, the programmer of Binarify. I am an 18 years old german teenager... "; ObjectID = "PkJ-h2-XGQ"; */
+"PkJ-h2-XGQ.text" = "Hey, this is Nick, the programmer of Binarify. I am an 18 years old german teenager... ";
 
-/* Class = "UILabel"; text = "Dynamic"; ObjectID = "Ras-sS-osb"; */
-"Ras-sS-osb.text" = "Dynamic";
+/* Class = "UILabel"; text = "32 Bit"; ObjectID = "Ras-sS-osb"; */
+"Ras-sS-osb.text" = "32 Bit";
 
 /* Class = "UILabel"; text = "Unicode"; ObjectID = "StC-5D-nux"; */
 "StC-5D-nux.text" = "Unicode";
@@ -47,8 +44,8 @@
 /* Class = "UILabel"; text = "copied"; ObjectID = "YoI-3T-9SJ"; */
 "YoI-3T-9SJ.text" = "copied";
 
-/* Class = "UILabel"; text = "UTF-8 (Default)"; ObjectID = "Z1E-JH-SA5"; */
-"Z1E-JH-SA5.text" = "UTF-8 (Default)";
+/* Class = "UILabel"; text = "UTF-8 (Standard)"; ObjectID = "Z1E-JH-SA5"; */
+"Z1E-JH-SA5.text" = "UTF-8 (Standard)";
 
 /* Class = "UILabel"; text = "8 Bit"; ObjectID = "am5-mR-T9X"; */
 "am5-mR-T9X.text" = "8 Bit";
@@ -65,8 +62,8 @@
 /* Class = "UIButton"; normalTitle = "Binarify"; ObjectID = "mCq-NQ-bnD"; */
 "mCq-NQ-bnD.normalTitle" = "Binarify";
 
-/* Class = "UILabel"; text = "Sepatate with Whitespace"; ObjectID = "p6C-kN-4li"; */
-"p6C-kN-4li.text" = "Sepatate with Whitespace";
+/* Class = "UILabel"; text = "Whitespace between Characters"; ObjectID = "p6C-kN-4li"; */
+"p6C-kN-4li.text" = "Whitespace between Characters";
 
 /* Class = "UINavigationItem"; title = "About"; ObjectID = "qqD-hi-n87"; */
 "qqD-hi-n87.title" = "About";
@@ -77,14 +74,11 @@
 /* Class = "UILabel"; text = "16 Bit"; ObjectID = "v9W-4u-DbO"; */
 "v9W-4u-DbO.text" = "16 Bit";
 
-/* Class = "UILabel"; text = "Rate Binarify"; ObjectID = "vkV-8T-qcm"; */
-"vkV-8T-qcm.text" = "Rate Binarify";
-
-/* Class = "UILabel"; text = "Thank you for using Binary!\nThis is the first app I released and I am still very curious about how it is used. Would you mind writing me a short mail or an App Store review with your opinion? Moreover feel free to check out my more recent apps listed below, I would be happy if you gave them a try."; ObjectID = "wfd-Xk-Lx2"; */
-"wfd-Xk-Lx2.text" = "Thank you for using Binary!\nThis is the first app I released and I am still very curious about how it is used. Would you mind writing me a short mail or an App Store review with your opinion? Moreover feel free to check out my more recent apps listed below, I would be happy if you gave them a try.";
+/* Class = "UILabel"; text = "Rate App"; ObjectID = "vkV-8T-qcm"; */
+"vkV-8T-qcm.text" = "Rate App";
 
 /* Class = "UILabel"; text = "Auto-Copying"; ObjectID = "wnW-Bv-TOw"; */
 "wnW-Bv-TOw.text" = "Auto-Copying";
 
-/* Class = "UILabel"; text = "App Name"; ObjectID = "yRY-DX-zsA"; */
-"yRY-DX-zsA.text" = "App Name";
+/* Class = "UILabel"; text = "Label"; ObjectID = "yRY-DX-zsA"; */
+"yRY-DX-zsA.text" = "Label";

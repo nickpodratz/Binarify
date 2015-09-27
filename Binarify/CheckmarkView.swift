@@ -11,17 +11,16 @@ import UIKit
 @available(iOS 8.0, *)
 @IBDesignable
 class CheckmarkView: UIVisualEffectView {
-
+    
     @IBOutlet var label: UILabel!
-    @IBOutlet var checkmarkView: UIView!
     var pathLayer: CAShapeLayer!
     /*
     // Only override drawRect: if you perform custom drawing.
     // An empty implementation adversely affects performance during animation.
     override func drawRect(rect: CGRect) {
-        // Drawing code
+    // Drawing code
     }
-
+    
     */
     
     @IBInspectable var cornerRadius: CGFloat = 10 {
@@ -30,7 +29,7 @@ class CheckmarkView: UIVisualEffectView {
             self.layer.masksToBounds = cornerRadius > 0
         }
     }
-
+    
     override func layoutSubviews() {
         super.layoutSubviews()
         
@@ -66,8 +65,7 @@ class CheckmarkView: UIVisualEffectView {
             pathAnimation.duration = 0.3
             pathAnimation.fromValue = 0
             pathAnimation.toValue = 1
-            pathLayer.addAnimation(pathAnimation, forKey: "strokeEnd")            
+            pathLayer.addAnimation(pathAnimation, forKey: "strokeEnd")
         }
     }
-
 }

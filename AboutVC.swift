@@ -32,6 +32,10 @@ class AboutController: UITableViewController, SKStoreProductViewControllerDelega
         
         imageView.layer.cornerRadius = imageView.bounds.size.width / 2
         imageView.layer.masksToBounds = true
+        
+        // Update size of cells
+        self.tableView.rowHeight = UITableViewAutomaticDimension
+        self.tableView.estimatedRowHeight = 0
     }
 
     override func viewWillAppear(animated: Bool) {
@@ -41,6 +45,11 @@ class AboutController: UITableViewController, SKStoreProductViewControllerDelega
         }
     }
     
+    override func viewDidAppear(animated: Bool) {
+        super.viewDidAppear(animated)
+        tableView.reloadData()
+    }
+        
     
     // MARK: - Store Kit
     
@@ -151,6 +160,9 @@ class AboutController: UITableViewController, SKStoreProductViewControllerDelega
         }
     }
     
+    
+    // MARK: - Table View Delegate
+
     override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         selectedIndexPath = indexPath
 
@@ -207,7 +219,7 @@ extension AboutController: MFMailComposeViewControllerDelegate {
         picker.mailComposeDelegate = self
         picker.setToRecipients(["nick.podratz.support@icloud.com"])
         picker.setSubject("Binarify App Feedback")
-        picker.setMessageBody("\n\n\n\n\n\n\n-------------------------\nSome details about my device:\n– \(deviceModel) with iOS \(systemVersion)\n– Binarify in version \(appVersion)", isHTML: false)
+        picker.setMessageBody("\n\n\n\n\n\n\n-------------------------\nSome details about my device:\n– \(deviceModel) with iOS \(systemVersion)\n– Binarify, version \(appVersion)", isHTML: false)
         
         presentViewController(picker, animated: true, completion: nil)
     }

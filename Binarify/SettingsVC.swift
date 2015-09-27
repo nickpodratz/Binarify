@@ -30,6 +30,10 @@ class SettingsController: UITableViewController, EncodingSelectorDelegate {
         defaults.synchronize()
     }
     
+    override func viewDidAppear(animated: Bool) {
+        NSTimer.scheduledTimerWithTimeInterval(1, target: self, selector: "deselectSelectedRow", userInfo: nil, repeats: false)
+    }
+    
     // MARK: - Life Cycle
 
     override func viewDidLoad() {
@@ -52,9 +56,9 @@ class SettingsController: UITableViewController, EncodingSelectorDelegate {
     }
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        if segue.identifier == nil { return }
+        guard let identifier = segue.identifier else { print("No Identifier specified."); return }
         
-        switch segue.identifier! {
+        switch identifier {
         case "toEncodingSelection":
             let destinationController = segue.destinationViewController as! EncodingSelectionController
             let defaults = NSUserDefaults.standardUserDefaults()
@@ -63,9 +67,7 @@ class SettingsController: UITableViewController, EncodingSelectorDelegate {
             destinationController.delegate = self
         case "toAbout": return
             //            let destinationController = segue.destinationViewController as! AboutController
-        case "toAbout": return
-            //            let destinationController = segue.destinationViewController as! AboutController
-        default: print("Presenting unknown View Controller \"\(segue.identifier)\"")
+        default: print("Presenting unknown View Controller with segue-identifier \"\(identifier)\"")
         }
     }
     
@@ -88,6 +90,15 @@ class SettingsController: UITableViewController, EncodingSelectorDelegate {
         delegate.settingsController(didSetAutoCopying: sender.on)
         let defaults = NSUserDefaults.standardUserDefaults()
         defaults.setBool(sender.on, forKey: autoCopyingKey)
+    }
+    
+    
+    // MARK: - Helper Functions
+    
+    func deselectSelectedRow() {
+        if let selectedIndex = tableView.indexPathForSelectedRow {
+            self.tableView.deselectRowAtIndexPath(selectedIndex, animated: true)
+        }
     }
     
     

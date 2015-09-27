@@ -16,8 +16,8 @@ enum Encoding: Int {
     func getDescription() -> String {
         switch self {
         case .UTF8: return "UTF-8"
-        case .UTF16: return "UTF16"
-        case .Unicode: return "Unicode Scalar"
+        case .UTF16: return "UTF-16"
+        case .Unicode: return "Unicode"
         }
     }
     

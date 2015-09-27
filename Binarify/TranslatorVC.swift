@@ -18,8 +18,9 @@ class TranslatorController: UIViewController, UITextFieldDelegate {
     @IBOutlet var tapGestureRecognizer: UITapGestureRecognizer!
     
     var autoCopying: Bool = NSUserDefaults.standardUserDefaults().boolForKey(autoCopyingKey)
-
     var translator: Translator!
+    
+    var lastTranslatedText: String?
     
     // MARK: - Life Cycle
     
@@ -59,21 +60,25 @@ class TranslatorController: UIViewController, UITextFieldDelegate {
     @IBAction func finishedEditing(sender: AnyObject) {
         textField.resignFirstResponder()
         tapGestureRecognizer.enabled = false
-        if autoCopying && !textField.text!.isEmpty {
+        if autoCopying && !textField.text!.isEmpty && textField.text != lastTranslatedText {
+            lastTranslatedText = textField.text
             copyToPasteboard(sender)
         }
     }
     
     func animateBinarifyButton() {
         if self.binarifyButton != nil {
+            let originalColor = self.binarifyButton.tintColor
             UIView.animateWithDuration(0.3, delay: 0, options: UIViewAnimationOptions.CurveEaseInOut,
                 animations: {
                     self.binarifyButton.transform = CGAffineTransformScale(self.binarifyButton.transform, 1.05, 1.05)
+                    self.binarifyButton.tintColor = UIColor(red: 256/256, green: 170/256, blue: 0, alpha: 1)
                 }
                 ,
                 completion: { completed -> Void in
                     UIView.animateWithDuration(0.7, delay: 0, usingSpringWithDamping: 0.35, initialSpringVelocity: 0.5, options: UIViewAnimationOptions.CurveEaseIn,
                         animations: {
+                            self.binarifyButton.tintColor = originalColor
                             self.binarifyButton.transform = CGAffineTransformScale(self.binarifyButton.transform, 0.9375, 0.9375)
                         }, completion: nil)
                 }
@@ -96,9 +101,9 @@ class TranslatorController: UIViewController, UITextFieldDelegate {
     // Transitioning
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        if segue.identifier == nil { return }
+        guard let identifier = segue.identifier else { print("No Identifier specified."); return }
         
-        switch segue.identifier! {
+        switch identifier {
             
         case "toSettings":
             let destinationController = (segue.destinationViewController as! UINavigationController).visibleViewController as! SettingsController
@@ -106,7 +111,7 @@ class TranslatorController: UIViewController, UITextFieldDelegate {
             
         case "toCopyingSucceededVC": return
 
-        default: print("Presenting unknown View Controller \"\(segue.identifier)\"")
+        default: print("Presenting View Controller with unknown segue \"\(segue.identifier)\"")
         }
     }
     
