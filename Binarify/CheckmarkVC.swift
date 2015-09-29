@@ -18,10 +18,6 @@ class CheckmarkViewController: UIViewController {
         NSTimer.scheduledTimerWithTimeInterval(0.5, target: self, selector: "dismissViewController", userInfo: nil, repeats: false)
     }
     
-    func animateCheckmark() {
-        self.checkmarkView.animateCheckmark()
-    }
-    
     func dismissViewController() {
         self.dismissViewControllerAnimated(true, completion: nil)
     }

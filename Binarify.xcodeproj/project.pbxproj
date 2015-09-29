@@ -20,12 +20,14 @@
 		6382568C1BAA3998003CEA8E /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6382568B1BAA3998003CEA8E /* Launch Screen.storyboard */; settings = {ASSET_TAGS = (); }; };
 		63B6782C1B9FD76500E9DFD7 /* AboutVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63B6782B1B9FD76500E9DFD7 /* AboutVC.swift */; };
 		63EECB4D1B9FCAD100B73146 /* Encodings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63EECB4C1B9FCAD100B73146 /* Encodings.swift */; };
-		63F310A41B9FBBD000A262EA /* localize.py in Resources */ = {isa = PBXBuildFile; fileRef = 63F310A31B9FBBD000A262EA /* localize.py */; };
+		63EED15F1BB9685A00633C18 /* App Store Details.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 63EED15E1BB9685A00633C18 /* App Store Details.rtf */; settings = {ASSET_TAGS = (); }; };
 		63F310AC1B9FC1D600A262EA /* SettingsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63F310AB1B9FC1D600A262EA /* SettingsVC.swift */; };
 		63F310B21B9FC39100A262EA /* EncodingSelectionVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63F310B11B9FC39100A262EA /* EncodingSelectionVC.swift */; };
+		A9CC0B6071BAB8F092086F73 /* Pods_Binarify.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00AEC19579DA2E349BC1380B /* Pods_Binarify.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		00AEC19579DA2E349BC1380B /* Pods_Binarify.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Binarify.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		01519BCA19AD340E000E5E46 /* Binarify.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Binarify.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		01519BCE19AD340E000E5E46 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		01519BCF19AD340E000E5E46 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -35,6 +37,7 @@
 		01519BE119AD340E000E5E46 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		01519BE219AD340E000E5E46 /* BinarifyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BinarifyTests.swift; sourceTree = "<group>"; };
 		6302AAFE1BAAED31008A006C /* CheckmarkView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CheckmarkView.swift; sourceTree = "<group>"; };
+		6317CF2D1BBAD0DA0089F1EF /* Binarify-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Binarify-Bridging-Header.h"; sourceTree = SOURCE_ROOT; };
 		63223A6C1BA061D300DCE8AB /* OtherAppsCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OtherAppsCell.swift; sourceTree = "<group>"; };
 		636415981BA054F3008993D4 /* Translator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Translator.swift; sourceTree = "<group>"; };
 		6364159A1BA05927008993D4 /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
@@ -47,9 +50,11 @@
 		63C334931BB87056007F3084 /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/Main.strings; sourceTree = "<group>"; };
 		63C334951BB8733D007F3084 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Main.strings; sourceTree = "<group>"; };
 		63EECB4C1B9FCAD100B73146 /* Encodings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Encodings.swift; sourceTree = "<group>"; };
-		63F310A31B9FBBD000A262EA /* localize.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = localize.py; sourceTree = SOURCE_ROOT; };
+		63EED15E1BB9685A00633C18 /* App Store Details.rtf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.rtf; path = "App Store Details.rtf"; sourceTree = "<group>"; };
 		63F310AB1B9FC1D600A262EA /* SettingsVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsVC.swift; sourceTree = "<group>"; };
 		63F310B11B9FC39100A262EA /* EncodingSelectionVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = EncodingSelectionVC.swift; path = ../EncodingSelectionVC.swift; sourceTree = "<group>"; };
+		BFA861099BB68A3C8F9259CF /* Pods-Binarify.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Binarify.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Binarify/Pods-Binarify.debug.xcconfig"; sourceTree = "<group>"; };
+		BFB1C0091A74A21D4899747E /* Pods-Binarify.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Binarify.release.xcconfig"; path = "Pods/Target Support Files/Pods-Binarify/Pods-Binarify.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +62,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A9CC0B6071BAB8F092086F73 /* Pods_Binarify.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -66,10 +72,11 @@
 		01519BC119AD340D000E5E46 = {
 			isa = PBXGroup;
 			children = (
-				63F310A31B9FBBD000A262EA /* localize.py */,
 				01519BCC19AD340E000E5E46 /* Binarify */,
 				01519BDF19AD340E000E5E46 /* BinarifyTests */,
 				01519BCB19AD340E000E5E46 /* Products */,
+				AD9BB883FDD6F2159E88F8D8 /* Pods */,
+				9090D1D385FA9B998F717D83 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -100,6 +107,8 @@
 		01519BCD19AD340E000E5E46 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				6317CF2D1BBAD0DA0089F1EF /* Binarify-Bridging-Header.h */,
+				63EED15E1BB9685A00633C18 /* App Store Details.rtf */,
 				63ADF1611BAD9A740043C876 /* MyPlayground.playground */,
 				01519BCE19AD340E000E5E46 /* Info.plist */,
 			);
@@ -153,6 +162,23 @@
 			name = Controller;
 			sourceTree = "<group>";
 		};
+		9090D1D385FA9B998F717D83 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				00AEC19579DA2E349BC1380B /* Pods_Binarify.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		AD9BB883FDD6F2159E88F8D8 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				BFA861099BB68A3C8F9259CF /* Pods-Binarify.debug.xcconfig */,
+				BFB1C0091A74A21D4899747E /* Pods-Binarify.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -160,9 +186,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 01519BE619AD340E000E5E46 /* Build configuration list for PBXNativeTarget "Binarify" */;
 			buildPhases = (
+				3E9E0A9B4F15A29199C09476 /* Check Pods Manifest.lock */,
 				01519BC619AD340E000E5E46 /* Sources */,
 				01519BC719AD340E000E5E46 /* Frameworks */,
 				01519BC819AD340E000E5E46 /* Resources */,
+				F4F36351B3D80D117EB4BA89 /* Embed Pods Frameworks */,
+				6735387A6005D03502834E58 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -238,8 +267,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				63EED15F1BB9685A00633C18 /* App Store Details.rtf in Resources */,
 				01519BD519AD340E000E5E46 /* Main.storyboard in Resources */,
-				63F310A41B9FBBD000A262EA /* localize.py in Resources */,
 				01519BD719AD340E000E5E46 /* Images.xcassets in Resources */,
 				6382568C1BAA3998003CEA8E /* Launch Screen.storyboard in Resources */,
 				01AC730619C0F83000CEF8F6 /* Info.plist in Resources */,
@@ -247,6 +276,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3E9E0A9B4F15A29199C09476 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		6735387A6005D03502834E58 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Binarify/Pods-Binarify-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F4F36351B3D80D117EB4BA89 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Binarify/Pods-Binarify-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		01519BC619AD340E000E5E46 /* Sources */ = {
@@ -323,7 +400,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
-				ONLY_ACTIVE_ARCH = YES;
+				ONLY_ACTIVE_ARCH = NO;
 				PROVISIONING_PROFILE = "a3a2d926-ed28-4d22-8a7a-735dbb85c1d2";
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -362,7 +439,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
-				ONLY_ACTIVE_ARCH = YES;
+				ONLY_ACTIVE_ARCH = NO;
 				PROVISIONING_PROFILE = "a3a2d926-ed28-4d22-8a7a-735dbb85c1d2";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -372,32 +449,40 @@
 		};
 		01519BE719AD340E000E5E46 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BFA861099BB68A3C8F9259CF /* Pods-Binarify.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = Binarify/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				ONLY_ACTIVE_ARCH = NO;
 				PRODUCT_BUNDLE_IDENTIFIER = np.Binarify;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "Binarify-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
 		01519BE819AD340E000E5E46 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BFB1C0091A74A21D4899747E /* Pods-Binarify.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = Binarify/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				ONLY_ACTIVE_ARCH = YES;
+				ONLY_ACTIVE_ARCH = NO;
 				PRODUCT_BUNDLE_IDENTIFIER = np.Binarify;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "Binarify-Bridging-Header.h";
 			};
 			name = Release;
 		};

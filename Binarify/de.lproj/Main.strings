@@ -9,7 +9,7 @@
 "8TI-FW-N5v.text" = "UTF-16";
 
 /* Class = "UILabel"; text = "18, Entwickler aus Hamburg"; ObjectID = "9RZ-t3-PyK"; */
-"9RZ-t3-PyK.text" = "18, Entwickler aus Hamburg";
+"9RZ-t3-PyK.text" = "Entwickler aus Hamburg";
 
 /* Class = "UILabel"; text = "UTF8"; ObjectID = "BXl-cK-wZw"; */
 "BXl-cK-wZw.text" = "UTF8";
@@ -48,7 +48,7 @@
 "YoI-3T-9SJ.text" = "Kopiert";
 
 /* Class = "UILabel"; text = "UTF-8 (Standard)"; ObjectID = "Z1E-JH-SA5"; */
-"Z1E-JH-SA5.text" = "UTF-8 (Standard)";
+"Z1E-JH-SA5.text" = "UTF-8 (standard)";
 
 /* Class = "UILabel"; text = "8 Bit"; ObjectID = "am5-mR-T9X"; */
 "am5-mR-T9X.text" = "8 Bit";
@@ -81,7 +81,7 @@
 "vkV-8T-qcm.text" = "Binarify bewerten";
 
 /* Class = "UILabel"; text = "Danke, dass du Binarify benutzt! Dies ist die erste App, die ich veröffentlicht habe und ich bin immer noch sehr interessiert, wie sie Verwendung findet. Darum würde ich mich über eine kurze Mail oder App Store Bewertung mit deiner Meinung sehr freuen. Und hast du schon meine anderen Apps gesehen? Ich bin mir sicher da ist auch etwas für dich dabei."; ObjectID = "wfd-Xk-Lx2"; */
-"wfd-Xk-Lx2.text" = "Danke, dass du Binarify benutzt! 
+"wfd-Xk-Lx2.text" = "Danke, dass du Binarify nutzt!
 Dies war meine erste App im App Store und ich bin immer noch sehr interessiert, wie sie Verwendung findet. Über eine kurze Mail oder App Store Bewertung mit deiner Meinung würde ich mich daher sehr freuen. Und vielleicht magst du noch einen Blick auf meine anderen Apps werfen?";
 
 /* Class = "UILabel"; text = "Automatisches kopieren"; ObjectID = "wnW-Bv-TOw"; */

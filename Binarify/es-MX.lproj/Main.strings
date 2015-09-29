@@ -9,7 +9,7 @@
 "8TI-FW-N5v.text" = "UTF-16";
 
 /* Class = "UILabel"; text = "18, Developer from Germany"; ObjectID = "9RZ-t3-PyK"; */
-"9RZ-t3-PyK.text" = "18, Desarrollador de Alemania";
+"9RZ-t3-PyK.text" = "Desarrollador de Alemania";
 
 /* Class = "UILabel"; text = "UTF8"; ObjectID = "BXl-cK-wZw"; */
 "BXl-cK-wZw.text" = "UTF8";
@@ -48,7 +48,7 @@
 "YoI-3T-9SJ.text" = "Copiado";
 
 /* Class = "UILabel"; text = "UTF-8 (Default)"; ObjectID = "Z1E-JH-SA5"; */
-"Z1E-JH-SA5.text" = "UTF-8";
+"Z1E-JH-SA5.text" = "UTF-8 (estándar)";
 
 /* Class = "UILabel"; text = "8 Bit"; ObjectID = "am5-mR-T9X"; */
 "am5-mR-T9X.text" = "8 Bit";

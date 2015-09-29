@@ -7,9 +7,11 @@
 //
 
 import UIKit
+import MBProgressHUD
+import PKHUD
 
 
-class TranslatorController: UIViewController, UITextFieldDelegate {
+class TranslatorViewController: UIViewController, UITextFieldDelegate {
                             
     @IBOutlet weak var binarifyButton: UIButton!
     @IBOutlet var textField: UITextField!
@@ -49,12 +51,50 @@ class TranslatorController: UIViewController, UITextFieldDelegate {
         self.textField.delegate = self
     }
     
+    @IBAction func returnsToViewController(segue:UIStoryboardSegue) {
+    }
+
     
     // MARK: - User Interaction
     
     @IBAction func copyToPasteboard(sender: AnyObject) {
         UIPasteboard.generalPasteboard().string = outputTextView.text
-        performSegueWithIdentifier("toCopyingSucceededVC", sender: self)
+        
+        let checkmarkLayer = CheckmarkLayer()
+        if #available(iOS 8.0, *) {
+            let view = PKHUDSubtitleView(subtitle: "Copied", image: nil)
+            view.layer.addSublayer(checkmarkLayer)
+            PKHUD.sharedHUD.contentView = view
+            PKHUD.sharedHUD.userInteractionOnUnderlyingViewsEnabled = true
+            PKHUD.sharedHUD.dimsBackground = false
+            PKHUD.sharedHUD.show()
+            PKHUD.sharedHUD.hide(afterDelay: 1.0)
+            checkmarkLayer.frame = CGRect(
+                x: view.bounds.width/4,
+                y: view.bounds.height/4,
+                width: view.bounds.width/2,
+                height: view.bounds.height/3
+            )
+            checkmarkLayer.animate()
+        } else {
+            let hud = MBProgressHUD.showHUDAddedTo(self.view, animated: true)
+            hud.customView = UIView(frame: CGRect(x: 0, y: 0, width: 130, height: 110))
+            hud.customView.layer.addSublayer(checkmarkLayer)
+            hud.mode = MBProgressHUDMode.CustomView
+            checkmarkLayer.frame = CGRect(
+                x: hud.customView.bounds.width/4,
+                y: hud.customView.bounds.width/4,
+                width: hud.customView.bounds.width/2,
+                height: hud.customView.bounds.width/3
+            )
+            hud.color = UIColor(white: 0.95, alpha: 1)
+            hud.labelColor = UIColor.blackColor()
+            checkmarkLayer.color = UIColor.blackColor()
+            hud.labelText = "Copied"
+            hud.userInteractionEnabled = false
+            hud.hide(true, afterDelay: 1)
+            checkmarkLayer.animate()
+        }
     }
     
     @IBAction func finishedEditing(sender: AnyObject) {
@@ -106,7 +146,7 @@ class TranslatorController: UIViewController, UITextFieldDelegate {
         switch identifier {
             
         case "toSettings":
-            let destinationController = (segue.destinationViewController as! UINavigationController).visibleViewController as! SettingsController
+            let destinationController = (segue.destinationViewController as! UINavigationController).visibleViewController as! SettingsViewController
             destinationController.delegate = self
             
         case "toCopyingSucceededVC": return
@@ -128,9 +168,6 @@ class TranslatorController: UIViewController, UITextFieldDelegate {
         self.finishedEditing(textField)
     }
     
-    @IBAction func returnsToViewController(segue:UIStoryboardSegue) {
-    }
-    
     
     // MARK: - State Preservation
   
@@ -148,7 +185,7 @@ class TranslatorController: UIViewController, UITextFieldDelegate {
 
 }
 
-extension TranslatorController: SettingsDelegate {
+extension TranslatorViewController: SettingsDelegate {
     func settingsController(didSetEncoding encoding: Encoding) {
         self.translator.encoding = encoding
         self.textField.keyboardType = encoding.keyboard
