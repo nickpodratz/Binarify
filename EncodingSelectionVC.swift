@@ -12,7 +12,7 @@ protocol EncodingSelectorDelegate {
     func didSelectEncoding(newEncoding: Encoding)
 }
 
-class EncodingSelectionController: UITableViewController {
+class EncodingSelectionViewController: UITableViewController {
 
     var delegate: EncodingSelectorDelegate?
     var selectedEncoding: Encoding! {

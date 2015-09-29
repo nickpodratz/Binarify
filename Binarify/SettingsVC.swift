@@ -15,7 +15,7 @@ protocol SettingsDelegate {
     func settingsController(didSetAutoCopying enabled: Bool)
 }
 
-class SettingsController: UITableViewController, EncodingSelectorDelegate {
+class SettingsViewController: UITableViewController, EncodingSelectorDelegate {
     
     @IBOutlet weak var encodingLabel: UILabel!
     @IBOutlet weak var whitespacesSwitch: UISwitch!
@@ -60,7 +60,7 @@ class SettingsController: UITableViewController, EncodingSelectorDelegate {
         
         switch identifier {
         case "toEncodingSelection":
-            let destinationController = segue.destinationViewController as! EncodingSelectionController
+            let destinationController = segue.destinationViewController as! EncodingSelectionViewController
             let defaults = NSUserDefaults.standardUserDefaults()
             let encoding = Encoding(rawValue: defaults.integerForKey(encodingKey)) ?? Encoding.UTF8
             destinationController.selectedEncoding = encoding

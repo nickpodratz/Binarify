@@ -15,6 +15,7 @@ let autoCorrectionKey = "BINARIFY_AUTOCORRECTION"
 let autoCopyingKey = "BINARIFY_AUTOCOPYING"
 let appId = "912928467"
 
+
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
                             
