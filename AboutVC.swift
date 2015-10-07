@@ -14,7 +14,6 @@ class AboutViewController: UITableViewController, SKStoreProductViewControllerDe
     
     
     // MARK: - Outlets
-    
     @IBOutlet weak var pictureDescriptionLabel: UILabel! {
         didSet{
             if let myAge = getMyAge() where pictureDescriptionLabel.text != nil {
@@ -28,7 +27,7 @@ class AboutViewController: UITableViewController, SKStoreProductViewControllerDe
     @IBOutlet weak var imageView: UIImageView!
     
     var timer: NSTimer!
-    
+
     // MARK: - Life Cycle
     
     override func viewDidLoad() {
@@ -57,7 +56,6 @@ class AboutViewController: UITableViewController, SKStoreProductViewControllerDe
             }
         }
     }
-    
     
     // MARK: - Store Kit
     
@@ -96,7 +94,7 @@ class AboutViewController: UITableViewController, SKStoreProductViewControllerDe
                     guard let data = data else {
                         dispatch_async(mainPatch) {
                             self.otherAppsActivityIndicator.stopAnimating()
-                            self.otherAppsErrorLabel.text = "keine Internetverbindung"
+                            self.otherAppsErrorLabel.text = NSLocalizedString("NO_INTERNET_CONNECTION", comment: "No internet connection")
                             self.otherAppsErrorLabel.hidden = false
                         }
                         return
@@ -104,7 +102,7 @@ class AboutViewController: UITableViewController, SKStoreProductViewControllerDe
                     guard
                         let json = try NSJSONSerialization.JSONObjectWithData(data, options: NSJSONReadingOptions.AllowFragments) as? NSDictionary,
                         let results = json["results"] as? [NSDictionary] where !results.isEmpty else {
-                            self.otherAppsErrorLabel.text = "Daten nicht gefunden"
+                            self.otherAppsErrorLabel.text = NSLocalizedString("NO_DATA_FOUND", comment: "No data found")
                             self.otherAppsErrorLabel.hidden = false
                             return
                     }
@@ -186,7 +184,7 @@ class AboutViewController: UITableViewController, SKStoreProductViewControllerDe
                 self.composeMail()
             } else {
                 if #available(iOS 8.0, *) {
-                    let alertController = UIAlertController(title: "Can't send mail", message: "Make sure, that you entered valid information about your mail account in the system preferences.", preferredStyle: UIAlertControllerStyle.Alert)
+                    let alertController = UIAlertController(title: NSLocalizedString("CAN_NOT_SEND_MAIL", comment: "Can't send mail"), message: NSLocalizedString("HINT_ON_MAIL_PREFERENCES", comment: "Make sure, that the information about your mail account in the system preferences are valid."), preferredStyle: UIAlertControllerStyle.Alert)
                     alertController.addAction(UIAlertAction(title: "Ok", style: UIAlertActionStyle.Default, handler: nil))
                     self.presentViewController(alertController, animated: true, completion: nil)
                 } else {
@@ -197,6 +195,7 @@ class AboutViewController: UITableViewController, SKStoreProductViewControllerDe
         default: return
         }
     }
+    
     
     // MARK: - Collection View
     

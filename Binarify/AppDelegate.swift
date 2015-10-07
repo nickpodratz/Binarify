@@ -14,6 +14,7 @@ let whitespacesKey = "BINARIFY_WHITESPACES"
 let autoCorrectionKey = "BINARIFY_AUTOCORRECTION"
 let autoCopyingKey = "BINARIFY_AUTOCOPYING"
 let appId = "912928467"
+let feedbackCounterKey = "FEEDBACK_COUNTER"
 
 
 @UIApplicationMain
@@ -23,6 +24,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject : AnyObject]?) -> Bool {
+        self.window!.backgroundColor = UIColor.clearColor()
         return true
     }
     

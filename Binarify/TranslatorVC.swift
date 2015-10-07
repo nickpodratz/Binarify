@@ -33,8 +33,22 @@ class TranslatorViewController: UIViewController, UITextFieldDelegate {
     }
     
     override func viewDidAppear(animated: Bool) {
+        super.viewDidAppear(animated)
         self.textField.keyboardType = translator.encoding.keyboard
     }
+    
+    func checkForFeedbackVC() {
+        // Feedback Views
+        let defaults = NSUserDefaults.standardUserDefaults()
+        var counter = defaults.integerForKey(feedbackCounterKey) ?? 0
+        print(counter)
+        if counter == 5 {
+            performSegueWithIdentifier("toFeedback", sender: self)
+        }
+        defaults.setInteger(++counter, forKey: feedbackCounterKey)
+        defaults.synchronize()
+    }
+
     
     private func setupTranslator() {
         let defaults = NSUserDefaults.standardUserDefaults()
@@ -51,9 +65,6 @@ class TranslatorViewController: UIViewController, UITextFieldDelegate {
         self.textField.delegate = self
     }
     
-    @IBAction func returnsToViewController(segue:UIStoryboardSegue) {
-    }
-
     
     // MARK: - User Interaction
     
@@ -62,7 +73,7 @@ class TranslatorViewController: UIViewController, UITextFieldDelegate {
         
         let checkmarkLayer = CheckmarkLayer()
         if #available(iOS 8.0, *) {
-            let view = PKHUDSubtitleView(subtitle: "Copied", image: nil)
+            let view = PKHUDSubtitleView(subtitle: NSLocalizedString("COPIED", comment: "Text in 'copied' HUD"), image: nil)
             view.layer.addSublayer(checkmarkLayer)
             PKHUD.sharedHUD.contentView = view
             PKHUD.sharedHUD.userInteractionOnUnderlyingViewsEnabled = true
@@ -90,7 +101,7 @@ class TranslatorViewController: UIViewController, UITextFieldDelegate {
             hud.color = UIColor(white: 0.95, alpha: 1)
             hud.labelColor = UIColor.blackColor()
             checkmarkLayer.color = UIColor.blackColor()
-            hud.labelText = "Copied"
+            hud.labelText = "Added"
             hud.userInteractionEnabled = false
             hud.hide(true, afterDelay: 1)
             checkmarkLayer.animate()
@@ -138,7 +149,7 @@ class TranslatorViewController: UIViewController, UITextFieldDelegate {
         }
     }
     
-    // Transitioning
+    // MARK: - Transitioning
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         guard let identifier = segue.identifier else { print("No Identifier specified."); return }
@@ -150,10 +161,19 @@ class TranslatorViewController: UIViewController, UITextFieldDelegate {
             destinationController.delegate = self
             
         case "toCopyingSucceededVC": return
+        case "toFeedback": return
 
         default: print("Presenting View Controller with unknown segue \"\(segue.identifier)\"")
         }
     }
+    
+    @IBAction func rewindsToTranslatorViewController(segue:UIStoryboardSegue) {
+        UIApplication.sharedApplication().setStatusBarStyle(.Default, animated: true)
+        NSTimer.scheduledTimerWithTimeInterval(0.7, target: self, selector: "checkForFeedbackVC", userInfo: nil, repeats: false)
+    }
+
+    
+    // MARK: Text Field Delegate
     
     func textFieldShouldReturn(textField: UITextField) -> Bool {
         finishedEditing(textField)

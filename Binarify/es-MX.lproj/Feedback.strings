@@ -1,0 +1,24 @@
+
+/* Class = "UILabel"; text = "Jetzt nicht"; ObjectID = "DTo-z0-76j"; */
+"DTo-z0-76j.text" = "Jetzt nicht";
+
+/* Class = "UIButton"; normalTitle = "Nicht jetzt"; ObjectID = "RoT-FF-oxA"; */
+"RoT-FF-oxA.normalTitle" = "Nicht jetzt";
+
+/* Class = "UIButton"; normalTitle = "Nein"; ObjectID = "WOW-nn-t1n"; */
+"WOW-nn-t1n.normalTitle" = "Nein";
+
+/* Class = "UIButton"; normalTitle = "Alles klar"; ObjectID = "Zdj-KG-tII"; */
+"Zdj-KG-tII.normalTitle" = "Alles klar";
+
+/* Class = "UIButton"; normalTitle = "Nicht jetzt"; ObjectID = "c8l-Pp-7rR"; */
+"c8l-Pp-7rR.normalTitle" = "Nicht jetzt";
+
+/* Class = "UIButton"; normalTitle = "Ja"; ObjectID = "cQZ-vm-qRv"; */
+"cQZ-vm-qRv.normalTitle" = "Ja";
+
+/* Class = "UIButton"; normalTitle = "App bewerten"; ObjectID = "nHL-Gk-gwV"; */
+"nHL-Gk-gwV.normalTitle" = "App bewerten";
+
+/* Class = "UIButton"; normalTitle = "Mail verfassen"; ObjectID = "o08-T1-tcf"; */
+"o08-T1-tcf.normalTitle" = "Mail verfassen";

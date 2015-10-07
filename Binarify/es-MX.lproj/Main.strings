@@ -11,6 +11,9 @@
 /* Class = "UILabel"; text = "18, Developer from Germany"; ObjectID = "9RZ-t3-PyK"; */
 "9RZ-t3-PyK.text" = "Desarrollador de Alemania";
 
+/* Class = "UILabel"; text = "18, Developer from Germany"; ObjectID = "9RZ-t3-PyK"; */
+"9RZ-t3-PyK.text" = "Desarrollador de Alemania";
+
 /* Class = "UILabel"; text = "UTF8"; ObjectID = "BXl-cK-wZw"; */
 "BXl-cK-wZw.text" = "UTF8";
 
@@ -33,7 +36,7 @@
 "KJj-VL-iff.placeholder" = "Texto o código binario";
 
 /* Class = "UILabel"; text = "Send Feedback"; ObjectID = "Ml4-24-0nZ"; */
-"Ml4-24-0nZ.text" = "Envia tu Opinión";
+"Ml4-24-0nZ.text" = "Envía tu Opinión";
 
 /* Class = "UILabel"; text = "Nick Podratz"; ObjectID = "RGb-7B-0ox"; */
 "RGb-7B-0ox.text" = "Nick Podratz";

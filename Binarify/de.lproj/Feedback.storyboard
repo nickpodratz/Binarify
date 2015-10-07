@@ -1,0 +1,591 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="baT-pV-YQc">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+    </dependencies>
+    <scenes>
+        <!--Feedback-->
+        <scene sceneID="BFK-wn-UIR">
+            <objects>
+                <viewController id="h7P-iJ-jlz" userLabel="Feedback" customClass="FeedbackViewController" customModule="Binarify" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="EJR-Fg-yah"/>
+                        <viewControllerLayoutGuide type="bottom" id="Rpa-Bl-KCX"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Pzj-xs-NCP">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PX2-n5-Tls">
+                                <rect key="frame" x="182" y="360" width="236" height="40"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WOW-nn-t1n" customClass="RoundedButton" customModule="Binarify" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="110" height="40"/>
+                                        <animations/>
+                                        <color key="backgroundColor" red="0.99215686321258545" green="0.43529412150382996" blue="0.031372550874948502" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="110" id="arO-x5-0EW"/>
+                                            <constraint firstAttribute="height" constant="40" id="jTT-P9-q7g"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="13"/>
+                                        <state key="normal" title="Nein">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                <color key="value" red="0.3827751875" green="0.73075264689999997" blue="0.034797742960000003" alpha="1" colorSpace="calibratedRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                <real key="value" value="0.0"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="20"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <segue destination="iFY-vp-kry" kind="show" id="bcy-Bz-elS">
+                                                <nil key="action"/>
+                                            </segue>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cQZ-vm-qRv" customClass="RoundedButton" customModule="Binarify" customModuleProvider="target">
+                                        <rect key="frame" x="126" y="0.0" width="110" height="40"/>
+                                        <animations/>
+                                        <color key="backgroundColor" red="0.3827751875" green="0.73075264689999997" blue="0.034797742960000003" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="110" id="2rD-tD-YBb"/>
+                                            <constraint firstAttribute="height" constant="40" id="YzV-zU-xby"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="13"/>
+                                        <state key="normal" title="Ja">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                <real key="value" value="0.0"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="20"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <segue destination="BX2-fc-qCr" kind="show" id="o68-SW-5g4">
+                                                <nil key="action"/>
+                                            </segue>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <animations/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="cQZ-vm-qRv" secondAttribute="bottom" id="5zB-6T-RIG"/>
+                                    <constraint firstItem="WOW-nn-t1n" firstAttribute="top" secondItem="PX2-n5-Tls" secondAttribute="top" id="6Eg-tT-lfX"/>
+                                    <constraint firstItem="WOW-nn-t1n" firstAttribute="leading" secondItem="PX2-n5-Tls" secondAttribute="leading" id="OWu-HM-g6C"/>
+                                    <constraint firstItem="cQZ-vm-qRv" firstAttribute="leading" secondItem="WOW-nn-t1n" secondAttribute="trailing" constant="16" id="YCo-bB-3Mc"/>
+                                    <constraint firstItem="cQZ-vm-qRv" firstAttribute="top" secondItem="PX2-n5-Tls" secondAttribute="top" id="Ym8-nH-dXB"/>
+                                    <constraint firstAttribute="trailing" secondItem="cQZ-vm-qRv" secondAttribute="trailing" id="ijm-6p-1IJ"/>
+                                    <constraint firstAttribute="bottom" secondItem="WOW-nn-t1n" secondAttribute="bottom" id="mlp-wP-aw4"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KIz-sa-Cpp">
+                                <rect key="frame" x="160" y="218" width="280" height="90.5"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="lessThanOrEqual" constant="280" id="OUK-42-JJ5"/>
+                                </constraints>
+                                <attributedString key="attributedText">
+                                    <fragment content="Gefällt dir Binarify? ">
+                                        <attributes>
+                                            <color key="NSColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                            <font key="NSFont" size="17" name="HelveticaNeue-Medium"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content" base64-UTF8="YES">
+Cg
+</string>
+                                        <attributes>
+                                            <color key="NSColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                            <font key="NSFont" size="15" name="HelveticaNeue-Medium"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content">
+Deine Meinung bedeutet mir sehr viel und wird bei der Entwicklung kommender Updates berücksichtigt.</string>
+                                        <attributes>
+                                            <color key="NSColor" red="0.20784313725490197" green="0.20784313725490197" blue="0.20784313725490197" alpha="1" colorSpace="calibratedRGB"/>
+                                            <font key="NSFont" size="15" name="HelveticaNeue"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" lineSpacing="1" defaultTabInterval="28" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
+                                                <tabStops/>
+                                            </paragraphStyle>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="KIz-sa-Cpp" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="Pzj-xs-NCP" secondAttribute="leadingMargin" constant="16" id="ARm-sm-roq"/>
+                            <constraint firstItem="KIz-sa-Cpp" firstAttribute="centerX" secondItem="Pzj-xs-NCP" secondAttribute="centerX" id="EWM-Jk-PQU"/>
+                            <constraint firstItem="PX2-n5-Tls" firstAttribute="centerY" secondItem="Pzj-xs-NCP" secondAttribute="centerY" constant="80" id="Kk9-iw-W6y"/>
+                            <constraint firstItem="KIz-sa-Cpp" firstAttribute="centerY" secondItem="Pzj-xs-NCP" secondAttribute="centerY" multiplier="0.92" constant="-13" id="PCf-vd-EgU"/>
+                            <constraint firstItem="PX2-n5-Tls" firstAttribute="centerX" secondItem="Pzj-xs-NCP" secondAttribute="centerX" id="Y1e-wT-afV"/>
+                            <constraint firstAttribute="trailingMargin" relation="greaterThanOrEqual" secondItem="KIz-sa-Cpp" secondAttribute="trailing" constant="16" id="sfz-3E-vb7"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="Sbr-OS-8iz">
+                        <barButtonItem key="rightBarButtonItem" systemItem="stop" id="1AJ-gR-FFK">
+                            <color key="tintColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                            <connections>
+                                <segue destination="QKB-Vb-YAF" kind="unwind" identifier="rewindsToTranslatorViewController" unwindAction="rewindsToTranslatorViewController:" id="Ht0-Sh-hOT"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cm4-lU-ZEg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="QKB-Vb-YAF" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="3039" y="-1478"/>
+        </scene>
+        <!--Negative-->
+        <scene sceneID="1Gc-Pq-bVe">
+            <objects>
+                <viewController id="iFY-vp-kry" userLabel="Negative" customClass="FeedbackNegativeViewController" customModule="Binarify" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="3r7-Qb-4jg"/>
+                        <viewControllerLayoutGuide type="bottom" id="JDb-fG-pUK"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="K65-qn-MCf">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zj9-Rt-Tcs">
+                                <rect key="frame" x="161" y="206.5" width="278" height="107"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="lessThanOrEqual" constant="280" id="0YG-v8-Jrf"/>
+                                </constraints>
+                                <attributedString key="attributedText">
+                                    <fragment content="Das ist schade!">
+                                        <attributes>
+                                            <color key="NSColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                            <font key="NSFont" size="17" name="HelveticaNeue-Medium"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content" base64-UTF8="YES">
+Cg
+</string>
+                                        <attributes>
+                                            <color key="NSColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                            <font key="NSFont" size="15" name="HelveticaNeue-Medium"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content" base64-UTF8="YES">
+Cg
+</string>
+                                        <attributes>
+                                            <color key="NSColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                            <font key="NSFont" size="15" name="HelveticaNeue"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content">… aber Feedback ist der erste Schritt zur Besserung. Wenn Du mir eine kurze Mail mit deiner Kritik schickst, kann ich mich um Nachbesserung kümmern.</string>
+                                        <attributes>
+                                            <color key="NSColor" red="0.20784313725490197" green="0.20784313725490197" blue="0.20784313725490197" alpha="1" colorSpace="calibratedRGB"/>
+                                            <font key="NSFont" size="15" name="Helvetica"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineSpacing="1" defaultTabInterval="28" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
+                                                <tabStops/>
+                                            </paragraphStyle>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IRr-XT-jlm">
+                                <rect key="frame" x="182" y="360" width="236" height="40"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RoT-FF-oxA" customClass="RoundedButton" customModule="Binarify" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="110" height="40"/>
+                                        <animations/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="110" id="bMT-re-bDQ"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="13"/>
+                                        <state key="normal" title="Nicht jetzt">
+                                            <color key="titleColor" red="0.38277518749237061" green="0.73075264692306519" blue="0.034797742962837219" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                <color key="value" red="0.38277518749237061" green="0.73075264692306519" blue="0.034797742962837219" alpha="1" colorSpace="calibratedRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                <real key="value" value="1.6000000000000001"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="20"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <segue destination="bXY-8D-wSO" kind="unwind" identifier="rewindsToTranslatorViewController" unwindAction="rewindsToTranslatorViewController:" id="zet-tp-13w"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="o08-T1-tcf" customClass="RoundedButton" customModule="Binarify" customModuleProvider="target">
+                                        <rect key="frame" x="126" y="0.0" width="110" height="40"/>
+                                        <animations/>
+                                        <color key="backgroundColor" red="0.38277518749237061" green="0.73075264692306519" blue="0.034797742962837219" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="110" id="BpE-DZ-wwf"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="13"/>
+                                        <state key="normal" title="Mail verfassen">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                <real key="value" value="0.0"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="20"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="pressedComposeMail:" destination="iFY-vp-kry" eventType="touchUpInside" id="Q6i-1V-kMb"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <animations/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="RoT-FF-oxA" firstAttribute="top" secondItem="IRr-XT-jlm" secondAttribute="top" id="B4x-Gq-udl"/>
+                                    <constraint firstItem="RoT-FF-oxA" firstAttribute="leading" secondItem="IRr-XT-jlm" secondAttribute="leading" id="IFl-uJ-wkn"/>
+                                    <constraint firstAttribute="trailing" secondItem="o08-T1-tcf" secondAttribute="trailing" id="Nuf-9E-Sdc"/>
+                                    <constraint firstAttribute="height" constant="40" id="PHg-0O-sCq"/>
+                                    <constraint firstItem="o08-T1-tcf" firstAttribute="top" secondItem="IRr-XT-jlm" secondAttribute="top" id="Qu0-gi-5Cc"/>
+                                    <constraint firstAttribute="bottom" secondItem="o08-T1-tcf" secondAttribute="bottom" id="kLV-9m-7X2"/>
+                                    <constraint firstAttribute="bottom" secondItem="RoT-FF-oxA" secondAttribute="bottom" id="pJQ-oP-Pk5"/>
+                                    <constraint firstItem="o08-T1-tcf" firstAttribute="leading" secondItem="RoT-FF-oxA" secondAttribute="trailing" constant="16" id="r1p-3v-txZ"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Zj9-Rt-Tcs" firstAttribute="centerY" secondItem="K65-qn-MCf" secondAttribute="centerY" multiplier="0.92" constant="-16" id="5XR-9D-nfv"/>
+                            <constraint firstItem="IRr-XT-jlm" firstAttribute="centerY" secondItem="K65-qn-MCf" secondAttribute="centerY" constant="80" id="6Ym-Ts-oI1"/>
+                            <constraint firstItem="Zj9-Rt-Tcs" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="K65-qn-MCf" secondAttribute="leadingMargin" constant="8" id="Q4t-KH-wmu"/>
+                            <constraint firstAttribute="trailingMargin" relation="greaterThanOrEqual" secondItem="Zj9-Rt-Tcs" secondAttribute="trailing" constant="8" id="avP-HB-Sxw"/>
+                            <constraint firstItem="Zj9-Rt-Tcs" firstAttribute="centerX" secondItem="K65-qn-MCf" secondAttribute="centerX" id="c8C-Zm-eju"/>
+                            <constraint firstItem="IRr-XT-jlm" firstAttribute="centerX" secondItem="K65-qn-MCf" secondAttribute="centerX" id="s7Z-Tc-lDO"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <segue destination="srD-Mg-JwZ" kind="show" identifier="toThankYouViewController" id="Hei-O5-vYi">
+                            <nil key="action"/>
+                        </segue>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2f5-UG-8Mx" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="bXY-8D-wSO" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="3792" y="-1840"/>
+        </scene>
+        <!--Positive-->
+        <scene sceneID="WzR-5G-z3R">
+            <objects>
+                <viewController id="BX2-fc-qCr" userLabel="Positive" customClass="FeedbackPositiveViewController" customModule="Binarify" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="UVu-zt-Ln0"/>
+                        <viewControllerLayoutGuide type="bottom" id="Usp-FP-TwT"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="DU3-Wp-wV2">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Jetzt nicht" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DTo-z0-76j">
+                                <rect key="frame" x="270" y="565" width="60.5" height="14.5"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xfC-xo-Aak">
+                                <rect key="frame" x="133" y="215" width="334" height="90.5"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="lessThanOrEqual" constant="280" id="AvG-PL-V6F"/>
+                                </constraints>
+                                <attributedString key="attributedText">
+                                    <fragment content="Fantastisch!">
+                                        <attributes>
+                                            <color key="NSColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                            <font key="NSFont" size="17" name="HelveticaNeue-Medium"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content" base64-UTF8="YES">
+Cg
+</string>
+                                        <attributes>
+                                            <color key="NSColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                            <font key="NSFont" size="15" name="HelveticaNeue-Medium"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content" base64-UTF8="YES">
+Cg
+</string>
+                                        <attributes>
+                                            <color key="NSColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                            <font key="NSFont" size="15" name="HelveticaNeue"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content">Könntest Du mir und vielen Nutzern den Gefallen tun und deine Meinung in einer kurzen Rezension oder Bewertung im App Store hinterlassen? Das wäre sehr hilfreich!</string>
+                                        <attributes>
+                                            <color key="NSColor" red="0.20784313725490197" green="0.20784313725490197" blue="0.20784313725490197" alpha="1" colorSpace="calibratedRGB"/>
+                                            <font key="NSFont" size="15" name="HelveticaNeue"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" lineSpacing="1" defaultTabInterval="28" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
+                                                <tabStops/>
+                                            </paragraphStyle>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7oC-Fn-POT">
+                                <rect key="frame" x="182" y="360" width="236" height="40"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c8l-Pp-7rR" customClass="RoundedButton" customModule="Binarify" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="110" height="40"/>
+                                        <animations/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="110" id="LMu-HD-YL4"/>
+                                            <constraint firstAttribute="height" constant="40" id="V5F-4O-77V"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="13"/>
+                                        <state key="normal" title="Nicht jetzt">
+                                            <color key="titleColor" red="0.3827751875" green="0.73075264689999997" blue="0.034797742960000003" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                <color key="value" red="0.3827751875" green="0.73075264689999997" blue="0.034797742960000003" alpha="1" colorSpace="calibratedRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                <real key="value" value="1.6000000000000001"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="20"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <segue destination="nQq-IT-TsQ" kind="unwind" identifier="rewindsToTranslatorViewController" unwindAction="rewindsToTranslatorViewController:" id="zfN-9m-FeX"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nHL-Gk-gwV" customClass="RoundedButton" customModule="Binarify" customModuleProvider="target">
+                                        <rect key="frame" x="126" y="0.0" width="110" height="40"/>
+                                        <animations/>
+                                        <color key="backgroundColor" red="0.38277518749237061" green="0.73075264692306519" blue="0.034797742962837219" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="110" id="xna-Hs-Gmf"/>
+                                            <constraint firstAttribute="height" constant="40" id="yum-RI-AQs"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="13"/>
+                                        <state key="normal" title="App bewerten">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                <real key="value" value="0.0"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="20"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="pressedComposeMail:" destination="iFY-vp-kry" eventType="touchUpInside" id="9qQ-dE-LY4"/>
+                                            <action selector="pressedOpenAppStore:" destination="BX2-fc-qCr" eventType="touchUpInside" id="Ndk-7R-Cpj"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <animations/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="nHL-Gk-gwV" secondAttribute="bottom" id="19u-yi-6sp"/>
+                                    <constraint firstAttribute="trailing" secondItem="nHL-Gk-gwV" secondAttribute="trailing" id="ChZ-R3-Del"/>
+                                    <constraint firstItem="nHL-Gk-gwV" firstAttribute="top" secondItem="7oC-Fn-POT" secondAttribute="top" id="FAz-19-4wf"/>
+                                    <constraint firstAttribute="bottom" secondItem="c8l-Pp-7rR" secondAttribute="bottom" id="cZy-4d-Xbh"/>
+                                    <constraint firstItem="c8l-Pp-7rR" firstAttribute="leading" secondItem="7oC-Fn-POT" secondAttribute="leading" id="nKl-k2-yYn"/>
+                                    <constraint firstItem="nHL-Gk-gwV" firstAttribute="leading" secondItem="c8l-Pp-7rR" secondAttribute="trailing" constant="16" id="wOV-TO-g2F"/>
+                                    <constraint firstItem="c8l-Pp-7rR" firstAttribute="top" secondItem="7oC-Fn-POT" secondAttribute="top" id="yqm-fe-qxC"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" relation="greaterThanOrEqual" secondItem="xfC-xo-Aak" secondAttribute="trailing" constant="8" id="MBG-YY-bug"/>
+                            <constraint firstItem="7oC-Fn-POT" firstAttribute="centerY" secondItem="DU3-Wp-wV2" secondAttribute="centerY" constant="80" id="T4L-er-1q0"/>
+                            <constraint firstItem="7oC-Fn-POT" firstAttribute="centerX" secondItem="DU3-Wp-wV2" secondAttribute="centerX" id="fpR-MZ-Sft"/>
+                            <constraint firstItem="xfC-xo-Aak" firstAttribute="centerX" secondItem="DU3-Wp-wV2" secondAttribute="centerX" id="huz-eP-Ps6"/>
+                            <constraint firstItem="xfC-xo-Aak" firstAttribute="centerY" secondItem="DU3-Wp-wV2" secondAttribute="centerY" multiplier="0.92" constant="-16" id="iga-fG-A5z"/>
+                            <constraint firstItem="xfC-xo-Aak" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="DU3-Wp-wV2" secondAttribute="leadingMargin" constant="8" id="oq4-BI-FHs"/>
+                            <constraint firstItem="DTo-z0-76j" firstAttribute="centerX" secondItem="DU3-Wp-wV2" secondAttribute="centerX" id="tE6-fU-8zk"/>
+                            <constraint firstItem="Usp-FP-TwT" firstAttribute="top" secondItem="DTo-z0-76j" secondAttribute="bottom" constant="20" id="tzG-ur-oeX"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <segue destination="srD-Mg-JwZ" kind="show" identifier="toThankYouViewController" id="onG-0c-GMP"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="m9F-NT-fYL" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="nQq-IT-TsQ" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="3792" y="-1095"/>
+        </scene>
+        <!--Thanks-->
+        <scene sceneID="bzi-Cy-KPb">
+            <objects>
+                <viewController id="srD-Mg-JwZ" userLabel="Thanks" customClass="FeedbackThanksViewController" customModule="Binarify" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ycz-qf-yss"/>
+                        <viewControllerLayoutGuide type="bottom" id="7MP-Yc-isD"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="2oU-s8-5dp">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zdj-KG-tII" customClass="RoundedButton" customModule="Binarify" customModuleProvider="target">
+                                <rect key="frame" x="227.5" y="355" width="145" height="40"/>
+                                <animations/>
+                                <color key="backgroundColor" red="0.3827751875" green="0.73075264689999997" blue="0.034797742960000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="Opo-hl-eLY"/>
+                                    <constraint firstAttribute="width" constant="145" id="Q2i-oR-DsZ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="13"/>
+                                <state key="normal" title="Alles klar">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="0.0"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="20"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <segue destination="gsm-nz-p8h" kind="unwind" identifier="rewindsToTranslatorViewController" unwindAction="rewindsToTranslatorViewController:" id="mvP-nv-aTM"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LXK-TK-t2b">
+                                <rect key="frame" x="179" y="215" width="243" height="90.5"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="lessThanOrEqual" constant="250" id="3et-mR-8pw"/>
+                                </constraints>
+                                <attributedString key="attributedText">
+                                    <fragment content="Vielen Dank!">
+                                        <attributes>
+                                            <color key="NSColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                            <font key="NSFont" size="17" name="HelveticaNeue-Medium"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content" base64-UTF8="YES">
+Cg
+</string>
+                                        <attributes>
+                                            <color key="NSColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                            <font key="NSFont" size="15" name="HelveticaNeue-Medium"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content" base64-UTF8="YES">
+Cg
+</string>
+                                        <attributes>
+                                            <color key="NSColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                            <font key="NSFont" size="15" name="HelveticaNeue"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="Ich werde mir dein Feedback so schnell wie möglich durchlesen und dir antworten.">
+                                        <attributes>
+                                            <color key="NSColor" red="0.20784313725490197" green="0.20784313725490197" blue="0.20784313725490197" alpha="1" colorSpace="calibratedRGB"/>
+                                            <font key="NSFont" size="15" name="HelveticaNeue"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" lineSpacing="1" defaultTabInterval="28" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
+                                                <tabStops/>
+                                            </paragraphStyle>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstItem="LXK-TK-t2b" firstAttribute="centerY" secondItem="2oU-s8-5dp" secondAttribute="centerY" multiplier="0.92" constant="-16" id="6m7-N9-JuF"/>
+                            <constraint firstItem="Zdj-KG-tII" firstAttribute="centerY" secondItem="2oU-s8-5dp" secondAttribute="centerY" constant="75" id="Kcr-RX-aCu"/>
+                            <constraint firstItem="LXK-TK-t2b" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="2oU-s8-5dp" secondAttribute="leadingMargin" constant="8" id="Ky9-A1-mfl"/>
+                            <constraint firstItem="LXK-TK-t2b" firstAttribute="centerX" secondItem="2oU-s8-5dp" secondAttribute="centerX" id="VDv-IB-EmI"/>
+                            <constraint firstItem="LXK-TK-t2b" firstAttribute="centerX" secondItem="2oU-s8-5dp" secondAttribute="centerX" id="ciG-sq-iys"/>
+                            <constraint firstItem="Zdj-KG-tII" firstAttribute="centerX" secondItem="2oU-s8-5dp" secondAttribute="centerX" id="e6d-Db-dwa"/>
+                            <constraint firstAttribute="trailingMargin" relation="greaterThanOrEqual" secondItem="LXK-TK-t2b" secondAttribute="trailing" constant="8" id="yGJ-ee-BTQ"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zxn-h0-hEB" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="gsm-nz-p8h" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="4510" y="-1478"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="iNA-s6-d38">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="baT-pV-YQc" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="ULC-Oa-jUz">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="barTintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <color key="textShadowColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="h7P-iJ-jlz" kind="relationship" relationship="rootViewController" id="GwS-CX-3E2"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="t20-ax-A6N" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2292" y="-1478"/>
+        </scene>
+    </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="Hei-O5-vYi"/>
+    </inferredMetricsTieBreakers>
+</document>

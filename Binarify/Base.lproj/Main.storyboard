@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
         <deployment version="2048" identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
@@ -7,6 +7,14 @@
         <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
     </dependencies>
     <scenes>
+        <!--Feedback-->
+        <scene sceneID="vlE-QB-gYt">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Feedback" id="X0a-hc-2qv" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="XHS-hh-mEc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="300.5" y="970"/>
+        </scene>
         <!--Translator View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
@@ -21,6 +29,7 @@
                         <subviews>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="textField" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="text or binary code" textAlignment="center" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="KJj-VL-iff">
                                 <rect key="frame" x="100" y="141" width="400" height="30"/>
+                                <animations/>
                                 <constraints>
                                     <constraint firstAttribute="width" priority="750" constant="400" id="ffc-vZ-vog"/>
                                 </constraints>
@@ -33,6 +42,7 @@
                             </textField>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="scaleToFill" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Y18-RU-OWt">
                                 <rect key="frame" x="178" y="182" width="245" height="359.5"/>
+                                <animations/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="245" id="KyN-2J-ISN"/>
@@ -42,6 +52,7 @@
                             </textView>
                             <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IRA-U6-PUV">
                                 <rect key="frame" x="283" y="550" width="34" height="30"/>
+                                <animations/>
                                 <state key="normal" title="copy">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -51,6 +62,7 @@
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mCq-NQ-bnD">
                                 <rect key="frame" x="228" y="64" width="144" height="57"/>
+                                <animations/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="57" id="Efc-YM-MR5"/>
                                 </constraints>
@@ -61,6 +73,7 @@
                                 </connections>
                             </button>
                         </subviews>
+                        <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <gestureRecognizers/>
                         <constraints>
@@ -69,9 +82,7 @@
                             <constraint firstItem="Y18-RU-OWt" firstAttribute="top" secondItem="KJj-VL-iff" secondAttribute="bottom" constant="11" id="9fY-5U-qSo"/>
                             <constraint firstItem="KJj-VL-iff" firstAttribute="top" secondItem="mCq-NQ-bnD" secondAttribute="bottom" constant="20" id="HHI-xR-2yf"/>
                             <constraint firstAttribute="centerX" secondItem="mCq-NQ-bnD" secondAttribute="centerX" id="PRd-c3-wl5"/>
-                            <constraint firstItem="KJj-VL-iff" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="bby-Kv-oa7">
-                                <variation key="widthClass=compact" constant="8"/>
-                            </constraint>
+                            <constraint firstItem="KJj-VL-iff" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="8" id="bby-Kv-oa7"/>
                             <constraint firstAttribute="trailingMargin" secondItem="KJj-VL-iff" secondAttribute="trailing" constant="8" id="d9G-XQ-Rg5"/>
                             <constraint firstAttribute="centerY" secondItem="mCq-NQ-bnD" secondAttribute="centerY" multiplier="4.2" constant="-88" id="fl1-O9-XJf"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="IRA-U6-PUV" secondAttribute="bottom" constant="20" id="gsr-mV-EkQ"/>
@@ -84,7 +95,7 @@
                                 <exclude reference="d9G-XQ-Rg5"/>
                             </mask>
                         </variation>
-                        <variation key="widthClass=compact">
+                        <variation key="heightClass=regular-widthClass=compact">
                             <mask key="constraints">
                                 <include reference="bby-Kv-oa7"/>
                                 <include reference="d9G-XQ-Rg5"/>
@@ -100,6 +111,7 @@
                         <outlet property="outputTextView" destination="Y18-RU-OWt" id="uj7-sc-gaQ"/>
                         <outlet property="tapGestureRecognizer" destination="lZC-1l-t2h" id="XTQ-Ui-CHT"/>
                         <outlet property="textField" destination="KJj-VL-iff" id="l00-SH-HMa"/>
+                        <segue destination="X0a-hc-2qv" kind="presentation" identifier="toFeedback" modalPresentationStyle="fullScreen" modalTransitionStyle="coverVertical" id="qbh-qr-c5Z"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -118,6 +130,7 @@
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="10" sectionFooterHeight="10" id="NpY-bz-cxm">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <animations/>
                         <color key="backgroundColor" red="0.93725490196078431" green="0.93725490196078431" blue="0.95686274509803926" alpha="1" colorSpace="calibratedRGB"/>
                         <sections>
                             <tableViewSection id="sSR-Li-hxa">
@@ -130,7 +143,8 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wfd-Xk-Lx2">
-                                                    <rect key="frame" x="16" y="91" width="568" height="75"/>
+                                                    <rect key="frame" x="16" y="95" width="568" height="75"/>
+                                                    <animations/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="75" id="NMI-cv-vMD">
                                                             <variation key="widthClass=compact" constant="142"/>
@@ -146,10 +160,11 @@ This is the first app I released and I am still very curious about how it is use
                                                     </variation>
                                                 </label>
                                                 <view contentMode="scaleToFill" horizontalCompressionResistancePriority="1000" verticalCompressionResistancePriority="1000" translatesAutoresizingMaskIntoConstraints="NO" id="mjr-gy-3r5">
-                                                    <rect key="frame" x="24" y="181.5" width="209.5" height="50"/>
+                                                    <rect key="frame" x="24" y="185.5" width="209.5" height="50"/>
                                                     <subviews>
                                                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="portrait" highlightedImage="portrait" translatesAutoresizingMaskIntoConstraints="NO" id="TdK-Gk-9aO">
                                                             <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                                            <animations/>
                                                             <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="height" constant="50" id="8tw-yq-Vkx"/>
@@ -158,17 +173,20 @@ This is the first app I released and I am still very curious about how it is use
                                                         </imageView>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nick Podratz" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RGb-7B-0ox">
                                                             <rect key="frame" x="58" y="7" width="88" height="18"/>
+                                                            <animations/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                             <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Developer from Germany" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9RZ-t3-PyK">
                                                             <rect key="frame" x="58" y="26" width="151.5" height="16"/>
+                                                            <animations/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                                             <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                     </subviews>
+                                                    <animations/>
                                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                     <constraints>
                                                         <constraint firstItem="9RZ-t3-PyK" firstAttribute="top" secondItem="RGb-7B-0ox" secondAttribute="bottom" constant="1" id="0Mi-KU-7XU"/>
@@ -182,15 +200,17 @@ This is the first app I released and I am still very curious about how it is use
                                                     </constraints>
                                                 </view>
                                             </subviews>
+                                            <animations/>
                                             <constraints>
                                                 <constraint firstItem="mjr-gy-3r5" firstAttribute="top" secondItem="wfd-Xk-Lx2" secondAttribute="bottom" constant="16" id="Fuq-qC-RLd"/>
                                                 <constraint firstAttribute="trailingMargin" secondItem="wfd-Xk-Lx2" secondAttribute="trailing" constant="8" id="KHF-4Z-j0b"/>
                                                 <constraint firstItem="mjr-gy-3r5" firstAttribute="leading" secondItem="wfd-Xk-Lx2" secondAttribute="leading" constant="8" id="bnA-3s-opU"/>
                                                 <constraint firstItem="wfd-Xk-Lx2" firstAttribute="leading" secondItem="Yg9-Oy-PR5" secondAttribute="leadingMargin" constant="8" id="swT-5b-UMw"/>
-                                                <constraint firstItem="wfd-Xk-Lx2" firstAttribute="top" secondItem="Yg9-Oy-PR5" secondAttribute="topMargin" priority="750" constant="16" id="wCK-o8-K1l"/>
-                                                <constraint firstAttribute="bottomMargin" secondItem="mjr-gy-3r5" secondAttribute="bottom" constant="12" id="wwy-45-gJ2"/>
+                                                <constraint firstItem="wfd-Xk-Lx2" firstAttribute="top" secondItem="Yg9-Oy-PR5" secondAttribute="top" priority="750" constant="16" id="wCK-o8-K1l"/>
+                                                <constraint firstAttribute="bottom" secondItem="mjr-gy-3r5" secondAttribute="bottom" constant="16" id="wwy-45-gJ2"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <animations/>
                                     </tableViewCell>
                                 </cells>
                             </tableViewSection>
@@ -206,12 +226,15 @@ This is the first app I released and I am still very curious about how it is use
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Rate Binarify" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="vkV-8T-qcm">
                                                     <rect key="frame" x="15" y="0.0" width="570" height="43.5"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <animations/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
+                                            <animations/>
                                         </tableViewCellContentView>
+                                        <animations/>
                                     </tableViewCell>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" textLabel="Ml4-24-0nZ" style="IBUITableViewCellStyleDefault" id="b4C-e0-Epg">
                                         <rect key="frame" x="0.0" y="417" width="600" height="44"/>
@@ -223,12 +246,15 @@ This is the first app I released and I am still very curious about how it is use
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Send Feedback" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Ml4-24-0nZ">
                                                     <rect key="frame" x="15" y="0.0" width="570" height="43.5"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <animations/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
+                                            <animations/>
                                         </tableViewCellContentView>
+                                        <animations/>
                                     </tableViewCell>
                                 </cells>
                             </tableViewSection>
@@ -243,6 +269,7 @@ This is the first app I released and I am still very curious about how it is use
                                             <subviews>
                                                 <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="2F2-nz-yKZ">
                                                     <rect key="frame" x="0.0" y="0.0" width="600" height="99"/>
+                                                    <animations/>
                                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                     <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="1" id="fXU-Ty-avS">
                                                         <size key="itemSize" width="66" height="76"/>
@@ -260,6 +287,7 @@ This is the first app I released and I am still very curious about how it is use
                                                                 <subviews>
                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="App Name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="6" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="yRY-DX-zsA">
                                                                         <rect key="frame" x="0.0" y="64" width="66" height="12"/>
+                                                                        <animations/>
                                                                         <constraints>
                                                                             <constraint firstAttribute="height" constant="12" id="Vcz-hA-XcS"/>
                                                                         </constraints>
@@ -269,10 +297,13 @@ This is the first app I released and I am still very curious about how it is use
                                                                     </label>
                                                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="nyd-yY-CWv">
                                                                         <rect key="frame" x="3" y="0.0" width="60" height="60"/>
+                                                                        <animations/>
                                                                     </imageView>
                                                                 </subviews>
+                                                                <animations/>
                                                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                                             </view>
+                                                            <animations/>
                                                             <constraints>
                                                                 <constraint firstItem="yRY-DX-zsA" firstAttribute="top" secondItem="nyd-yY-CWv" secondAttribute="bottom" constant="4" id="8e3-tt-b6o"/>
                                                                 <constraint firstAttribute="trailing" secondItem="yRY-DX-zsA" secondAttribute="trailing" id="SSt-gJ-y7L"/>
@@ -291,14 +322,17 @@ This is the first app I released and I am still very curious about how it is use
                                                 </collectionView>
                                                 <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" animating="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="Ced-FA-imJ">
                                                     <rect key="frame" x="290" y="40" width="20" height="20"/>
+                                                    <animations/>
                                                 </activityIndicatorView>
                                                 <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="keine Netzwerkverbindung" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IQr-UG-dSh">
                                                     <rect key="frame" x="198" y="39" width="204" height="21"/>
+                                                    <animations/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
+                                            <animations/>
                                             <constraints>
                                                 <constraint firstAttribute="bottom" secondItem="2F2-nz-yKZ" secondAttribute="bottom" id="8mb-QB-I4Y"/>
                                                 <constraint firstAttribute="centerY" secondItem="IQr-UG-dSh" secondAttribute="centerY" id="AmW-cL-mag"/>
@@ -310,6 +344,7 @@ This is the first app I released and I am still very curious about how it is use
                                                 <constraint firstItem="2F2-nz-yKZ" firstAttribute="top" secondItem="qm2-UB-fRL" secondAttribute="top" id="zz9-gE-TaI"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <animations/>
                                     </tableViewCell>
                                 </cells>
                             </tableViewSection>
@@ -346,6 +381,7 @@ This is the first app I released and I am still very curious about how it is use
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="10" sectionFooterHeight="10" id="ZRZ-gF-Fqc">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <animations/>
                         <color key="backgroundColor" red="0.93725490196078431" green="0.93725490196078431" blue="0.95686274509803926" alpha="1" colorSpace="calibratedRGB"/>
                         <sections>
                             <tableViewSection headerTitle="Translation" id="3zU-PL-yGm">
@@ -360,6 +396,7 @@ This is the first app I released and I am still very curious about how it is use
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Encoding Protocol" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="F3O-Je-K62">
                                                     <rect key="frame" x="15" y="12" width="132.5" height="19.5"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <animations/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
@@ -367,12 +404,15 @@ This is the first app I released and I am still very curious about how it is use
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="UTF8" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="BXl-cK-wZw">
                                                     <rect key="frame" x="525" y="12" width="40" height="19.5"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <animations/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                                     <color key="textColor" red="0.55686274509803924" green="0.55686274509803924" blue="0.57647058823529407" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
+                                            <animations/>
                                         </tableViewCellContentView>
+                                        <animations/>
                                         <connections>
                                             <segue destination="QyP-wx-1J4" kind="show" identifier="toEncodingSelection" id="3ds-MO-FYc"/>
                                         </connections>
@@ -386,7 +426,8 @@ This is the first app I released and I am still very curious about how it is use
                                             <subviews>
                                                 <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bNC-8h-Z0u">
                                                     <rect key="frame" x="543" y="6" width="51" height="31"/>
-                                                    <color key="onTintColor" red="0.38277519158783063" green="0.73075263848585859" blue="0.034797744689802748" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <animations/>
+                                                    <color key="onTintColor" red="0.41568627450980394" green="0.792156862745098" blue="0.13725490196078433" alpha="1" colorSpace="calibratedRGB"/>
                                                     <variation key="heightClass=regular-widthClass=regular" misplaced="YES">
                                                         <rect key="frame" x="743" y="6" width="51" height="31"/>
                                                     </variation>
@@ -396,6 +437,7 @@ This is the first app I released and I am still very curious about how it is use
                                                 </switch>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sepatate with Whitespace" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="p6C-kN-4li">
                                                     <rect key="frame" x="16" y="11" width="519" height="21"/>
+                                                    <animations/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
@@ -404,6 +446,7 @@ This is the first app I released and I am still very curious about how it is use
                                                     </variation>
                                                 </label>
                                             </subviews>
+                                            <animations/>
                                             <constraints>
                                                 <constraint firstAttribute="centerY" secondItem="p6C-kN-4li" secondAttribute="centerY" id="3NS-7b-92M"/>
                                                 <constraint firstItem="bNC-8h-Z0u" firstAttribute="trailing" secondItem="Fsx-zf-s1l" secondAttribute="trailingMargin" id="5nY-2u-I5L"/>
@@ -412,6 +455,7 @@ This is the first app I released and I am still very curious about how it is use
                                                 <constraint firstItem="p6C-kN-4li" firstAttribute="leading" secondItem="Fsx-zf-s1l" secondAttribute="leadingMargin" constant="8" id="S0B-pz-uha"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <animations/>
                                     </tableViewCell>
                                 </cells>
                             </tableViewSection>
@@ -426,7 +470,8 @@ This is the first app I released and I am still very curious about how it is use
                                             <subviews>
                                                 <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="NHE-78-lwQ">
                                                     <rect key="frame" x="543" y="6" width="51" height="31"/>
-                                                    <color key="onTintColor" red="0.38277519160000001" green="0.73075263850000005" blue="0.03479774469" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <animations/>
+                                                    <color key="onTintColor" red="0.41568627450000001" green="0.79215686269999996" blue="0.13725490200000001" alpha="1" colorSpace="calibratedRGB"/>
                                                     <variation key="heightClass=regular-widthClass=regular" misplaced="YES">
                                                         <rect key="frame" x="743" y="6" width="51" height="31"/>
                                                     </variation>
@@ -436,6 +481,7 @@ This is the first app I released and I am still very curious about how it is use
                                                 </switch>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Autocorrection" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="thv-Mc-WYQ">
                                                     <rect key="frame" x="16" y="11" width="519" height="21"/>
+                                                    <animations/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
@@ -444,6 +490,7 @@ This is the first app I released and I am still very curious about how it is use
                                                     </variation>
                                                 </label>
                                             </subviews>
+                                            <animations/>
                                             <constraints>
                                                 <constraint firstAttribute="centerY" secondItem="thv-Mc-WYQ" secondAttribute="centerY" id="E60-Jm-3aQ"/>
                                                 <constraint firstItem="NHE-78-lwQ" firstAttribute="leading" secondItem="thv-Mc-WYQ" secondAttribute="trailing" constant="8" id="Odh-77-Wfu"/>
@@ -452,6 +499,7 @@ This is the first app I released and I am still very curious about how it is use
                                                 <constraint firstItem="NHE-78-lwQ" firstAttribute="trailing" secondItem="Thi-Db-dsv" secondAttribute="trailingMargin" id="dAc-6T-uhC"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <animations/>
                                     </tableViewCell>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" id="U37-PD-vIP">
                                         <rect key="frame" x="0.0" y="267.5" width="600" height="44"/>
@@ -462,7 +510,8 @@ This is the first app I released and I am still very curious about how it is use
                                             <subviews>
                                                 <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Pxb-v8-R3f">
                                                     <rect key="frame" x="543" y="6" width="51" height="31"/>
-                                                    <color key="onTintColor" red="0.38277519160000001" green="0.73075263850000005" blue="0.03479774469" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <animations/>
+                                                    <color key="onTintColor" red="0.41568627450000001" green="0.79215686269999996" blue="0.13725490200000001" alpha="1" colorSpace="calibratedRGB"/>
                                                     <variation key="heightClass=regular-widthClass=regular" misplaced="YES">
                                                         <rect key="frame" x="743" y="6" width="51" height="31"/>
                                                     </variation>
@@ -472,6 +521,7 @@ This is the first app I released and I am still very curious about how it is use
                                                 </switch>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Auto-Copying" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wnW-Bv-TOw">
                                                     <rect key="frame" x="16" y="11" width="519" height="20.5"/>
+                                                    <animations/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
@@ -480,6 +530,7 @@ This is the first app I released and I am still very curious about how it is use
                                                     </variation>
                                                 </label>
                                             </subviews>
+                                            <animations/>
                                             <constraints>
                                                 <constraint firstItem="Pxb-v8-R3f" firstAttribute="trailing" secondItem="xos-ks-loS" secondAttribute="trailingMargin" id="WoD-0E-hdk"/>
                                                 <constraint firstAttribute="centerY" secondItem="wnW-Bv-TOw" secondAttribute="centerY" id="alx-kL-xGn"/>
@@ -488,6 +539,7 @@ This is the first app I released and I am still very curious about how it is use
                                                 <constraint firstItem="Pxb-v8-R3f" firstAttribute="leading" secondItem="wnW-Bv-TOw" secondAttribute="trailing" constant="8" id="ptp-Fc-ge6"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <animations/>
                                     </tableViewCell>
                                 </cells>
                             </tableViewSection>
@@ -498,7 +550,7 @@ This is the first app I released and I am still very curious about how it is use
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="Settings" id="HZa-5q-EYg">
-                        <barButtonItem key="leftBarButtonItem" title="About" style="done" id="GeQ-hC-KVr">
+                        <barButtonItem key="leftBarButtonItem" title="About" id="GeQ-hC-KVr">
                             <color key="tintColor" red="1" green="0.51764705879999995" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                             <connections>
                                 <segue destination="sNd-jH-DIN" kind="presentation" identifier="toAbout" modalPresentationStyle="currentContext" modalTransitionStyle="flipHorizontal" id="PFb-AP-lkA"/>
@@ -507,7 +559,7 @@ This is the first app I released and I am still very curious about how it is use
                         <barButtonItem key="rightBarButtonItem" systemItem="done" id="O6d-YN-m4a">
                             <color key="tintColor" red="1" green="0.47246819366842097" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                             <connections>
-                                <segue destination="Nqh-g4-zcy" kind="unwind" unwindAction="returnsToViewController:" id="9GF-Ku-B3k"/>
+                                <segue destination="Nqh-g4-zcy" kind="unwind" unwindAction="rewindsToTranslatorViewController:" id="80h-Q5-Uxz"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -530,6 +582,7 @@ This is the first app I released and I am still very curious about how it is use
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="10" sectionFooterHeight="10" id="ESy-y6-aLf">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <animations/>
                         <color key="backgroundColor" red="0.93725490196078431" green="0.93725490196078431" blue="0.95686274509803926" alpha="1" colorSpace="calibratedRGB"/>
                         <sections>
                             <tableViewSection headerTitle="Encoding Protocol" id="lIb-QV-uuG">
@@ -544,19 +597,24 @@ This is the first app I released and I am still very curious about how it is use
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="8 Bit" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="am5-mR-T9X">
                                                     <rect key="frame" x="15" y="15" width="91" height="14.5"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <animations/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="12"/>
-                                                    <color key="textColor" red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <color key="textColor" red="1" green="0.51764705879999995" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="UTF-8 (default)" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Z1E-JH-SA5">
                                                     <rect key="frame" x="112" y="15" width="88" height="14.5"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <animations/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
+                                            <animations/>
                                         </tableViewCellContentView>
+                                        <animations/>
+                                        <color key="tintColor" red="0.41568627450000001" green="0.79215686269999996" blue="0.13725490200000001" alpha="1" colorSpace="calibratedRGB"/>
                                     </tableViewCell>
                                     <tableViewCell tag="1" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" textLabel="v9W-4u-DbO" detailTextLabel="8TI-FW-N5v" style="IBUITableViewCellStyleValue2" id="YhR-C9-tc5">
                                         <rect key="frame" x="0.0" y="137.5" width="600" height="44"/>
@@ -568,19 +626,24 @@ This is the first app I released and I am still very curious about how it is use
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="16 Bit" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="v9W-4u-DbO">
                                                     <rect key="frame" x="15" y="15" width="91" height="14.5"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <animations/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="12"/>
-                                                    <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <color key="textColor" red="1" green="0.51764705879999995" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="UTF-16" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="8TI-FW-N5v">
                                                     <rect key="frame" x="112" y="15" width="42.5" height="14.5"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <animations/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
+                                            <animations/>
                                         </tableViewCellContentView>
+                                        <animations/>
+                                        <color key="tintColor" red="0.41568627450000001" green="0.79215686269999996" blue="0.13725490200000001" alpha="1" colorSpace="calibratedRGB"/>
                                     </tableViewCell>
                                     <tableViewCell tag="2" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" textLabel="Ras-sS-osb" detailTextLabel="StC-5D-nux" style="IBUITableViewCellStyleValue2" id="wnC-FR-JDd">
                                         <rect key="frame" x="0.0" y="181.5" width="600" height="44"/>
@@ -592,19 +655,24 @@ This is the first app I released and I am still very curious about how it is use
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Dynamic" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Ras-sS-osb">
                                                     <rect key="frame" x="15" y="15" width="91" height="14.5"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <animations/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="12"/>
-                                                    <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <color key="textColor" red="1" green="0.51764705879999995" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Unicode" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="StC-5D-nux">
                                                     <rect key="frame" x="112" y="15" width="47" height="14.5"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <animations/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
+                                            <animations/>
                                         </tableViewCellContentView>
+                                        <animations/>
+                                        <color key="tintColor" red="0.41568627450000001" green="0.79215686269999996" blue="0.13725490200000001" alpha="1" colorSpace="calibratedRGB"/>
                                     </tableViewCell>
                                 </cells>
                             </tableViewSection>
@@ -627,6 +695,7 @@ This is the first app I released and I am still very curious about how it is use
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="HoN-De-RWq">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <animations/>
                         <textAttributes key="titleTextAttributes">
                             <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                         </textAttributes>
@@ -648,6 +717,7 @@ This is the first app I released and I am still very curious about how it is use
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="zXz-dT-iQK">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <animations/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>

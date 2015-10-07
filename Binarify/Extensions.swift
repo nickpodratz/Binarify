@@ -39,4 +39,25 @@ extension UIImage {
         UIGraphicsEndImageContext() // !!!
         return scaledImage
     }
+    
+    convenience init?(color: UIColor) {
+        self.init(color: color, size: CGSizeMake(1, 1))
+    }
+    
+    convenience init?(color: UIColor, size: CGSize) {
+        let rect = CGRect(origin: CGPointZero, size: size)
+        
+        UIGraphicsBeginImageContext(size);
+        //        let path = UIBezierPath(rect: rect)
+        
+        let context = UIGraphicsGetCurrentContext()
+        CGContextSetFillColorWithColor(context, color.CGColor)
+        CGContextFillRect(context, rect)
+        
+        let image = UIGraphicsGetImageFromCurrentImageContext();
+        UIGraphicsEndImageContext();
+        
+        self.init(CGImage: image.CGImage!)
+    }
+
 }

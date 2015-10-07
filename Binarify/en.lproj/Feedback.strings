@@ -1,0 +1,24 @@
+
+/* Class = "UILabel"; text = "Not now"; ObjectID = "DTo-z0-76j"; */
+"DTo-z0-76j.text" = "Not now";
+
+/* Class = "UIButton"; normalTitle = "Not now"; ObjectID = "RoT-FF-oxA"; */
+"RoT-FF-oxA.normalTitle" = "Not now";
+
+/* Class = "UIButton"; normalTitle = "No"; ObjectID = "WOW-nn-t1n"; */
+"WOW-nn-t1n.normalTitle" = "No";
+
+/* Class = "UIButton"; normalTitle = "Okay"; ObjectID = "Zdj-KG-tII"; */
+"Zdj-KG-tII.normalTitle" = "Okay";
+
+/* Class = "UIButton"; normalTitle = "Not now"; ObjectID = "c8l-Pp-7rR"; */
+"c8l-Pp-7rR.normalTitle" = "Not now";
+
+/* Class = "UIButton"; normalTitle = "Yes"; ObjectID = "cQZ-vm-qRv"; */
+"cQZ-vm-qRv.normalTitle" = "Yes";
+
+/* Class = "UIButton"; normalTitle = "Review App"; ObjectID = "nHL-Gk-gwV"; */
+"nHL-Gk-gwV.normalTitle" = "Review App";
+
+/* Class = "UIButton"; normalTitle = "Compose Mail"; ObjectID = "o08-T1-tcf"; */
+"o08-T1-tcf.normalTitle" = "Compose Mail";
