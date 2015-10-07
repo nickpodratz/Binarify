@@ -101,7 +101,6 @@ class CheckmarkLayer: CAShapeLayer {
         lineWidth = 5
         lineJoin = kCALineJoinRound
         lineCap = kCALineJoinRound
-        lineJoin = kCALineJoinRound
     }
     
     func animate() {

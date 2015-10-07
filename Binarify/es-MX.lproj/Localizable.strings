@@ -1,0 +1,12 @@
+/* 
+  Localizable.strings
+  Binarify
+
+  Created by Nick Podratz on 30.09.15.
+  Copyright © 2015 Nick Podratz. All rights reserved.
+*/
+COPIED = "Copiado";
+NO_INTERNET_CONNECTION = "No conexión al internet";
+NO_DATA_FOUND = "Data no encontrado";
+CAN_NOT_SEND_MAIL = "No puede enviar correo electronico";
+HINT_ON_MAIL_PREFERENCES = "Míra sí los ajustes de tu perfil de correo electronico son correctos.";

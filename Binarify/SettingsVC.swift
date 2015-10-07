@@ -25,12 +25,8 @@ class SettingsViewController: UITableViewController, EncodingSelectorDelegate {
     var delegate: SettingsDelegate!
     
     
-    override func viewWillDisappear(animated: Bool) {
-        let defaults = NSUserDefaults.standardUserDefaults()
-        defaults.synchronize()
-    }
-    
     override func viewDidAppear(animated: Bool) {
+        super.viewDidAppear(animated)
         NSTimer.scheduledTimerWithTimeInterval(1, target: self, selector: "deselectSelectedRow", userInfo: nil, repeats: false)
     }
     

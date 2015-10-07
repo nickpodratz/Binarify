@@ -1,0 +1,14 @@
+/* 
+  Localizable.strings
+  Binarify
+
+  Created by Nick Podratz on 30.09.15.
+  Copyright © 2015 Nick Podratz. All rights reserved.
+*/
+COPIED = "Copied";
+NO_INTERNET_CONNECTION = "No internet connection";
+NO_DATA_FOUND = "No data found";
+CAN_NOT_SEND_MAIL = "Can't send mail";
+HINT_ON_MAIL_PREFERENCES = "Asegurate que los ajustes de tu perfil de correo electronico son correctos.";
+MAIL_COMPOSING_ERROR = "Mail kann nicht erstellt werden";
+MAIL_COMPOSING_ERROR_DESCRIPTION = "Make sure, that the settings of your email account are correct.";
