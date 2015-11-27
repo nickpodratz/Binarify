@@ -42,53 +42,37 @@ class Translator {
     }
     
     private func translateToBinary(aString: String) -> String {
-        var bytes = [String]()
-        switch encoding {
-        case .UTF8:
-            for asciiNumber in aString.utf8 {
-                let number: UInt32 = UInt32(asciiNumber)
-                var byte = String(number, radix: 2)
-                byte = pad(byte, toSize: 8)
-                bytes.append(byte)
+        // Create an array of the characters' binary values contained in aString.
+        let unpaddedBinaryStrings: [String] = {
+            switch encoding {
+            case .UTF8: return aString.utf8.map{ String($0, radix: 2) }
+            case .UTF16: return aString.utf16.map{ String($0, radix: 2) }
+            case .Unicode: return aString.unicodeScalars.map{ String($0.value, radix: 2) }
             }
-        case .UTF16:
-            for asciiNumber in aString.utf16 {
-                let number: UInt32 = UInt32(asciiNumber)
-                var byte = String(number, radix: 2)
-                byte = pad(byte, toSize: 16)
-                bytes.append(byte)
-            }
-            
-        case .Unicode:
-            for asciiNumber in aString.unicodeScalars {
-                let number = asciiNumber.value
-                var byte = String(number, radix: 2)
-                byte = pad(byte, toSize: 32)
-                bytes.append(byte)
-            }
+        }()
+        
+        // Add padding to the values and join them together.
+        return unpaddedBinaryStrings.reduce("") {
+            initial, unpaddedBinaryString in
+            let paddedByteString = pad(unpaddedBinaryString, toSize: encoding.characterBitLength)
+            let separatorForJoining = whitespacesEnabled && !initial.isEmpty ? " " : ""
+            return initial + separatorForJoining + paddedByteString
         }
-        
-        let separatorForJoining = whitespacesEnabled ? " " : ""
-        let product = bytes.joinWithSeparator(separatorForJoining)
-        
-        return product
     }
     
     
     private func translateFromBinary(string: String) -> String {
-        var charactersAsBinary = [String]()
-        
         // Delete Whitespaces
         let clearBinary = string.stringByReplacingOccurrencesOfString(" ", withString: "", options: NSStringCompareOptions.LiteralSearch, range: nil)
-        clearBinary.characters.count
-        clearBinary.characters.count / encoding.characterBitLength
+        
         // Separate into Byte-Blocks
+        var binaryCharacters = [String]()
         for numberOfBytes in 0...(clearBinary.characters.count / encoding.characterBitLength) {
-            charactersAsBinary.append(clearBinary.substring(numberOfBytes * encoding.characterBitLength, length: encoding.characterBitLength ))
+            binaryCharacters.append(clearBinary.substring(numberOfBytes * encoding.characterBitLength, length: encoding.characterBitLength ))
         }
         
-        let values = charactersAsBinary.map{ strtoul($0, nil, 2) }.map{ Int($0) }
-        let characters = values.map{ String(UnicodeScalar(Int($0))) } as [String]
+        let numericValues = binaryCharacters.map{ Int(strtoul($0, nil, 2)) }
+        let characters = numericValues.map{ String(UnicodeScalar(Int($0))) }
         return characters.joinWithSeparator("")
     }
     
@@ -105,12 +89,12 @@ class Translator {
         else { return UInt32(pow(2.0, Double(index))) }
     }
     
-    private func pad(string : String, toSize: Int) -> String {
-        var padded = string
-        for _ in 0..<toSize - string.characters.count {
-            padded = "0" + padded
+    /// Recursively adds 0s as padding to the left of the input string
+    private func pad(aString : String, toSize: Int) -> String {
+        if toSize == aString.characters.count {
+            return aString
         }
-        return padded
+        return pad("0" + aString, toSize: toSize)
     }
 
 }

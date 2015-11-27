@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="baT-pV-YQc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9060" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="baT-pV-YQc">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
-        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
         <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
     </dependencies>
     <scenes>
@@ -25,7 +24,7 @@
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WOW-nn-t1n" customClass="RoundedButton" customModule="Binarify" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="110" height="40"/>
                                         <animations/>
-                                        <color key="backgroundColor" red="0.99215686321258545" green="0.43529412150382996" blue="0.031372550874948502" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="backgroundColor" red="1" green="0.51764705879999995" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="110" id="arO-x5-0EW"/>
                                             <constraint firstAttribute="height" constant="40" id="jTT-P9-q7g"/>
@@ -91,10 +90,10 @@
                                 </constraints>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KIz-sa-Cpp">
-                                <rect key="frame" x="167" y="218.5" width="266.5" height="90.5"/>
+                                <rect key="frame" x="160.5" y="218.5" width="280" height="90.5"/>
                                 <animations/>
                                 <constraints>
-                                    <constraint firstAttribute="width" relation="lessThanOrEqual" constant="280" id="OUK-42-JJ5"/>
+                                    <constraint firstAttribute="width" constant="280" id="OUK-42-JJ5"/>
                                 </constraints>
                                 <attributedString key="attributedText">
                                     <fragment content="¿Te gusta Binarify? ">
@@ -132,12 +131,10 @@ A mí tu opinión vale mucho y yo voy a tomarla en cuenta durante el desarrollo 
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="KIz-sa-Cpp" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="Pzj-xs-NCP" secondAttribute="leadingMargin" constant="16" id="ARm-sm-roq"/>
                             <constraint firstItem="KIz-sa-Cpp" firstAttribute="centerX" secondItem="Pzj-xs-NCP" secondAttribute="centerX" id="EWM-Jk-PQU"/>
                             <constraint firstItem="PX2-n5-Tls" firstAttribute="centerY" secondItem="Pzj-xs-NCP" secondAttribute="centerY" constant="80" id="Kk9-iw-W6y"/>
                             <constraint firstItem="KIz-sa-Cpp" firstAttribute="centerY" secondItem="Pzj-xs-NCP" secondAttribute="centerY" multiplier="0.92" constant="-13" id="PCf-vd-EgU"/>
                             <constraint firstItem="PX2-n5-Tls" firstAttribute="centerX" secondItem="Pzj-xs-NCP" secondAttribute="centerX" id="Y1e-wT-afV"/>
-                            <constraint firstAttribute="trailingMargin" relation="greaterThanOrEqual" secondItem="KIz-sa-Cpp" secondAttribute="trailing" constant="16" id="sfz-3E-vb7"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="Sbr-OS-8iz">
@@ -167,10 +164,10 @@ A mí tu opinión vale mucho y yo voy a tomarla en cuenta durante el desarrollo 
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zj9-Rt-Tcs">
-                                <rect key="frame" x="168" y="206" width="264.5" height="107"/>
+                                <rect key="frame" x="160.5" y="206" width="280" height="107"/>
                                 <animations/>
                                 <constraints>
-                                    <constraint firstAttribute="width" relation="lessThanOrEqual" constant="280" id="0YG-v8-Jrf"/>
+                                    <constraint firstAttribute="width" constant="280" id="0YG-v8-Jrf"/>
                                 </constraints>
                                 <attributedString key="attributedText">
                                     <fragment content="¡Que pena!">
@@ -284,8 +281,6 @@ Cg
                         <constraints>
                             <constraint firstItem="Zj9-Rt-Tcs" firstAttribute="centerY" secondItem="K65-qn-MCf" secondAttribute="centerY" multiplier="0.92" constant="-16" id="5XR-9D-nfv"/>
                             <constraint firstItem="IRr-XT-jlm" firstAttribute="centerY" secondItem="K65-qn-MCf" secondAttribute="centerY" constant="80" id="6Ym-Ts-oI1"/>
-                            <constraint firstItem="Zj9-Rt-Tcs" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="K65-qn-MCf" secondAttribute="leadingMargin" constant="8" id="Q4t-KH-wmu"/>
-                            <constraint firstAttribute="trailingMargin" relation="greaterThanOrEqual" secondItem="Zj9-Rt-Tcs" secondAttribute="trailing" constant="8" id="avP-HB-Sxw"/>
                             <constraint firstItem="Zj9-Rt-Tcs" firstAttribute="centerX" secondItem="K65-qn-MCf" secondAttribute="centerX" id="c8C-Zm-eju"/>
                             <constraint firstItem="IRr-XT-jlm" firstAttribute="centerX" secondItem="K65-qn-MCf" secondAttribute="centerX" id="s7Z-Tc-lDO"/>
                         </constraints>
@@ -324,7 +319,7 @@ Cg
                                 <rect key="frame" x="160" y="206.5" width="280" height="108"/>
                                 <animations/>
                                 <constraints>
-                                    <constraint firstAttribute="width" relation="lessThanOrEqual" constant="280" id="AvG-PL-V6F"/>
+                                    <constraint firstAttribute="width" constant="280" id="AvG-PL-V6F"/>
                                 </constraints>
                                 <attributedString key="attributedText">
                                     <fragment content="¡Muy bien!">
@@ -438,12 +433,10 @@ Cg
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstAttribute="trailingMargin" relation="greaterThanOrEqual" secondItem="xfC-xo-Aak" secondAttribute="trailing" constant="8" id="MBG-YY-bug"/>
                             <constraint firstItem="7oC-Fn-POT" firstAttribute="centerY" secondItem="DU3-Wp-wV2" secondAttribute="centerY" constant="80" id="T4L-er-1q0"/>
                             <constraint firstItem="7oC-Fn-POT" firstAttribute="centerX" secondItem="DU3-Wp-wV2" secondAttribute="centerX" id="fpR-MZ-Sft"/>
                             <constraint firstItem="xfC-xo-Aak" firstAttribute="centerX" secondItem="DU3-Wp-wV2" secondAttribute="centerX" id="huz-eP-Ps6"/>
                             <constraint firstItem="xfC-xo-Aak" firstAttribute="centerY" secondItem="DU3-Wp-wV2" secondAttribute="centerY" multiplier="0.92" constant="-16" id="iga-fG-A5z"/>
-                            <constraint firstItem="xfC-xo-Aak" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="DU3-Wp-wV2" secondAttribute="leadingMargin" constant="8" id="oq4-BI-FHs"/>
                             <constraint firstItem="DTo-z0-76j" firstAttribute="centerX" secondItem="DU3-Wp-wV2" secondAttribute="centerX" id="tE6-fU-8zk"/>
                             <constraint firstItem="Usp-FP-TwT" firstAttribute="top" secondItem="DTo-z0-76j" secondAttribute="bottom" constant="20" id="tzG-ur-oeX"/>
                         </constraints>
@@ -494,10 +487,10 @@ Cg
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LXK-TK-t2b">
-                                <rect key="frame" x="181" y="224" width="239" height="73"/>
+                                <rect key="frame" x="175.5" y="224" width="250" height="73"/>
                                 <animations/>
                                 <constraints>
-                                    <constraint firstAttribute="width" relation="lessThanOrEqual" constant="250" id="3et-mR-8pw"/>
+                                    <constraint firstAttribute="width" constant="250" id="3et-mR-8pw"/>
                                 </constraints>
                                 <attributedString key="attributedText">
                                     <fragment content="¡Muchas gracias!">
@@ -546,11 +539,9 @@ Cg
                         <constraints>
                             <constraint firstItem="LXK-TK-t2b" firstAttribute="centerY" secondItem="2oU-s8-5dp" secondAttribute="centerY" multiplier="0.92" constant="-16" id="6m7-N9-JuF"/>
                             <constraint firstItem="Zdj-KG-tII" firstAttribute="centerY" secondItem="2oU-s8-5dp" secondAttribute="centerY" constant="75" id="Kcr-RX-aCu"/>
-                            <constraint firstItem="LXK-TK-t2b" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="2oU-s8-5dp" secondAttribute="leadingMargin" constant="8" id="Ky9-A1-mfl"/>
                             <constraint firstItem="LXK-TK-t2b" firstAttribute="centerX" secondItem="2oU-s8-5dp" secondAttribute="centerX" id="VDv-IB-EmI"/>
                             <constraint firstItem="LXK-TK-t2b" firstAttribute="centerX" secondItem="2oU-s8-5dp" secondAttribute="centerX" id="ciG-sq-iys"/>
                             <constraint firstItem="Zdj-KG-tII" firstAttribute="centerX" secondItem="2oU-s8-5dp" secondAttribute="centerX" id="e6d-Db-dwa"/>
-                            <constraint firstAttribute="trailingMargin" relation="greaterThanOrEqual" secondItem="LXK-TK-t2b" secondAttribute="trailing" constant="8" id="yGJ-ee-BTQ"/>
                         </constraints>
                     </view>
                 </viewController>

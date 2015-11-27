@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="baT-pV-YQc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9060" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="baT-pV-YQc">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
-        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
         <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
     </dependencies>
     <scenes>
@@ -25,19 +24,17 @@
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WOW-nn-t1n" customClass="RoundedButton" customModule="Binarify" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="110" height="40"/>
                                         <animations/>
-                                        <color key="backgroundColor" red="0.99215686321258545" green="0.43529412150382996" blue="0.031372550874948502" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="backgroundColor" red="1" green="0.58680474758148193" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="110" id="arO-x5-0EW"/>
                                             <constraint firstAttribute="height" constant="40" id="jTT-P9-q7g"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" weight="medium" pointSize="13"/>
-                                        <state key="normal" title="Nein">
+                                        <color key="tintColor" red="1" green="0.58680474758148193" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <state key="normal" title="No">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                         <userDefinedRuntimeAttributes>
-                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
-                                                <color key="value" red="0.3827751875" green="0.73075264689999997" blue="0.034797742960000003" alpha="1" colorSpace="calibratedRGB"/>
-                                            </userDefinedRuntimeAttribute>
                                             <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
                                                 <real key="value" value="0.0"/>
                                             </userDefinedRuntimeAttribute>
@@ -54,13 +51,13 @@
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cQZ-vm-qRv" customClass="RoundedButton" customModule="Binarify" customModuleProvider="target">
                                         <rect key="frame" x="126" y="0.0" width="110" height="40"/>
                                         <animations/>
-                                        <color key="backgroundColor" red="0.3827751875" green="0.73075264689999997" blue="0.034797742960000003" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="backgroundColor" red="0.26584070920944214" green="0.85808372497558594" blue="0.3677983283996582" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="110" id="2rD-tD-YBb"/>
                                             <constraint firstAttribute="height" constant="40" id="YzV-zU-xby"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" weight="medium" pointSize="13"/>
-                                        <state key="normal" title="Ja">
+                                        <state key="normal" title="Yes">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                         <userDefinedRuntimeAttributes>
@@ -91,17 +88,16 @@
                                 </constraints>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KIz-sa-Cpp">
-                                <rect key="frame" x="142" y="218" width="316" height="90.5"/>
+                                <rect key="frame" x="160" y="227" width="280" height="73"/>
                                 <animations/>
                                 <constraints>
-                                    <constraint firstAttribute="width" relation="lessThanOrEqual" constant="335" id="OUK-42-JJ5"/>
+                                    <constraint firstAttribute="width" constant="280" id="OUK-42-JJ5"/>
                                 </constraints>
                                 <attributedString key="attributedText">
-                                    <fragment content="Gefällt dir Binarify? ">
+                                    <fragment content="Do you like Binarify? ">
                                         <attributes>
-                                            <color key="NSColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                             <font key="NSFont" size="17" name="HelveticaNeue-Medium"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO"/>
                                         </attributes>
                                     </fragment>
                                     <fragment>
@@ -109,14 +105,13 @@
 Cg
 </string>
                                         <attributes>
-                                            <color key="NSColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                             <font key="NSFont" size="15" name="HelveticaNeue-Medium"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO"/>
                                         </attributes>
                                     </fragment>
                                     <fragment>
                                         <string key="content">
-Deine Meinung ist mir sehr wichtig und soll bei der Entwicklung kommender Updates berücksichtigt werden.</string>
+Your opinion is very important to me and will be regarded in future updates.</string>
                                         <attributes>
                                             <color key="NSColor" red="0.20784313725490197" green="0.20784313725490197" blue="0.20784313725490197" alpha="1" colorSpace="calibratedRGB"/>
                                             <font key="NSFont" size="15" name="HelveticaNeue"/>
@@ -132,12 +127,10 @@ Deine Meinung ist mir sehr wichtig und soll bei der Entwicklung kommender Update
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="KIz-sa-Cpp" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="Pzj-xs-NCP" secondAttribute="leadingMargin" constant="16" id="ARm-sm-roq"/>
                             <constraint firstItem="KIz-sa-Cpp" firstAttribute="centerX" secondItem="Pzj-xs-NCP" secondAttribute="centerX" id="EWM-Jk-PQU"/>
                             <constraint firstItem="PX2-n5-Tls" firstAttribute="centerY" secondItem="Pzj-xs-NCP" secondAttribute="centerY" constant="80" id="Kk9-iw-W6y"/>
                             <constraint firstItem="KIz-sa-Cpp" firstAttribute="centerY" secondItem="Pzj-xs-NCP" secondAttribute="centerY" multiplier="0.92" constant="-13" id="PCf-vd-EgU"/>
                             <constraint firstItem="PX2-n5-Tls" firstAttribute="centerX" secondItem="Pzj-xs-NCP" secondAttribute="centerX" id="Y1e-wT-afV"/>
-                            <constraint firstAttribute="trailingMargin" relation="greaterThanOrEqual" secondItem="KIz-sa-Cpp" secondAttribute="trailing" constant="16" id="sfz-3E-vb7"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="Sbr-OS-8iz">
@@ -167,17 +160,16 @@ Deine Meinung ist mir sehr wichtig und soll bei der Entwicklung kommender Update
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zj9-Rt-Tcs">
-                                <rect key="frame" x="149.5" y="206.5" width="301" height="107"/>
+                                <rect key="frame" x="160" y="206.5" width="280" height="107"/>
                                 <animations/>
                                 <constraints>
-                                    <constraint firstAttribute="width" relation="lessThanOrEqual" constant="335" id="0YG-v8-Jrf"/>
+                                    <constraint firstAttribute="width" constant="280" id="0YG-v8-Jrf"/>
                                 </constraints>
                                 <attributedString key="attributedText">
-                                    <fragment content="Das ist schade!">
+                                    <fragment content="I'm sorry for that!">
                                         <attributes>
-                                            <color key="NSColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                             <font key="NSFont" size="17" name="HelveticaNeue-Medium"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO"/>
                                         </attributes>
                                     </fragment>
                                     <fragment>
@@ -185,9 +177,8 @@ Deine Meinung ist mir sehr wichtig und soll bei der Entwicklung kommender Update
 Cg
 </string>
                                         <attributes>
-                                            <color key="NSColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                             <font key="NSFont" size="15" name="HelveticaNeue-Medium"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO"/>
                                         </attributes>
                                     </fragment>
                                     <fragment>
@@ -195,13 +186,12 @@ Cg
 Cg
 </string>
                                         <attributes>
-                                            <color key="NSColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                             <font key="NSFont" size="15" name="HelveticaNeue"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO"/>
                                         </attributes>
                                     </fragment>
                                     <fragment>
-                                        <string key="content">… aber Feedback ist der erste Schritt zur Besserung. Wenn Du mir eine kurze Mail mit deiner Kritik schickst, kann ich mich um Nachbesserung kümmern.</string>
+                                        <string key="content">… but feedback is the first step to all improvements. If you write me a short mail with your critics I can start fixing the errors.</string>
                                         <attributes>
                                             <color key="NSColor" red="0.20784313725490197" green="0.20784313725490197" blue="0.20784313725490197" alpha="1" colorSpace="calibratedRGB"/>
                                             <font key="NSFont" size="15" name="Helvetica"/>
@@ -223,12 +213,12 @@ Cg
                                             <constraint firstAttribute="width" constant="110" id="bMT-re-bDQ"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" weight="medium" pointSize="13"/>
-                                        <state key="normal" title="Nicht jetzt">
-                                            <color key="titleColor" red="0.38277518749237061" green="0.73075264692306519" blue="0.034797742962837219" alpha="1" colorSpace="calibratedRGB"/>
+                                        <state key="normal" title="Not Now">
+                                            <color key="titleColor" red="0.26584070920944214" green="0.85808372497558594" blue="0.3677983283996582" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
                                         <userDefinedRuntimeAttributes>
                                             <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
-                                                <color key="value" red="0.38277518749237061" green="0.73075264692306519" blue="0.034797742962837219" alpha="1" colorSpace="calibratedRGB"/>
+                                                <color key="value" red="0.26584070920944214" green="0.85808372497558594" blue="0.3677983283996582" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             </userDefinedRuntimeAttribute>
                                             <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
                                                 <real key="value" value="1.6000000000000001"/>
@@ -244,12 +234,12 @@ Cg
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="o08-T1-tcf" customClass="RoundedButton" customModule="Binarify" customModuleProvider="target">
                                         <rect key="frame" x="126" y="0.0" width="110" height="40"/>
                                         <animations/>
-                                        <color key="backgroundColor" red="0.38277518749237061" green="0.73075264692306519" blue="0.034797742962837219" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="backgroundColor" red="0.26584070920944214" green="0.85808372497558594" blue="0.3677983283996582" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="110" id="BpE-DZ-wwf"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" weight="medium" pointSize="13"/>
-                                        <state key="normal" title="Mail verfassen">
+                                        <state key="normal" title="Compose Mail">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                         <userDefinedRuntimeAttributes>
@@ -284,8 +274,6 @@ Cg
                         <constraints>
                             <constraint firstItem="Zj9-Rt-Tcs" firstAttribute="centerY" secondItem="K65-qn-MCf" secondAttribute="centerY" multiplier="0.92" constant="-16" id="5XR-9D-nfv"/>
                             <constraint firstItem="IRr-XT-jlm" firstAttribute="centerY" secondItem="K65-qn-MCf" secondAttribute="centerY" constant="80" id="6Ym-Ts-oI1"/>
-                            <constraint firstItem="Zj9-Rt-Tcs" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="K65-qn-MCf" secondAttribute="leadingMargin" constant="8" id="Q4t-KH-wmu"/>
-                            <constraint firstAttribute="trailingMargin" relation="greaterThanOrEqual" secondItem="Zj9-Rt-Tcs" secondAttribute="trailing" constant="8" id="avP-HB-Sxw"/>
                             <constraint firstItem="Zj9-Rt-Tcs" firstAttribute="centerX" secondItem="K65-qn-MCf" secondAttribute="centerX" id="c8C-Zm-eju"/>
                             <constraint firstItem="IRr-XT-jlm" firstAttribute="centerX" secondItem="K65-qn-MCf" secondAttribute="centerX" id="s7Z-Tc-lDO"/>
                         </constraints>
@@ -321,17 +309,16 @@ Cg
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xfC-xo-Aak">
-                                <rect key="frame" x="133" y="215" width="334" height="90.5"/>
+                                <rect key="frame" x="160" y="206.5" width="280" height="108"/>
                                 <animations/>
                                 <constraints>
-                                    <constraint firstAttribute="width" relation="lessThanOrEqual" constant="335" id="AvG-PL-V6F"/>
+                                    <constraint firstAttribute="width" constant="280" id="AvG-PL-V6F"/>
                                 </constraints>
                                 <attributedString key="attributedText">
-                                    <fragment content="Klasse!">
+                                    <fragment content="Fantastic!">
                                         <attributes>
-                                            <color key="NSColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                             <font key="NSFont" size="17" name="HelveticaNeue-Medium"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO"/>
                                         </attributes>
                                     </fragment>
                                     <fragment>
@@ -339,9 +326,8 @@ Cg
 Cg
 </string>
                                         <attributes>
-                                            <color key="NSColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                             <font key="NSFont" size="15" name="HelveticaNeue-Medium"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO"/>
                                         </attributes>
                                     </fragment>
                                     <fragment>
@@ -349,13 +335,12 @@ Cg
 Cg
 </string>
                                         <attributes>
-                                            <color key="NSColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                             <font key="NSFont" size="15" name="HelveticaNeue"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO"/>
                                         </attributes>
                                     </fragment>
                                     <fragment>
-                                        <string key="content">Würdest Du mir und vielen Nutzern den Gefallen tun und eine kurze Rezension oder Bewertung im App Store hinterlassen? Das wäre sehr hilfreich!</string>
+                                        <string key="content">Could you do me and many other users a favor by leaving your opinion in a short review or rating on the App Store? That would be really nice!</string>
                                         <attributes>
                                             <color key="NSColor" red="0.20784313725490197" green="0.20784313725490197" blue="0.20784313725490197" alpha="1" colorSpace="calibratedRGB"/>
                                             <font key="NSFont" size="15" name="HelveticaNeue"/>
@@ -378,12 +363,12 @@ Cg
                                             <constraint firstAttribute="height" constant="40" id="V5F-4O-77V"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" weight="medium" pointSize="13"/>
-                                        <state key="normal" title="Nicht jetzt">
-                                            <color key="titleColor" red="0.3827751875" green="0.73075264689999997" blue="0.034797742960000003" alpha="1" colorSpace="calibratedRGB"/>
+                                        <state key="normal" title="Not Now">
+                                            <color key="titleColor" red="0.26584070920944214" green="0.85808372497558594" blue="0.3677983283996582" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
                                         <userDefinedRuntimeAttributes>
                                             <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
-                                                <color key="value" red="0.3827751875" green="0.73075264689999997" blue="0.034797742960000003" alpha="1" colorSpace="calibratedRGB"/>
+                                                <color key="value" red="0.26584070920944214" green="0.85808372497558594" blue="0.3677983283996582" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             </userDefinedRuntimeAttribute>
                                             <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
                                                 <real key="value" value="1.6000000000000001"/>
@@ -399,13 +384,13 @@ Cg
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nHL-Gk-gwV" customClass="RoundedButton" customModule="Binarify" customModuleProvider="target">
                                         <rect key="frame" x="126" y="0.0" width="110" height="40"/>
                                         <animations/>
-                                        <color key="backgroundColor" red="0.38277518749237061" green="0.73075264692306519" blue="0.034797742962837219" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="backgroundColor" red="0.26584070920944214" green="0.85808372497558594" blue="0.3677983283996582" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="110" id="xna-Hs-Gmf"/>
                                             <constraint firstAttribute="height" constant="40" id="yum-RI-AQs"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" weight="medium" pointSize="13"/>
-                                        <state key="normal" title="App bewerten">
+                                        <state key="normal" title="Review App">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                         <userDefinedRuntimeAttributes>
@@ -438,12 +423,10 @@ Cg
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstAttribute="trailingMargin" relation="greaterThanOrEqual" secondItem="xfC-xo-Aak" secondAttribute="trailing" constant="8" id="MBG-YY-bug"/>
                             <constraint firstItem="7oC-Fn-POT" firstAttribute="centerY" secondItem="DU3-Wp-wV2" secondAttribute="centerY" constant="80" id="T4L-er-1q0"/>
                             <constraint firstItem="7oC-Fn-POT" firstAttribute="centerX" secondItem="DU3-Wp-wV2" secondAttribute="centerX" id="fpR-MZ-Sft"/>
                             <constraint firstItem="xfC-xo-Aak" firstAttribute="centerX" secondItem="DU3-Wp-wV2" secondAttribute="centerX" id="huz-eP-Ps6"/>
                             <constraint firstItem="xfC-xo-Aak" firstAttribute="centerY" secondItem="DU3-Wp-wV2" secondAttribute="centerY" multiplier="0.92" constant="-16" id="iga-fG-A5z"/>
-                            <constraint firstItem="xfC-xo-Aak" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="DU3-Wp-wV2" secondAttribute="leadingMargin" constant="8" id="oq4-BI-FHs"/>
                             <constraint firstItem="DTo-z0-76j" firstAttribute="centerX" secondItem="DU3-Wp-wV2" secondAttribute="centerX" id="tE6-fU-8zk"/>
                             <constraint firstItem="Usp-FP-TwT" firstAttribute="top" secondItem="DTo-z0-76j" secondAttribute="bottom" constant="20" id="tzG-ur-oeX"/>
                         </constraints>
@@ -472,13 +455,13 @@ Cg
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zdj-KG-tII" customClass="RoundedButton" customModule="Binarify" customModuleProvider="target">
                                 <rect key="frame" x="227.5" y="355" width="145" height="40"/>
                                 <animations/>
-                                <color key="backgroundColor" red="0.3827751875" green="0.73075264689999997" blue="0.034797742960000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" red="0.26584070920944214" green="0.85808372497558594" blue="0.3677983283996582" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="Opo-hl-eLY"/>
                                     <constraint firstAttribute="width" constant="145" id="Q2i-oR-DsZ"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" weight="medium" pointSize="13"/>
-                                <state key="normal" title="Alles klar">
+                                <state key="normal" title="Okay">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <userDefinedRuntimeAttributes>
@@ -494,17 +477,16 @@ Cg
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LXK-TK-t2b">
-                                <rect key="frame" x="179" y="215" width="243" height="90.5"/>
+                                <rect key="frame" x="175" y="215" width="250" height="90.5"/>
                                 <animations/>
                                 <constraints>
-                                    <constraint firstAttribute="width" relation="lessThanOrEqual" constant="250" id="3et-mR-8pw"/>
+                                    <constraint firstAttribute="width" constant="250" id="3et-mR-8pw"/>
                                 </constraints>
                                 <attributedString key="attributedText">
-                                    <fragment content="Vielen Dank!">
+                                    <fragment content="Thank you so much!">
                                         <attributes>
-                                            <color key="NSColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                             <font key="NSFont" size="17" name="HelveticaNeue-Medium"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO"/>
                                         </attributes>
                                     </fragment>
                                     <fragment>
@@ -512,9 +494,8 @@ Cg
 Cg
 </string>
                                         <attributes>
-                                            <color key="NSColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                             <font key="NSFont" size="15" name="HelveticaNeue-Medium"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO"/>
                                         </attributes>
                                     </fragment>
                                     <fragment>
@@ -522,12 +503,11 @@ Cg
 Cg
 </string>
                                         <attributes>
-                                            <color key="NSColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                             <font key="NSFont" size="15" name="HelveticaNeue"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO"/>
                                         </attributes>
                                     </fragment>
-                                    <fragment content="Ich werde mir dein Feedback so schnell wie möglich durchlesen und dir antworten.">
+                                    <fragment content="I will read through your feedback as soon as possible and send you my answer.">
                                         <attributes>
                                             <color key="NSColor" red="0.20784313725490197" green="0.20784313725490197" blue="0.20784313725490197" alpha="1" colorSpace="calibratedRGB"/>
                                             <font key="NSFont" size="15" name="HelveticaNeue"/>
@@ -546,11 +526,9 @@ Cg
                         <constraints>
                             <constraint firstItem="LXK-TK-t2b" firstAttribute="centerY" secondItem="2oU-s8-5dp" secondAttribute="centerY" multiplier="0.92" constant="-16" id="6m7-N9-JuF"/>
                             <constraint firstItem="Zdj-KG-tII" firstAttribute="centerY" secondItem="2oU-s8-5dp" secondAttribute="centerY" constant="75" id="Kcr-RX-aCu"/>
-                            <constraint firstItem="LXK-TK-t2b" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="2oU-s8-5dp" secondAttribute="leadingMargin" constant="8" id="Ky9-A1-mfl"/>
                             <constraint firstItem="LXK-TK-t2b" firstAttribute="centerX" secondItem="2oU-s8-5dp" secondAttribute="centerX" id="VDv-IB-EmI"/>
                             <constraint firstItem="LXK-TK-t2b" firstAttribute="centerX" secondItem="2oU-s8-5dp" secondAttribute="centerX" id="ciG-sq-iys"/>
                             <constraint firstItem="Zdj-KG-tII" firstAttribute="centerX" secondItem="2oU-s8-5dp" secondAttribute="centerX" id="e6d-Db-dwa"/>
-                            <constraint firstAttribute="trailingMargin" relation="greaterThanOrEqual" secondItem="LXK-TK-t2b" secondAttribute="trailing" constant="8" id="yGJ-ee-BTQ"/>
                         </constraints>
                     </view>
                 </viewController>
@@ -588,4 +566,5 @@ Cg
     <inferredMetricsTieBreakers>
         <segue reference="Hei-O5-vYi"/>
     </inferredMetricsTieBreakers>
+    <color key="tintColor" red="1" green="0.58680474758148193" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
 </document>

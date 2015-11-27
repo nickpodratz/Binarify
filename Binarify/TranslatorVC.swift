@@ -120,20 +120,22 @@ class TranslatorViewController: UIViewController, UITextFieldDelegate {
     func animateBinarifyButton() {
         if self.binarifyButton != nil {
             let originalColor = self.binarifyButton.tintColor
-            UIView.animateWithDuration(0.3, delay: 0, options: UIViewAnimationOptions.CurveEaseInOut,
-                animations: {
-                    self.binarifyButton.transform = CGAffineTransformScale(self.binarifyButton.transform, 1.05, 1.05)
-                    self.binarifyButton.tintColor = UIColor(red: 256/256, green: 170/256, blue: 0, alpha: 1)
-                }
-                ,
-                completion: { completed -> Void in
-                    UIView.animateWithDuration(0.7, delay: 0, usingSpringWithDamping: 0.35, initialSpringVelocity: 0.5, options: UIViewAnimationOptions.CurveEaseIn,
-                        animations: {
-                            self.binarifyButton.tintColor = originalColor
-                            self.binarifyButton.transform = CGAffineTransformScale(self.binarifyButton.transform, 0.9375, 0.9375)
-                        }, completion: nil)
-                }
-            )
+            if self.presentedViewController == nil {
+                UIView.animateWithDuration(0.3, delay: 0, options: UIViewAnimationOptions.CurveEaseInOut,
+                    animations: {
+                        self.binarifyButton.transform = CGAffineTransformScale(self.binarifyButton.transform, 1.05, 1.05)
+                        self.binarifyButton.tintColor = UIColor(red: 256/256, green: 170/256, blue: 0, alpha: 1)
+                    }
+                    ,
+                    completion: { completed -> Void in
+                        UIView.animateWithDuration(0.7, delay: 0, usingSpringWithDamping: 0.35, initialSpringVelocity: 0.5, options: UIViewAnimationOptions.CurveEaseIn,
+                            animations: {
+                                self.binarifyButton.tintColor = originalColor
+                                self.binarifyButton.transform = CGAffineTransformScale(self.binarifyButton.transform, 0.9375, 0.9375)
+                            }, completion: nil)
+                    }
+                )                
+            }
         }
     }
     

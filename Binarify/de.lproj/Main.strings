@@ -3,16 +3,16 @@
 "3zU-PL-yGm.headerTitle" = "Übersetzung";
 
 /* Class = "UITableViewSection"; headerTitle = "Usability"; ObjectID = "5w9-mt-clg"; */
-"5w9-mt-clg.headerTitle" = "Usability";
+"5w9-mt-clg.headerTitle" = "Nutzung";
 
 /* Class = "UILabel"; text = "UTF-16"; ObjectID = "8TI-FW-N5v"; */
 "8TI-FW-N5v.text" = "UTF-16";
 
-/* Class = "UILabel"; text = "18, Entwickler aus Hamburg"; ObjectID = "9RZ-t3-PyK"; */
-"9RZ-t3-PyK.text" = "Entwickler aus Hamburg";
-
 /* Class = "UILabel"; text = "UTF8"; ObjectID = "BXl-cK-wZw"; */
-"BXl-cK-wZw.text" = "UTF8";
+"BXl-cK-wZw.text" = "UTF-8";
+
+/* Class = "UINavigationItem"; title = "About"; ObjectID = "Eo3-Fv-NLO"; */
+"Eo3-Fv-NLO.title" = "Über";
 
 /* Class = "UILabel"; text = "Kodierungsprotokoll"; ObjectID = "F3O-Je-K62"; */
 "F3O-Je-K62.text" = "Kodierungsprotokoll";
@@ -20,72 +20,71 @@
 /* Class = "UIBarButtonItem"; title = "About"; ObjectID = "GeQ-hC-KVr"; */
 "GeQ-hC-KVr.title" = "Über";
 
-/* Class = "UINavigationItem"; title = "Einstellungen"; ObjectID = "HZa-5q-EYg"; */
+/* Class = "UINavigationItem"; title = "Settings"; ObjectID = "HZa-5q-EYg"; */
 "HZa-5q-EYg.title" = "Einstellungen";
 
-/* Class = "UILabel"; text = "keine Netzwerkverbindung"; ObjectID = "IQr-UG-dSh"; */
-"IQr-UG-dSh.text" = "keine Internetverbindung";
+/* Class = "UILabel"; text = "Developer from Germany"; ObjectID = "HqO-rr-5GY"; */
+"HqO-rr-5GY.text" = "Entwickler aus Hamburg";
 
-/* Class = "UIButton"; normalTitle = "kopieren"; ObjectID = "IRA-U6-PUV"; */
-"IRA-U6-PUV.normalTitle" = "Kopieren";
+/* Class = "UIButton"; normalTitle = "copy"; ObjectID = "IRA-U6-PUV"; */
+"IRA-U6-PUV.normalTitle" = "kopieren";
 
-/* Class = "UITextField"; placeholder = "Text oder Binärcode"; ObjectID = "KJj-VL-iff"; */
+/* Class = "UITextField"; placeholder = "text or binary code"; ObjectID = "KJj-VL-iff"; */
 "KJj-VL-iff.placeholder" = "Text oder Binärcode";
 
-/* Class = "UILabel"; text = "Feedback senden"; ObjectID = "Ml4-24-0nZ"; */
-"Ml4-24-0nZ.text" = "Feedback senden";
+/* Class = "UILabel"; text = "Review App"; ObjectID = "KyY-6e-Kit"; */
+"KyY-6e-Kit.text" = "App bewerten";
 
-/* Class = "UILabel"; text = "Nick Podratz"; ObjectID = "RGb-7B-0ox"; */
-"RGb-7B-0ox.text" = "Nick Podratz";
-
-/* Class = "UILabel"; text = "Dynamisch"; ObjectID = "Ras-sS-osb"; */
+/* Class = "UILabel"; text = "Dynamic"; ObjectID = "Ras-sS-osb"; */
 "Ras-sS-osb.text" = "Dynamisch";
 
 /* Class = "UILabel"; text = "Unicode"; ObjectID = "StC-5D-nux"; */
 "StC-5D-nux.text" = "Unicode";
 
-/* Class = "UILabel"; text = "kopiert"; ObjectID = "YoI-3T-9SJ"; */
-"YoI-3T-9SJ.text" = "Kopiert";
+/* Class = "UILabel"; text = "Nick Podratz"; ObjectID = "T0K-uJ-3Yu"; */
+"T0K-uJ-3Yu.text" = "Nick Podratz";
 
-/* Class = "UILabel"; text = "UTF-8 (Standard)"; ObjectID = "Z1E-JH-SA5"; */
+/* Class = "UILabel"; text = "UTF-8 (default)"; ObjectID = "Z1E-JH-SA5"; */
 "Z1E-JH-SA5.text" = "UTF-8 (standard)";
 
 /* Class = "UILabel"; text = "8 Bit"; ObjectID = "am5-mR-T9X"; */
 "am5-mR-T9X.text" = "8 Bit";
 
-/* Class = "UITableViewSection"; headerTitle = "In Kontakt treten"; ObjectID = "cuD-UL-r4I"; */
-"cuD-UL-r4I.headerTitle" = "In Kontakt treten";
-
-/* Class = "UITableViewSection"; headerTitle = "Meine anderen Apps"; ObjectID = "gRb-bf-zzW"; */
-"gRb-bf-zzW.headerTitle" = "Meine anderen Apps";
-
-/* Class = "UITableViewSection"; headerTitle = "Kodierungsprotokoll"; ObjectID = "lIb-QV-uuG"; */
+/* Class = "UITableViewSection"; headerTitle = "Encoding Protocol"; ObjectID = "lIb-QV-uuG"; */
 "lIb-QV-uuG.headerTitle" = "Kodierungsprotokoll";
 
 /* Class = "UIButton"; normalTitle = "Binarify"; ObjectID = "mCq-NQ-bnD"; */
 "mCq-NQ-bnD.normalTitle" = "Binarify";
 
-/* Class = "UILabel"; text = "Zeichentrennung"; ObjectID = "p6C-kN-4li"; */
-"p6C-kN-4li.text" = "Zeichentrennung";
+/* Class = "UILabel"; text = "Thank you for using Binary!\nThis is the first app I released and I am still very curious about how it is used. Would you mind writing me a short mail or an App Store review with your opinion? Moreover feel free to check out my more recent apps listed below, I would be happy if you gave them a try."; ObjectID = "of9-HH-9Rj"; */
+"of9-HH-9Rj.text" = "Danke, dass du Binarify nutzt!\nDies war meine erste App im App Store und ich bin immer noch sehr interessiert, wie sie Verwendung findet. Über eine kurze Mail oder Aoo Store Bewertung mit deiner Meinung würde ich mich daher sehr freuen. Und vielleicht magst du noch einen Blick auf meine anderen Apps werfen?";
 
-/* Class = "UINavigationItem"; title = "Über"; ObjectID = "qqD-hi-n87"; */
-"qqD-hi-n87.title" = "Über";
+/* Class = "UILabel"; text = "Sepatate with Whitespace"; ObjectID = "p6C-kN-4li"; */
+"p6C-kN-4li.text" = "Leerzeichentrennung";
 
-/* Class = "UILabel"; text = "Autokorrektur"; ObjectID = "thv-Mc-WYQ"; */
+/* Class = "UILabel"; text = "Send Feedback"; ObjectID = "qXK-aa-3kV"; */
+"qXK-aa-3kV.text" = "Feedback seden";
+
+/* Class = "UILabel"; text = "App Name"; ObjectID = "rzV-Ab-O4F"; */
+"rzV-Ab-O4F.text" = "App Name";
+
+/* Class = "UITableViewSection"; headerTitle = "My other apps"; ObjectID = "t1j-5z-TYw"; */
+"t1j-5z-TYw.headerTitle" = "Meine anderen Apps";
+
+/* Class = "UILabel"; text = "Autocorrection"; ObjectID = "thv-Mc-WYQ"; */
 "thv-Mc-WYQ.text" = "Autokorrektur";
+
+/* Class = "UITableViewController"; title = "About"; ObjectID = "tjL-Rp-F4I"; */
+"tjL-Rp-F4I.title" = "Über";
 
 /* Class = "UILabel"; text = "16 Bit"; ObjectID = "v9W-4u-DbO"; */
 "v9W-4u-DbO.text" = "16 Bit";
 
-/* Class = "UILabel"; text = "Binarify bewerten"; ObjectID = "vkV-8T-qcm"; */
-"vkV-8T-qcm.text" = "Binarify bewerten";
+/* Class = "UITableViewSection"; headerTitle = "Tell me your opinion"; ObjectID = "vjZ-Zy-BKL"; */
+"vjZ-Zy-BKL.headerTitle" = "Deine Meinung teilen";
 
-/* Class = "UILabel"; text = "Danke, dass du Binarify benutzt! Dies ist die erste App, die ich veröffentlicht habe und ich bin immer noch sehr interessiert, wie sie Verwendung findet. Darum würde ich mich über eine kurze Mail oder App Store Bewertung mit deiner Meinung sehr freuen. Und hast du schon meine anderen Apps gesehen? Ich bin mir sicher da ist auch etwas für dich dabei."; ObjectID = "wfd-Xk-Lx2"; */
-"wfd-Xk-Lx2.text" = "Danke, dass du Binarify nutzt!
-Dies war meine erste App im App Store und ich bin immer noch sehr interessiert, wie sie Verwendung findet. Über eine kurze Mail oder App Store Bewertung mit deiner Meinung würde ich mich daher sehr freuen. Und vielleicht magst du noch einen Blick auf meine anderen Apps werfen?";
+/* Class = "UILabel"; text = "Auto-Copying"; ObjectID = "wnW-Bv-TOw"; */
+"wnW-Bv-TOw.text" = "Automatisches Kopieren";
 
-/* Class = "UILabel"; text = "Automatisches kopieren"; ObjectID = "wnW-Bv-TOw"; */
-"wnW-Bv-TOw.text" = "Automatisches kopieren";
-
-/* Class = "UILabel"; text = "App Name"; ObjectID = "yRY-DX-zsA"; */
-"yRY-DX-zsA.text" = "App Name";
+/* Class = "UILabel"; text = "keine Netzwerkverbindung"; ObjectID = "ya6-e9-Y4t"; */
+"ya6-e9-Y4t.text" = "keine Netzwerkverbindung";
