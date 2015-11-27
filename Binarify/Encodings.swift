@@ -20,7 +20,7 @@ enum Encoding: Int {
         case .Unicode: return "Unicode"
         }
     }
-    
+        
     var characterBitLength: Int {
         switch self {
         case .UTF8: return 8
@@ -28,7 +28,7 @@ enum Encoding: Int {
         case .Unicode: return 32
         }
     }
-    
+
     var encodingStyle: UInt {
         switch self {
         case .UTF8: return NSUTF8StringEncoding

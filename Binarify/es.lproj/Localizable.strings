@@ -12,3 +12,7 @@ CAN_NOT_SEND_MAIL = "No puede enviar correo electronico";
 HINT_ON_MAIL_PREFERENCES = "Míra sí los ajustes de tu perfil de correo electronico son correctos.";
 MAIL_COMPOSING_ERROR = "No puede crear correo electrónico";
 MAIL_COMPOSING_ERROR_DESCRIPTION = "Asegura que los ajustes de tu perfil de email son correctos.";
+"majCountryCode" = "ES";
+"minCountryCode" = "es";
+VISIT_MY_WEBSITE = "Visitar mi página web";
+VISIT_FACEBOOK_PAGE = "Abrir página de Facebook";
