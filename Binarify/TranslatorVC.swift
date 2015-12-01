@@ -11,6 +11,8 @@ import MBProgressHUD
 import PKHUD
 
 
+let masterVCLoadingCounterKey = "MASTERVIEWCONTROLLERLOADINGKEY"
+
 class TranslatorViewController: UIViewController, UITextFieldDelegate {
                             
     @IBOutlet weak var binarifyButton: UIButton!
@@ -36,19 +38,6 @@ class TranslatorViewController: UIViewController, UITextFieldDelegate {
         super.viewDidAppear(animated)
         self.textField.keyboardType = translator.encoding.keyboard
     }
-    
-    func checkForFeedbackVC() {
-        // Feedback Views
-        let defaults = NSUserDefaults.standardUserDefaults()
-        var counter = defaults.integerForKey(feedbackCounterKey) ?? 0
-        print(counter)
-        if counter == 5 {
-            performSegueWithIdentifier("toFeedback", sender: self)
-        }
-        defaults.setInteger(++counter, forKey: feedbackCounterKey)
-        defaults.synchronize()
-    }
-
     
     private func setupTranslator() {
         let defaults = NSUserDefaults.standardUserDefaults()
@@ -171,7 +160,18 @@ class TranslatorViewController: UIViewController, UITextFieldDelegate {
     
     @IBAction func rewindsToTranslatorViewController(segue:UIStoryboardSegue) {
         UIApplication.sharedApplication().setStatusBarStyle(.Default, animated: true)
-        NSTimer.scheduledTimerWithTimeInterval(0.7, target: self, selector: "checkForFeedbackVC", userInfo: nil, repeats: false)
+        let defaults = NSUserDefaults.standardUserDefaults()
+        var counter = NSUserDefaults.standardUserDefaults().integerForKey(masterVCLoadingCounterKey) ?? 0
+        
+        switch counter {
+        case 5: performSegueWithIdentifier("toFeedback", sender: self)
+        case 9: performSegueWithIdentifier("toFeedbackLiking", sender: self)
+        case 13: performSegueWithIdentifier("toFeedbackSharing", sender: self)
+        default: ()
+        }
+        
+        defaults.setInteger(++counter, forKey: masterVCLoadingCounterKey)
+        defaults.synchronize()
     }
 
     

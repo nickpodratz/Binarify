@@ -1,0 +1,72 @@
+
+/* Class = "UILabel"; text = "Fantastic!"; ObjectID = "1cL-EA-wdD"; */
+"1cL-EA-wdD.text" = "¡Muy bien!";
+
+/* Class = "UILabel"; text = "I'm sorry for that!"; ObjectID = "4oU-QD-KdA"; */
+"4oU-QD-KdA.text" = "¡Que pena!";
+
+/* Class = "UIButton"; normalTitle = "Keine Lust"; ObjectID = "5Ng-YJ-dWq"; */
+"5Ng-YJ-dWq.normalTitle" = "No quiero";
+
+/* Class = "UILabel"; text = "Möchtest du immer auf dem neusten Stand sein? "; ObjectID = "9Wd-8Q-ebm"; */
+"9Wd-8Q-ebm.text" = "¿Quieres estar siempre al día?";
+
+/* Class = "UILabel"; text = "Sharing is caring <3\n"; ObjectID = "DCa-zn-6nx"; */
+"DCa-zn-6nx.text" = "Compartir es amar <3";
+
+/* Class = "UILabel"; text = "Ahora No"; ObjectID = "DTo-z0-76j"; */
+"DTo-z0-76j.text" = "Ahora no";
+
+/* Class = "UIButton"; normalTitle = "Jetzt teilen"; ObjectID = "GrZ-Vd-r5V"; */
+"GrZ-Vd-r5V.normalTitle" = "Compartir";
+
+/* Class = "UILabel"; text = "Your opinion is very important to me and will be regarded in future updates."; ObjectID = "KIz-sa-Cpp"; */
+"KIz-sa-Cpp.text" = "A mí tu opinión vale mucho y yo voy a tomarla en cuenta durante el desarrollo futuro.";
+
+/* Class = "UILabel"; text = "I will read through your feedback as soon as possible and send you my answer."; ObjectID = "LXK-TK-t2b"; */
+"LXK-TK-t2b.text" = "Voy a leer tu mensaje y contestarte muy pronto.";
+
+/* Class = "UILabel"; text = "Über meine Facebookseite lade ich zum Beta Testing brandneuer Funktionen ein, verteile Promo-Codes für den gratis-Download meiner aktuellen Apps und teile ab und zu Einblicke in meine App-Entwicklung. Von mir gibt es keinen Spam: Indianerehrenwort!"; ObjectID = "PdI-Gd-zwg"; */
+"PdI-Gd-zwg.text" = "En mi página de Facebook invito a probadores betas, repartio códigos promocionales por descargas gratis y doy una idea de como se desarrolla apps por el iPhone y iPad. No voy compartir spam. Prometido.";
+
+/* Class = "UILabel"; text = "Thank you so much!"; ObjectID = "QZs-4a-9Hz"; */
+"QZs-4a-9Hz.text" = "¡Muchas gracias!";
+
+/* Class = "UIButton"; normalTitle = "Ahora No"; ObjectID = "RoT-FF-oxA"; */
+"RoT-FF-oxA.normalTitle" = "Ahora No";
+
+/* Class = "UIButton"; normalTitle = "Nee…"; ObjectID = "SoU-gN-Dea"; */
+"SoU-gN-Dea.normalTitle" = "No";
+
+/* Class = "UIButton"; normalTitle = "No"; ObjectID = "WOW-nn-t1n"; */
+"WOW-nn-t1n.normalTitle" = "No";
+
+/* Class = "UIButton"; normalTitle = "¡Está bien!"; ObjectID = "Zdj-KG-tII"; */
+"Zdj-KG-tII.normalTitle" = "¡Está bien!";
+
+/* Class = "UILabel"; text = "… but feedback is the first step to all improvements. If you write me a short mail with your critics I can start fixing the errors."; ObjectID = "Zj9-Rt-Tcs"; */
+"Zj9-Rt-Tcs.text" = "… pero la realimentación es el primer paso a la mejora. Si me escribas un correo electrónico yo puedo empezar a corregir los errores.";
+
+/* Class = "UIButton"; normalTitle = "Ahora No"; ObjectID = "c8l-Pp-7rR"; */
+"c8l-Pp-7rR.normalTitle" = "Ahora No";
+
+/* Class = "UIButton"; normalTitle = "Sí"; ObjectID = "cQZ-vm-qRv"; */
+"cQZ-vm-qRv.normalTitle" = "Sí";
+
+/* Class = "UILabel"; text = "Do you like Binarify?"; ObjectID = "cQl-n0-EYV"; */
+"cQl-n0-EYV.text" = "¿Te gusta Binarify?";
+
+/* Class = "UIButton"; normalTitle = "Jetzt Folgen"; ObjectID = "hLu-0e-WzQ"; */
+"hLu-0e-WzQ.normalTitle" = "Abrir Página";
+
+/* Class = "UIButton"; normalTitle = "Revísa App"; ObjectID = "nHL-Gk-gwV"; */
+"nHL-Gk-gwV.normalTitle" = "Revísa App";
+
+/* Class = "UIButton"; normalTitle = "Escríbe correo"; ObjectID = "o08-T1-tcf"; */
+"o08-T1-tcf.normalTitle" = "Escríbe mensaje";
+
+/* Class = "UILabel"; text = "Dir gefällt Binarify? Dann tue mir doch einen Gefallen und erzähle deinen Freunden davon. Sicher wären sie dir sehr dankbar."; ObjectID = "smu-40-pfI"; */
+"smu-40-pfI.text" = "Te gusta Binarify, ¿no? Pués podrías hacerme un favor y compartir esta App con tus amigos?";
+
+/* Class = "UILabel"; text = "Could you do me and many other users a favor by leaving your opinion in a short review or rating on the App Store? That would be really nice!"; ObjectID = "xfC-xo-Aak"; */
+"xfC-xo-Aak.text" = "¿Podrías hacer un favor a mí y muchos usadores por dejar tu opinión de Binarify en una revisa pequeñita o una evaluación en el App Store? ¡Sería muy agradable!";

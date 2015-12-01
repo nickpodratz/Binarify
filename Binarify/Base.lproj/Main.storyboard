@@ -7,13 +7,29 @@
         <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
     </dependencies>
     <scenes>
+        <!--FeedbackLikingViewController-->
+        <scene sceneID="7MR-LE-tMg">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Feedback" referencedIdentifier="FeedbackLikingViewController" id="11H-Yf-fjH" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="DzW-5p-9OC" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="77" y="893"/>
+        </scene>
+        <!--FeedbackSharingViewController-->
+        <scene sceneID="yAd-sf-awh">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Feedback" referencedIdentifier="FeedbackSharingViewController" id="1Lu-Ap-UNC" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mdo-Yo-Bc2" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="522" y="893"/>
+        </scene>
         <!--Feedback-->
         <scene sceneID="vlE-QB-gYt">
             <objects>
                 <viewControllerPlaceholder storyboardName="Feedback" id="X0a-hc-2qv" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XHS-hh-mEc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="300.5" y="970"/>
+            <point key="canvasLocation" x="299.5" y="893"/>
         </scene>
         <!--Translator View Controller-->
         <scene sceneID="tne-QT-ifu">
@@ -112,6 +128,8 @@
                         <outlet property="tapGestureRecognizer" destination="lZC-1l-t2h" id="XTQ-Ui-CHT"/>
                         <outlet property="textField" destination="KJj-VL-iff" id="l00-SH-HMa"/>
                         <segue destination="X0a-hc-2qv" kind="presentation" identifier="toFeedback" modalPresentationStyle="fullScreen" modalTransitionStyle="coverVertical" id="qbh-qr-c5Z"/>
+                        <segue destination="11H-Yf-fjH" kind="presentation" identifier="toFeedbackLiking" modalPresentationStyle="fullScreen" modalTransitionStyle="coverVertical" id="ryg-9R-eDe"/>
+                        <segue destination="1Lu-Ap-UNC" kind="presentation" identifier="toFeedbackSharing" modalPresentationStyle="fullScreen" modalTransitionStyle="coverVertical" id="fJJ-dm-sav"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -516,11 +534,11 @@ This is the first app I released and I am still very curious about how it is use
                                         </tableViewCellContentView>
                                         <animations/>
                                     </tableViewCell>
-                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="70" id="lxk-iR-e4n">
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" rowHeight="70" id="lxk-iR-e4n">
                                         <rect key="frame" x="0.0" y="229" width="600" height="70"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" tableViewCell="lxk-iR-e4n" id="B43-oT-3H7">
-                                            <rect key="frame" x="0.0" y="0.0" width="600" height="69.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="567" height="69.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <view contentMode="scaleToFill" horizontalCompressionResistancePriority="1000" verticalCompressionResistancePriority="1000" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="g99-6U-SVn">
@@ -579,15 +597,15 @@ This is the first app I released and I am still very curious about how it is use
                             </tableViewSection>
                             <tableViewSection headerTitle="Tell me your opinion" id="vjZ-Zy-BKL">
                                 <cells>
-                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" textLabel="KyY-6e-Kit" style="IBUITableViewCellStyleDefault" id="Y56-YH-lsb">
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" textLabel="KyY-6e-Kit" style="IBUITableViewCellStyleDefault" id="Y56-YH-lsb">
                                         <rect key="frame" x="0.0" y="341" width="600" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Y56-YH-lsb" id="W6t-lr-kc0">
-                                            <rect key="frame" x="0.0" y="0.0" width="600" height="43.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="567" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Review App" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="KyY-6e-Kit">
-                                                    <rect key="frame" x="15" y="0.0" width="570" height="43.5"/>
+                                                    <rect key="frame" x="15" y="0.0" width="550" height="43.5"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <animations/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="16"/>
@@ -599,15 +617,15 @@ This is the first app I released and I am still very curious about how it is use
                                         </tableViewCellContentView>
                                         <animations/>
                                     </tableViewCell>
-                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" textLabel="qXK-aa-3kV" style="IBUITableViewCellStyleDefault" id="Urb-Xf-rfp">
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" textLabel="qXK-aa-3kV" style="IBUITableViewCellStyleDefault" id="Urb-Xf-rfp">
                                         <rect key="frame" x="0.0" y="385" width="600" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Urb-Xf-rfp" id="x7h-wZ-rhZ">
-                                            <rect key="frame" x="0.0" y="0.0" width="600" height="43.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="567" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Send Feedback" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="qXK-aa-3kV">
-                                                    <rect key="frame" x="15" y="0.0" width="570" height="43.5"/>
+                                                    <rect key="frame" x="15" y="0.0" width="550" height="43.5"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <animations/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="16"/>

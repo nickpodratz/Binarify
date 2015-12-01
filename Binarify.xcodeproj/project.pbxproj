@@ -24,6 +24,8 @@
 		6364159B1BA05927008993D4 /* String+Subscript.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6364159A1BA05927008993D4 /* String+Subscript.swift */; };
 		6373CC7D1BAB10A100F5DE6D /* CheckmarkVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6373CC7C1BAB10A100F5DE6D /* CheckmarkVC.swift */; };
 		6382568C1BAA3998003CEA8E /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6382568B1BAA3998003CEA8E /* Launch Screen.storyboard */; };
+		638322A71C0E2CCF00DF305A /* FeedbackSharingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 638322A51C0E2CCF00DF305A /* FeedbackSharingVC.swift */; };
+		638322A81C0E2CCF00DF305A /* FeedbackLikingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 638322A61C0E2CCF00DF305A /* FeedbackLikingVC.swift */; };
 		63C1B6691BBC8BE600F4490C /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 63C1B66B1BBC8BE600F4490C /* Localizable.strings */; };
 		63D0B2A21BDFFE0700380DF7 /* UIImage+Resize+Init.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63D0B2A11BDFFE0700380DF7 /* UIImage+Resize+Init.swift */; };
 		63D69BC91BEAC5240044A00B /* AboutVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63D69BC81BEAC5240044A00B /* AboutVC.swift */; };
@@ -31,7 +33,7 @@
 		63EED15F1BB9685A00633C18 /* App Store Details.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 63EED15E1BB9685A00633C18 /* App Store Details.rtf */; };
 		63F310AC1B9FC1D600A262EA /* SettingsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63F310AB1B9FC1D600A262EA /* SettingsVC.swift */; };
 		63F310B21B9FC39100A262EA /* EncodingSelectionVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63F310B11B9FC39100A262EA /* EncodingSelectionVC.swift */; };
-		A9CC0B6071BAB8F092086F73 /* Pods_Binarify.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00AEC19579DA2E349BC1380B /* Pods_Binarify.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		A9CC0B6071BAB8F092086F73 /* Pods_Binarify.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00AEC19579DA2E349BC1380B /* Pods_Binarify.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -45,9 +47,7 @@
 		01519BE119AD340E000E5E46 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		01519BE219AD340E000E5E46 /* BinarifyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BinarifyTests.swift; sourceTree = "<group>"; };
 		630250371BC5437C00869BB5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Feedback.storyboard; sourceTree = "<group>"; };
-		630250391BC543B800869BB5 /* es */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = es; path = es.lproj/Feedback.storyboard; sourceTree = "<group>"; };
 		6302AAFE1BAAED31008A006C /* CheckmarkView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CheckmarkView.swift; sourceTree = "<group>"; };
-		63098EAC1C077D8200E8269F /* de */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = de; path = de.lproj/Feedback.storyboard; sourceTree = "<group>"; };
 		6317CF2D1BBAD0DA0089F1EF /* Binarify-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Binarify-Bridging-Header.h"; sourceTree = SOURCE_ROOT; };
 		632117271BC5332F009500DC /* FeedbackVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedbackVC.swift; sourceTree = "<group>"; };
 		632117281BC5332F009500DC /* FeedbackPositiveVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedbackPositiveVC.swift; sourceTree = "<group>"; };
@@ -59,6 +59,10 @@
 		6364159A1BA05927008993D4 /* String+Subscript.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Subscript.swift"; sourceTree = "<group>"; };
 		6373CC7C1BAB10A100F5DE6D /* CheckmarkVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CheckmarkVC.swift; sourceTree = "<group>"; };
 		6382568B1BAA3998003CEA8E /* Launch Screen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
+		638322A51C0E2CCF00DF305A /* FeedbackSharingVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedbackSharingVC.swift; sourceTree = "<group>"; };
+		638322A61C0E2CCF00DF305A /* FeedbackLikingVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedbackLikingVC.swift; sourceTree = "<group>"; };
+		638322AB1C0E311C00DF305A /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/Feedback.strings; sourceTree = "<group>"; };
+		638322AD1C0E337500DF305A /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Feedback.strings; sourceTree = "<group>"; };
 		63ADF1611BAD9A740043C876 /* MyPlayground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = MyPlayground.playground; sourceTree = "<group>"; };
 		63B1ECCA1C0783E300BD2807 /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/Main.strings; sourceTree = "<group>"; };
 		63C1B66A1BBC8BE600F4490C /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/Localizable.strings; sourceTree = "<group>"; };
@@ -157,6 +161,8 @@
 				632117271BC5332F009500DC /* FeedbackVC.swift */,
 				632117281BC5332F009500DC /* FeedbackPositiveVC.swift */,
 				632117291BC5332F009500DC /* FeedbackNegativeVC.swift */,
+				638322A51C0E2CCF00DF305A /* FeedbackSharingVC.swift */,
+				638322A61C0E2CCF00DF305A /* FeedbackLikingVC.swift */,
 				6321172A1BC5332F009500DC /* FeedbackThanksViewController.swift */,
 			);
 			name = Feedback;
@@ -370,8 +376,10 @@
 				01519BD019AD340E000E5E46 /* AppDelegate.swift in Sources */,
 				632117321BC5387F009500DC /* RoundedButton.swift in Sources */,
 				63223A6D1BA061D300DCE8AB /* OtherAppsCell.swift in Sources */,
+				638322A71C0E2CCF00DF305A /* FeedbackSharingVC.swift in Sources */,
 				6302AAFF1BAAED31008A006C /* CheckmarkView.swift in Sources */,
 				63D69BC91BEAC5240044A00B /* AboutVC.swift in Sources */,
+				638322A81C0E2CCF00DF305A /* FeedbackLikingVC.swift in Sources */,
 				63D0B2A21BDFFE0700380DF7 /* UIImage+Resize+Init.swift in Sources */,
 				636415991BA054F3008993D4 /* Translator.swift in Sources */,
 				6321172D1BC5332F009500DC /* FeedbackPositiveVC.swift in Sources */,
@@ -395,8 +403,8 @@
 			isa = PBXVariantGroup;
 			children = (
 				630250371BC5437C00869BB5 /* Base */,
-				630250391BC543B800869BB5 /* es */,
-				63098EAC1C077D8200E8269F /* de */,
+				638322AB1C0E311C00DF305A /* de */,
+				638322AD1C0E337500DF305A /* es */,
 			);
 			name = Feedback.storyboard;
 			sourceTree = "<group>";
