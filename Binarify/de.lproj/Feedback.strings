@@ -1,0 +1,72 @@
+
+/* Class = "UILabel"; text = "Fantastic!"; ObjectID = "1cL-EA-wdD"; */
+"1cL-EA-wdD.text" = "Fantastisch!";
+
+/* Class = "UILabel"; text = "I'm sorry for that!"; ObjectID = "4oU-QD-KdA"; */
+"4oU-QD-KdA.text" = "Das tut mir Leid!";
+
+/* Class = "UIButton"; normalTitle = "Keine Lust"; ObjectID = "5Ng-YJ-dWq"; */
+"5Ng-YJ-dWq.normalTitle" = "Keine Lust";
+
+/* Class = "UILabel"; text = "Möchtest du immer auf dem neusten Stand sein? "; ObjectID = "9Wd-8Q-ebm"; */
+"9Wd-8Q-ebm.text" = "Möchtest du immer auf dem neusten Stand sein?";
+
+/* Class = "UILabel"; text = "Sharing is caring <3\n"; ObjectID = "DCa-zn-6nx"; */
+"DCa-zn-6nx.text" = "Sharing is caring <3\n";
+
+/* Class = "UILabel"; text = "Jetzt nicht"; ObjectID = "DTo-z0-76j"; */
+"DTo-z0-76j.text" = "Jetzt nicht";
+
+/* Class = "UIButton"; normalTitle = "Jetzt teilen"; ObjectID = "GrZ-Vd-r5V"; */
+"GrZ-Vd-r5V.normalTitle" = "Jetzt teilen";
+
+/* Class = "UILabel"; text = "Your opinion is very important to me and will be regarded in future updates."; ObjectID = "KIz-sa-Cpp"; */
+"KIz-sa-Cpp.text" = "Deine Meinung ist mir sehr wichtig und soll bei der Entwicklung von Updates berücksichtigt werden.";
+
+/* Class = "UILabel"; text = "I will read through your feedback as soon as possible and send you my answer."; ObjectID = "LXK-TK-t2b"; */
+"LXK-TK-t2b.text" = "Ich werde mir dein Feedback so schnell wie möglich durchlesen und dir antworten.";
+
+/* Class = "UILabel"; text = "Über meine Facebookseite lade ich zum Beta Testing brandneuer Funktionen ein, verteile Promo-Codes für den gratis-Download meiner aktuellen Apps und teile ab und zu Einblicke in meine App-Entwicklung. Von mir gibt es keinen Spam: Indianerehrenwort!"; ObjectID = "PdI-Gd-zwg"; */
+"PdI-Gd-zwg.text" = "Über meine Facebookseite lade ich zum Beta-Testing brandneuer Funktionen ein, verteile Promo-Codes für den gratis Download meiner aktuellen Apps und teile ab und zu Einblicke in meine App-Entwicklung. Von mir gibt es keinen Spam: Indianerehrenwort!";
+
+/* Class = "UILabel"; text = "Thank you so much!"; ObjectID = "QZs-4a-9Hz"; */
+"QZs-4a-9Hz.text" = "Vielen Dank!";
+
+/* Class = "UIButton"; normalTitle = "Nicht jetzt"; ObjectID = "RoT-FF-oxA"; */
+"RoT-FF-oxA.normalTitle" = "Nicht jetzt";
+
+/* Class = "UIButton"; normalTitle = "Nee…"; ObjectID = "SoU-gN-Dea"; */
+"SoU-gN-Dea.normalTitle" = "Nope";
+
+/* Class = "UIButton"; normalTitle = "Nein"; ObjectID = "WOW-nn-t1n"; */
+"WOW-nn-t1n.normalTitle" = "Nein";
+
+/* Class = "UIButton"; normalTitle = "Alles klar"; ObjectID = "Zdj-KG-tII"; */
+"Zdj-KG-tII.normalTitle" = "Alles klar";
+
+/* Class = "UILabel"; text = "… but feedback is the first step to all improvements. If you write me a short mail with your critics I can start fixing the errors."; ObjectID = "Zj9-Rt-Tcs"; */
+"Zj9-Rt-Tcs.text" = "… aber Feedback ist der erste Schritt zur Besserung. Wenn Du mir eine kurze Mail mit deiner Kritik schickst, kann ich mich um schnelle Nachbesserung kümmern.";
+
+/* Class = "UIButton"; normalTitle = "Nicht jetzt"; ObjectID = "c8l-Pp-7rR"; */
+"c8l-Pp-7rR.normalTitle" = "Nicht jetzt";
+
+/* Class = "UIButton"; normalTitle = "Ja"; ObjectID = "cQZ-vm-qRv"; */
+"cQZ-vm-qRv.normalTitle" = "Ja";
+
+/* Class = "UILabel"; text = "Do you like Binarify? "; ObjectID = "cQl-n0-EYV"; */
+"cQl-n0-EYV.text" = "Gefällt dir Binarify?";
+
+/* Class = "UIButton"; normalTitle = "Jetzt Folgen"; ObjectID = "hLu-0e-WzQ"; */
+"hLu-0e-WzQ.normalTitle" = "Seite öffnen";
+
+/* Class = "UIButton"; normalTitle = "App bewerten"; ObjectID = "nHL-Gk-gwV"; */
+"nHL-Gk-gwV.normalTitle" = "App bewerten";
+
+/* Class = "UIButton"; normalTitle = "Mail verfassen"; ObjectID = "o08-T1-tcf"; */
+"o08-T1-tcf.normalTitle" = "Mail verfassen";
+
+/* Class = "UILabel"; text = "Dir gefällt Binarify? Dann tue mir doch einen Gefallen und erzähle deinen Freunden davon. Sicher wären sie dir sehr dankbar."; ObjectID = "smu-40-pfI"; */
+"smu-40-pfI.text" = "Dir gefällt Binarify? Dann tue mir doch einen Gefallen und erzähle deinen Freunden davon. Sicher wären sie dir sehr dankbar.";
+
+/* Class = "UILabel"; text = "Could you do me and many other users a favor by leaving your opinion in a short review or rating on the App Store? That would be really nice!"; ObjectID = "xfC-xo-Aak"; */
+"xfC-xo-Aak.text" = "Würdest Du mir und vielen Nutzern den Gefallen tun und eine kurze Rezension oder Bewertung im App Store hinterlassen? Das wäre sehr hilfreich!";

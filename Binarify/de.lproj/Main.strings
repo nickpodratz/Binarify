@@ -57,13 +57,13 @@
 "mCq-NQ-bnD.normalTitle" = "Binarify";
 
 /* Class = "UILabel"; text = "Thank you for using Binary!\nThis is the first app I released and I am still very curious about how it is used. Would you mind writing me a short mail or an App Store review with your opinion? Moreover feel free to check out my more recent apps listed below, I would be happy if you gave them a try."; ObjectID = "of9-HH-9Rj"; */
-"of9-HH-9Rj.text" = "Danke, dass du Binarify nutzt!\nDies war meine erste App im App Store und ich bin immer noch sehr interessiert, wie sie Verwendung findet. Über eine kurze Mail oder Aoo Store Bewertung mit deiner Meinung würde ich mich daher sehr freuen. Und vielleicht magst du noch einen Blick auf meine anderen Apps werfen?";
+"of9-HH-9Rj.text" = "Danke, dass du Binarify nutzt!\nDies war meine erste App im App Store und ich bin immer noch sehr interessiert, wie sie Verwendung findet. Über eine kurze Mail oder App Store Bewertung mit deiner Meinung würde ich mich daher sehr freuen. Und vielleicht magst du noch einen Blick auf meine anderen Apps werfen?";
 
 /* Class = "UILabel"; text = "Sepatate with Whitespace"; ObjectID = "p6C-kN-4li"; */
 "p6C-kN-4li.text" = "Leerzeichentrennung";
 
 /* Class = "UILabel"; text = "Send Feedback"; ObjectID = "qXK-aa-3kV"; */
-"qXK-aa-3kV.text" = "Feedback seden";
+"qXK-aa-3kV.text" = "Feedback senden";
 
 /* Class = "UILabel"; text = "App Name"; ObjectID = "rzV-Ab-O4F"; */
 "rzV-Ab-O4F.text" = "App Name";
