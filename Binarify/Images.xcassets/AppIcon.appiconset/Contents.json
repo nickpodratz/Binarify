@@ -171,8 +171,9 @@
       "subtype" : "42mm"
     },
     {
-      "idiom" : "mac",
       "size" : "512x512",
+      "idiom" : "mac",
+      "filename" : "iTunesArtwork.png",
       "scale" : "1x"
     },
     {

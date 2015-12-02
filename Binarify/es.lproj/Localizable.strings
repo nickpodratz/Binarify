@@ -16,3 +16,6 @@ MAIL_COMPOSING_ERROR_DESCRIPTION = "Asegura que los ajustes de tu perfil de emai
 "minCountryCode" = "es";
 VISIT_MY_WEBSITE = "Visitar mi página web";
 VISIT_FACEBOOK_PAGE = "Abrir página de Facebook";
+wrong_encoding = "Codificación es falso";
+wrong_encoding_description = "Este texto no puede ser decodificado, porque elegiste un protocolo de codifición que no es compatible. Toca \"Binarify\" para abrir los ajustes y cambiar la codificación.";
+wrong_encoding_button_title = "Ok";

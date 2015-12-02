@@ -32,6 +32,7 @@ class TranslatorViewController: UIViewController, UITextFieldDelegate {
         setupTextField()
         setupTranslator()
         NSTimer.scheduledTimerWithTimeInterval(2.8, target: self, selector: "animateBinarifyButton", userInfo: nil, repeats: false)
+        NSTimer.scheduledTimerWithTimeInterval(0.2, target: self, selector: "checkForFeedbackViewControllers", userInfo: nil, repeats: false)
     }
     
     override func viewDidAppear(animated: Bool) {
@@ -54,7 +55,24 @@ class TranslatorViewController: UIViewController, UITextFieldDelegate {
         self.textField.delegate = self
     }
     
+    func checkForFeedbackViewControllers() {
+        
+        let defaults = NSUserDefaults.standardUserDefaults()
+        var counter = NSUserDefaults.standardUserDefaults().integerForKey(masterVCLoadingCounterKey) ?? 0
+        
+        print(counter)
+        switch counter {
+        case 5: performSegueWithIdentifier("toFeedback", sender: self)
+        case 10: performSegueWithIdentifier("toFeedbackLiking", sender: self)
+        case 15: performSegueWithIdentifier("toFeedbackSharing", sender: self)
+        default: ()
+        }
+        
+        defaults.setInteger(++counter, forKey: masterVCLoadingCounterKey)
+        defaults.synchronize()
+    }
     
+
     // MARK: - User Interaction
     
     @IBAction func copyToPasteboard(sender: AnyObject) {
@@ -131,8 +149,16 @@ class TranslatorViewController: UIViewController, UITextFieldDelegate {
     @IBAction func translate(sender: UITextField) {
         if sender.text != nil && !sender.text!.isEmpty {
             outputTextView.userInteractionEnabled = true
-            outputTextView.text = translator.translate(sender.text!)
-            copyButton.enabled = true
+            if let text = translator.translate(sender.text!) {
+                outputTextView.text = text
+                copyButton.enabled = true
+            } else {
+                self.textField.text = nil
+                let alertController = UIAlertController(title: NSLocalizedString("wrong_encoding", comment: ""), message: NSLocalizedString("wrong_encoding_description", comment: ""), preferredStyle: .Alert)
+                alertController.addAction(UIAlertAction(title: NSLocalizedString("wrong_encoding_button_title", comment: ""), style: .Cancel, handler: nil))
+                self.presentViewController(alertController, animated: true, completion: nil)
+                copyButton.enabled = false
+            }
         } else {
             outputTextView.userInteractionEnabled = false
             outputTextView.text = nil
@@ -160,18 +186,7 @@ class TranslatorViewController: UIViewController, UITextFieldDelegate {
     
     @IBAction func rewindsToTranslatorViewController(segue:UIStoryboardSegue) {
         UIApplication.sharedApplication().setStatusBarStyle(.Default, animated: true)
-        let defaults = NSUserDefaults.standardUserDefaults()
-        var counter = NSUserDefaults.standardUserDefaults().integerForKey(masterVCLoadingCounterKey) ?? 0
-        
-        switch counter {
-        case 5: performSegueWithIdentifier("toFeedback", sender: self)
-        case 9: performSegueWithIdentifier("toFeedbackLiking", sender: self)
-        case 13: performSegueWithIdentifier("toFeedbackSharing", sender: self)
-        default: ()
-        }
-        
-        defaults.setInteger(++counter, forKey: masterVCLoadingCounterKey)
-        defaults.synchronize()
+        NSTimer.scheduledTimerWithTimeInterval(0.2, target: self, selector: "checkForFeedbackViewControllers", userInfo: nil, repeats: false)
     }
 
     
