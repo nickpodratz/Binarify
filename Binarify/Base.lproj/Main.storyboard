@@ -322,7 +322,7 @@
                                 <segue destination="sNd-jH-DIN" kind="presentation" identifier="toAbout" modalPresentationStyle="currentContext" modalTransitionStyle="flipHorizontal" id="PFb-AP-lkA"/>
                             </connections>
                         </barButtonItem>
-                        <barButtonItem key="rightBarButtonItem" systemItem="done" id="O6d-YN-m4a">
+                        <barButtonItem key="rightBarButtonItem" style="done" systemItem="done" id="O6d-YN-m4a">
                             <connections>
                                 <segue destination="Nqh-g4-zcy" kind="unwind" unwindAction="rewindsToTranslatorViewController:" id="80h-Q5-Uxz"/>
                             </connections>
@@ -745,7 +745,7 @@ This is the first app I released and I am still very curious about how it is use
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="About" id="Eo3-Fv-NLO">
-                        <barButtonItem key="rightBarButtonItem" systemItem="done" id="H5m-ba-J1l">
+                        <barButtonItem key="rightBarButtonItem" style="done" systemItem="done" id="H5m-ba-J1l">
                             <connections>
                                 <segue destination="Tie-tI-aDH" kind="unwind" unwindAction="cancelToSettingsViewController:" id="C9H-Ck-dCm"/>
                             </connections>

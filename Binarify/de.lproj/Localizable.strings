@@ -16,3 +16,6 @@ MAIL_COMPOSING_ERROR_DESCRIPTION = "Stellen Sie sicher, dass die Einstellungen i
 "minCountryCode" = "de";
 VISIT_MY_WEBSITE = "Meine Website besuchen";
 VISIT_FACEBOOK_PAGE = "Facebookseite anzeigen";
+wrong_encoding = "Falsche Kodierung";
+wrong_encoding_description = "Dieser Text kann nicht dekodiert werden, weil du eine nicht kompatible Kodierung ausgewählt hast. Tippe auf \"Binarify\" um die App Einstellungen zu öffnen und deine Kodierung zu ändern.";
+wrong_encoding_button_title = "Okay";

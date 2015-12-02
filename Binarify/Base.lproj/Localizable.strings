@@ -16,3 +16,6 @@ MAIL_COMPOSING_ERROR_DESCRIPTION = "Make sure, that the settings of your email a
 "minCountryCode" = "us";
 VISIT_MY_WEBSITE = "Visit my website";
 VISIT_FACEBOOK_PAGE = "Show Facebook page";
+wrong_encoding = "Wrong encoding";
+wrong_encoding_description = "This text cannot be decoded, because you specified the wrong encoding in the settings. Tap on \"Binarify\" to open the settings menu.";
+wrong_encoding_button_title = "Okay";

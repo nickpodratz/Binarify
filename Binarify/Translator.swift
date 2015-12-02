@@ -22,7 +22,7 @@ class Translator {
         self.whitespacesEnabled = whitespacesEnabled
     }
     
-    func translate(aString: String) -> String {
+    func translate(aString: String) -> String? {
         var isBinary = true
         
         if aString.characters.count >= encoding.characterBitLength {
@@ -61,7 +61,7 @@ class Translator {
     }
     
     
-    private func translateFromBinary(string: String) -> String {
+    private func translateFromBinary(string: String) -> String? {
         // Delete Whitespaces
         let clearBinary = string.stringByReplacingOccurrencesOfString(" ", withString: "", options: NSStringCompareOptions.LiteralSearch, range: nil)
         
@@ -72,7 +72,11 @@ class Translator {
         }
         
         let numericValues = binaryCharacters.map{ Int(strtoul($0, nil, 2)) }
-        let characters = numericValues.map{ String(UnicodeScalar(Int($0))) }
+        guard !numericValues.contains({ $0 > 1114112 }) else {
+            print("Out of codespace")
+            return nil
+        }
+        let characters = numericValues.map{ String(UnicodeScalar($0)) }
         return characters.joinWithSeparator("")
     }
     

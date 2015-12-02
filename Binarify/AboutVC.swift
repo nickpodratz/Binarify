@@ -183,7 +183,7 @@ class AboutViewController: UITableViewController, SKStoreProductViewControllerDe
     
     override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         switch (indexPath.section, indexPath.row) {
-        case (0, _):
+        case (0, 1):
             let alertController = UIAlertController(title: nil, message: nil, preferredStyle: UIAlertControllerStyle.ActionSheet)
             let visitWebsiteLocalized = NSLocalizedString("VISIT_MY_WEBSITE", comment: "")
             alertController.addAction(UIAlertAction(title: visitWebsiteLocalized, style: UIAlertActionStyle.Default, handler: { action in

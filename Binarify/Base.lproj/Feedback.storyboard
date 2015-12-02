@@ -486,18 +486,18 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PdI-Gd-zwg">
-                                <rect key="frame" x="153" y="255" width="295" height="90"/>
+                                <rect key="frame" x="152.5" y="255" width="295" height="90"/>
                                 <animations/>
                                 <constraints>
                                     <constraint firstAttribute="width" relation="lessThanOrEqual" constant="295" id="42j-sB-7Ai"/>
                                 </constraints>
-                                <string key="text">On my Facebook page I post invitations for beta-testing, share promo-codes of my most recent apps and give some insights into app-development. There will be no spam. Ever.</string>
+                                <string key="text">On my Facebook page I post invitations for beta-testing, share promo-codes of my latest apps and give some insights into app-development. There will be no spam. Ever.</string>
                                 <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="15"/>
                                 <color key="textColor" red="0.20784313725490197" green="0.20784313725490197" blue="0.20784313725490197" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Do you want to stay informed?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Wd-8Q-ebm">
-                                <rect key="frame" x="175" y="227.5" width="250" height="19.5"/>
+                                <rect key="frame" x="175" y="227" width="250" height="19.5"/>
                                 <animations/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="250" id="4hT-la-Tvi"/>

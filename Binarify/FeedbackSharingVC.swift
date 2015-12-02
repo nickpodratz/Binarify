@@ -43,7 +43,7 @@ class FeedbackSharingViewController: UIViewController {
         if SLComposeViewController.isAvailableForServiceType(SLServiceTypeFacebook) {
             let controller = SLComposeViewController(forServiceType: SLServiceTypeFacebook)
             let coutryCode = NSLocalizedString("minCountryCode", comment: "")
-            let url = NSURL(string: "https://itunes.apple.com/\(coutryCode)/app/rhetorica-stilmittel-einfach/id926449450?mt=8")!
+            let url = NSURL(string: "https://itunes.apple.com/\(coutryCode)/app/binarify/id912928467?mt=8")!
             controller.addURL(url)
             self.presentViewController(controller, animated:true, completion: nil)
         }

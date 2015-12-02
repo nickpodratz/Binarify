@@ -33,7 +33,7 @@
 "KJj-VL-iff.placeholder" = "texto o código binario";
 
 /* Class = "UILabel"; text = "Review App"; ObjectID = "KyY-6e-Kit"; */
-"KyY-6e-Kit.text" = "Revisa app";
+"KyY-6e-Kit.text" = "Revisar app";
 
 /* Class = "UILabel"; text = "Dynamic"; ObjectID = "Ras-sS-osb"; */
 "Ras-sS-osb.text" = "dinámico";
@@ -63,7 +63,7 @@
 "p6C-kN-4li.text" = "Separa con espacios blancos";
 
 /* Class = "UILabel"; text = "Send Feedback"; ObjectID = "qXK-aa-3kV"; */
-"qXK-aa-3kV.text" = "Envía tu opinión";
+"qXK-aa-3kV.text" = "Enviar votación";
 
 /* Class = "UILabel"; text = "App Name"; ObjectID = "rzV-Ab-O4F"; */
 "rzV-Ab-O4F.text" = "App Name";
