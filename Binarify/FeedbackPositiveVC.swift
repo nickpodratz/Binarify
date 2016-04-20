@@ -17,7 +17,7 @@ class FeedbackPositiveViewController: UIViewController {
     
     @IBAction func pressedOpenAppStore(sender: UIButton) {
         openInAppStore()
-        NSTimer.scheduledTimerWithTimeInterval(0.35, target: self, selector: "toThankYouViewController", userInfo: nil, repeats: false)
+        NSTimer.scheduledTimerWithTimeInterval(0.35, target: self, selector: #selector(FeedbackPositiveViewController.toThankYouViewController), userInfo: nil, repeats: false)
     }
     
     func toThankYouViewController() {

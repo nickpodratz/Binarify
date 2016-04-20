@@ -61,7 +61,7 @@ class AboutViewController: UITableViewController, SKStoreProductViewControllerDe
         self.tableView.rowHeight = UITableViewAutomaticDimension
         self.tableView.estimatedRowHeight = 100
         
-        timer = NSTimer.scheduledTimerWithTimeInterval(0.5, target: self, selector: "getOtherApps", userInfo: nil, repeats: true)
+        timer = NSTimer.scheduledTimerWithTimeInterval(0.5, target: self, selector: #selector(AboutViewController.getOtherApps), userInfo: nil, repeats: true)
     }
     
     override func viewWillAppear(animated: Bool) {

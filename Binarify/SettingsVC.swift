@@ -33,7 +33,7 @@ class SettingsViewController: UITableViewController, EncodingSelectorDelegate {
 
     override func viewDidAppear(animated: Bool) {
         super.viewDidAppear(animated)
-        NSTimer.scheduledTimerWithTimeInterval(1, target: self, selector: "deselectSelectedRow", userInfo: nil, repeats: false)
+        NSTimer.scheduledTimerWithTimeInterval(1, target: self, selector: #selector(SettingsViewController.deselectSelectedRow), userInfo: nil, repeats: false)
     }
     
     // MARK: - Life Cycle

@@ -31,8 +31,8 @@ class TranslatorViewController: UIViewController, UITextFieldDelegate {
     override func viewDidLoad() {
         setupTextField()
         setupTranslator()
-        NSTimer.scheduledTimerWithTimeInterval(2.8, target: self, selector: "animateBinarifyButton", userInfo: nil, repeats: false)
-        NSTimer.scheduledTimerWithTimeInterval(0.2, target: self, selector: "checkForFeedbackViewControllers", userInfo: nil, repeats: false)
+        NSTimer.scheduledTimerWithTimeInterval(2.8, target: self, selector: #selector(TranslatorViewController.animateBinarifyButton), userInfo: nil, repeats: false)
+        NSTimer.scheduledTimerWithTimeInterval(0.2, target: self, selector: #selector(TranslatorViewController.checkForFeedbackViewControllers), userInfo: nil, repeats: false)
     }
     
     override func viewDidAppear(animated: Bool) {
@@ -58,7 +58,7 @@ class TranslatorViewController: UIViewController, UITextFieldDelegate {
     func checkForFeedbackViewControllers() {
         
         let defaults = NSUserDefaults.standardUserDefaults()
-        var counter = NSUserDefaults.standardUserDefaults().integerForKey(masterVCLoadingCounterKey) ?? 0
+        let counter = NSUserDefaults.standardUserDefaults().integerForKey(masterVCLoadingCounterKey) ?? 0
         
         print(counter)
         switch counter {
@@ -68,7 +68,7 @@ class TranslatorViewController: UIViewController, UITextFieldDelegate {
         default: ()
         }
         
-        defaults.setInteger(++counter, forKey: masterVCLoadingCounterKey)
+        defaults.setInteger(counter.successor(), forKey: masterVCLoadingCounterKey)
         defaults.synchronize()
     }
     
@@ -186,7 +186,7 @@ class TranslatorViewController: UIViewController, UITextFieldDelegate {
     
     @IBAction func rewindsToTranslatorViewController(segue:UIStoryboardSegue) {
         UIApplication.sharedApplication().setStatusBarStyle(.Default, animated: true)
-        NSTimer.scheduledTimerWithTimeInterval(0.2, target: self, selector: "checkForFeedbackViewControllers", userInfo: nil, repeats: false)
+        NSTimer.scheduledTimerWithTimeInterval(0.2, target: self, selector: #selector(TranslatorViewController.checkForFeedbackViewControllers), userInfo: nil, repeats: false)
     }
 
     

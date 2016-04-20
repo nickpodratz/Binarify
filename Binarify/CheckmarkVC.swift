@@ -15,7 +15,7 @@ class CheckmarkViewController: UIViewController {
 
     override func viewDidAppear(animated: Bool) {
 //        self.checkmarkView.animateCheckmark()
-        NSTimer.scheduledTimerWithTimeInterval(0.5, target: self, selector: "dismissViewController", userInfo: nil, repeats: false)
+        NSTimer.scheduledTimerWithTimeInterval(0.5, target: self, selector: #selector(CheckmarkViewController.dismissViewController), userInfo: nil, repeats: false)
     }
     
     func dismissViewController() {

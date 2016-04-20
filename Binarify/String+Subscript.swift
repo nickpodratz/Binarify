@@ -13,7 +13,7 @@ extension String {
         get {
             let subStart = self.startIndex.advancedBy(r.startIndex, limit: self.endIndex)
             let subEnd = subStart.advancedBy(r.endIndex - r.startIndex, limit: self.endIndex)
-            return self.substringWithRange(Range(start: subStart, end: subEnd))
+            return self.substringWithRange(subStart..<subEnd)
         }
     }
     func substring(from: Int) -> String {
