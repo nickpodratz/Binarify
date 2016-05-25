@@ -268,7 +268,7 @@ class AboutViewController: UITableViewController, SKStoreProductViewControllerDe
 extension AboutViewController: MFMailComposeViewControllerDelegate {
     
     func composeMail() {
-        let appVersion = NSBundle.mainBundle().objectForInfoDictionaryKey(kCFBundleVersionKey as String) as! String
+        let appVersion = NSBundle.mainBundle().objectForInfoDictionaryKey("CFBundleShortVersionString") as! String
         let deviceModel = UIDevice.currentDevice().model
         let systemVersion = UIDevice.currentDevice().systemVersion
         let appName = NSBundle.mainBundle().infoDictionary!["CFBundleName"] as! String
