@@ -16,7 +16,7 @@
 		6321172C1BC5332F009500DC /* FeedbackVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 632117271BC5332F009500DC /* FeedbackVC.swift */; };
 		6321172D1BC5332F009500DC /* FeedbackPositiveVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 632117281BC5332F009500DC /* FeedbackPositiveVC.swift */; };
 		6321172E1BC5332F009500DC /* FeedbackNegativeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 632117291BC5332F009500DC /* FeedbackNegativeVC.swift */; };
-		6321172F1BC5332F009500DC /* FeedbackThanksViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6321172A1BC5332F009500DC /* FeedbackThanksViewController.swift */; };
+		6321172F1BC5332F009500DC /* FeedbackThanksVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6321172A1BC5332F009500DC /* FeedbackThanksVC.swift */; };
 		632117321BC5387F009500DC /* RoundedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 632117311BC5387F009500DC /* RoundedButton.swift */; };
 		632117331BC53C3D009500DC /* Feedback.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 632117351BC53C3D009500DC /* Feedback.storyboard */; };
 		63223A6D1BA061D300DCE8AB /* OtherAppsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63223A6C1BA061D300DCE8AB /* OtherAppsCell.swift */; };
@@ -30,7 +30,6 @@
 		63D0B2A21BDFFE0700380DF7 /* UIImage+Resize+Init.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63D0B2A11BDFFE0700380DF7 /* UIImage+Resize+Init.swift */; };
 		63D69BC91BEAC5240044A00B /* AboutVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63D69BC81BEAC5240044A00B /* AboutVC.swift */; };
 		63EECB4D1B9FCAD100B73146 /* Encodings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63EECB4C1B9FCAD100B73146 /* Encodings.swift */; };
-		63EED15F1BB9685A00633C18 /* App Store Details.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 63EED15E1BB9685A00633C18 /* App Store Details.rtf */; };
 		63F310AC1B9FC1D600A262EA /* SettingsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63F310AB1B9FC1D600A262EA /* SettingsVC.swift */; };
 		63F310B21B9FC39100A262EA /* EncodingSelectionVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63F310B11B9FC39100A262EA /* EncodingSelectionVC.swift */; };
 		A9CC0B6071BAB8F092086F73 /* Pods_Binarify.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00AEC19579DA2E349BC1380B /* Pods_Binarify.framework */; };
@@ -48,17 +47,16 @@
 		01519BE219AD340E000E5E46 /* BinarifyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BinarifyTests.swift; sourceTree = "<group>"; };
 		630250371BC5437C00869BB5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Feedback.storyboard; sourceTree = "<group>"; };
 		6302AAFE1BAAED31008A006C /* CheckmarkView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CheckmarkView.swift; sourceTree = "<group>"; };
-		6317CF2D1BBAD0DA0089F1EF /* Binarify-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Binarify-Bridging-Header.h"; sourceTree = SOURCE_ROOT; };
 		632117271BC5332F009500DC /* FeedbackVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedbackVC.swift; sourceTree = "<group>"; };
 		632117281BC5332F009500DC /* FeedbackPositiveVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedbackPositiveVC.swift; sourceTree = "<group>"; };
 		632117291BC5332F009500DC /* FeedbackNegativeVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedbackNegativeVC.swift; sourceTree = "<group>"; };
-		6321172A1BC5332F009500DC /* FeedbackThanksViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedbackThanksViewController.swift; sourceTree = "<group>"; };
+		6321172A1BC5332F009500DC /* FeedbackThanksVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedbackThanksVC.swift; sourceTree = "<group>"; };
 		632117311BC5387F009500DC /* RoundedButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundedButton.swift; sourceTree = "<group>"; };
 		63223A6C1BA061D300DCE8AB /* OtherAppsCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OtherAppsCell.swift; sourceTree = "<group>"; };
 		636415981BA054F3008993D4 /* Translator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Translator.swift; sourceTree = "<group>"; };
 		6364159A1BA05927008993D4 /* String+Subscript.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Subscript.swift"; sourceTree = "<group>"; };
 		6373CC7C1BAB10A100F5DE6D /* CheckmarkVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CheckmarkVC.swift; sourceTree = "<group>"; };
-		6382568B1BAA3998003CEA8E /* Launch Screen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
+		6382568B1BAA3998003CEA8E /* Launch Screen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = "Launch Screen.storyboard"; path = "../Base.lproj/Launch Screen.storyboard"; sourceTree = "<group>"; };
 		638322A51C0E2CCF00DF305A /* FeedbackSharingVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedbackSharingVC.swift; sourceTree = "<group>"; };
 		638322A61C0E2CCF00DF305A /* FeedbackLikingVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedbackLikingVC.swift; sourceTree = "<group>"; };
 		638322AB1C0E311C00DF305A /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/Feedback.strings; sourceTree = "<group>"; };
@@ -71,9 +69,8 @@
 		63D0B2A11BDFFE0700380DF7 /* UIImage+Resize+Init.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+Resize+Init.swift"; sourceTree = "<group>"; };
 		63D69BC81BEAC5240044A00B /* AboutVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AboutVC.swift; sourceTree = "<group>"; };
 		63EECB4C1B9FCAD100B73146 /* Encodings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Encodings.swift; sourceTree = "<group>"; };
-		63EED15E1BB9685A00633C18 /* App Store Details.rtf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.rtf; path = "App Store Details.rtf"; sourceTree = "<group>"; };
 		63F310AB1B9FC1D600A262EA /* SettingsVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsVC.swift; sourceTree = "<group>"; };
-		63F310B11B9FC39100A262EA /* EncodingSelectionVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = EncodingSelectionVC.swift; path = ../EncodingSelectionVC.swift; sourceTree = "<group>"; };
+		63F310B11B9FC39100A262EA /* EncodingSelectionVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EncodingSelectionVC.swift; sourceTree = "<group>"; };
 		63FF3D861BEC2D67002E972F /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Main.strings; sourceTree = "<group>"; };
 		BFA861099BB68A3C8F9259CF /* Pods-Binarify.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Binarify.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Binarify/Pods-Binarify.debug.xcconfig"; sourceTree = "<group>"; };
 		BFB1C0091A74A21D4899747E /* Pods-Binarify.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Binarify.release.xcconfig"; path = "Pods/Target Support Files/Pods-Binarify/Pods-Binarify.release.xcconfig"; sourceTree = "<group>"; };
@@ -129,8 +126,6 @@
 			isa = PBXGroup;
 			children = (
 				63C1B66B1BBC8BE600F4490C /* Localizable.strings */,
-				6317CF2D1BBAD0DA0089F1EF /* Binarify-Bridging-Header.h */,
-				63EED15E1BB9685A00633C18 /* App Store Details.rtf */,
 				63ADF1611BAD9A740043C876 /* MyPlayground.playground */,
 				01519BCE19AD340E000E5E46 /* Info.plist */,
 			);
@@ -163,9 +158,10 @@
 				632117291BC5332F009500DC /* FeedbackNegativeVC.swift */,
 				638322A51C0E2CCF00DF305A /* FeedbackSharingVC.swift */,
 				638322A61C0E2CCF00DF305A /* FeedbackLikingVC.swift */,
-				6321172A1BC5332F009500DC /* FeedbackThanksViewController.swift */,
+				6321172A1BC5332F009500DC /* FeedbackThanksVC.swift */,
 			);
 			name = Feedback;
+			path = Controllers;
 			sourceTree = "<group>";
 		};
 		63223A6E1BA0625B00DCE8AB /* View */ = {
@@ -176,6 +172,7 @@
 				6302AAFE1BAAED31008A006C /* CheckmarkView.swift */,
 			);
 			name = View;
+			path = Views;
 			sourceTree = "<group>";
 		};
 		63D0B2A31BDFFE3600380DF7 /* Extensions */ = {
@@ -194,6 +191,7 @@
 				636415981BA054F3008993D4 /* Translator.swift */,
 			);
 			name = Model;
+			path = Models;
 			sourceTree = "<group>";
 		};
 		63EECB4F1B9FCB9900B73146 /* Main */ = {
@@ -208,6 +206,7 @@
 				63F310B11B9FC39100A262EA /* EncodingSelectionVC.swift */,
 			);
 			name = Main;
+			path = Controllers;
 			sourceTree = "<group>";
 		};
 		9090D1D385FA9B998F717D83 /* Frameworks */ = {
@@ -299,7 +298,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				63EED15F1BB9685A00633C18 /* App Store Details.rtf in Resources */,
 				632117331BC53C3D009500DC /* Feedback.storyboard in Resources */,
 				63C1B6691BBC8BE600F4490C /* Localizable.strings in Resources */,
 				01519BD519AD340E000E5E46 /* Main.storyboard in Resources */,
@@ -371,7 +369,7 @@
 				6373CC7D1BAB10A100F5DE6D /* CheckmarkVC.swift in Sources */,
 				6321172C1BC5332F009500DC /* FeedbackVC.swift in Sources */,
 				01519BD219AD340E000E5E46 /* TranslatorVC.swift in Sources */,
-				6321172F1BC5332F009500DC /* FeedbackThanksViewController.swift in Sources */,
+				6321172F1BC5332F009500DC /* FeedbackThanksVC.swift in Sources */,
 				63F310B21B9FC39100A262EA /* EncodingSelectionVC.swift in Sources */,
 				01519BD019AD340E000E5E46 /* AppDelegate.swift in Sources */,
 				632117321BC5387F009500DC /* RoundedButton.swift in Sources */,
