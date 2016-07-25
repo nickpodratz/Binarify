@@ -1,0 +1,13 @@
+PODS:
+  - MBProgressHUD (0.9.2)
+  - PKHUD (3.1.0)
+
+DEPENDENCIES:
+  - MBProgressHUD
+  - PKHUD
+
+SPEC CHECKSUMS:
+  MBProgressHUD: 1569cf7ace17a8bac47aabfbb8580a49690386d1
+  PKHUD: 4167eccdb1b3a892fd80ce2b51cb6ba412a889ab
+
+COCOAPODS: 0.39.0
